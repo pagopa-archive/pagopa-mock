@@ -1,0 +1,463 @@
+
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 888888888888888
+CCP: 0dc01620887e11e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-06T19:11:02+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/888888888888888/nodosim.properties /var/www/html/moc/data/888888888888888/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID43IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-06T19:11:02+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-06</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>888888888888888</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>0dc01620887e11e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/888888888888888/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-06T19:11:02+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 888888888888888
+CCP: 7d269050890211e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-07T10:59:01+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/888888888888888/nodosim.properties /var/www/html/moc/data/888888888888888/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID55IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-07T10:59:01+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-07</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>888888888888888</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>7d269050890211e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/888888888888888/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-07T10:59:01+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 888888888888888
+CCP: 42a47760890411e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-07T11:11:41+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/888888888888888/nodosim.properties /var/www/html/moc/data/888888888888888/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID25IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-07T11:11:41+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-07</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>888888888888888</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>42a47760890411e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/888888888888888/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-07T11:11:41+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 888888888888888
+CCP: a8000980890411e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-07T11:14:31+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/888888888888888/nodosim.properties /var/www/html/moc/data/888888888888888/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID24IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-07T11:14:31+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-07</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>888888888888888</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>a8000980890411e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/888888888888888/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-07T11:14:31+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 888888888888888
+CCP: 28250f70890511e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-07T11:18:06+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/888888888888888/nodosim.properties /var/www/html/moc/data/888888888888888/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID58IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-07T11:18:06+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-07</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100.00</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>888888888888888</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>28250f70890511e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/888888888888888/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-07T11:18:06+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 777777777777777
+CCP: 1eb764208ce711e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-12T09:53:12+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/777777777777777/nodosim.properties /var/www/html/moc/data/777777777777777/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID62IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-12T09:53:12+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-12</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100.00</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>777777777777777</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>1eb764208ce711e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/777777777777777/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-12T09:53:12+02:00
+############## paaAttivaRPT ###############
+identificativoPSP:AGID_01
+IUV: 777777777777777
+CCP: 4ee917f0999011e9a3aaedde276a28c2
+IdentificativoCanalePSP: 97735020584_02
+IdentificativoIntermediarioPSP: 97735020584
+importo: 100.00
+###########################################
+
+start exec at 2019-06-28T12:34:31+02:00exec: /var/www/html/moc/script/nodoInviaRPT.sh /var/www/html/moc/data/777777777777777/nodosim.properties /var/www/html/moc/data/777777777777777/nodoInviaRPTRequest.xml >/dev/null 2>/dev/null &
+RPT : <?xml version="1.0"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>AGID25IDM</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-06-28T12:34:31+02:00</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>2019-06-28</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>100.00</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>777777777777777</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>4ee917f0999011e9a3aaedde276a28c2</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>100.00</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>RFB/777777777777777/100.00/TXT/pagamento di test</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+
+returned exec at 2019-06-28T12:34:31+02:00

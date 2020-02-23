@@ -1,0 +1,1264 @@
+[27-Sep-2019 09:40:04.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 09:40:04.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID89249 avente IUV: RF204362854 terminata correttamente.
+[27-Sep-2019 09:40:04.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID65IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T09:39:44+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>10000.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF204362854</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>1770224</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>10000.00</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF204362854/10000.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 09:40:04.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID89249</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF204362854</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>1770224</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDY1SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDA5OjM5OjQ0KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTAwMDAuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkYyMDQzNjI4NTQ8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjE3NzAyMjQ8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTAwMDAuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48aWJhbkFjY3JlZGl0bz5JVDMwTjAxMDMwNzYyNzEwMDAwMDE4MjM2MDM8L2liYW5BY2NyZWRpdG8+PGliYW5BcHBvZ2dpbz5JVDU3TjA3NjAxMTQ4MDAwMDAwMTEwNTAwMzY8L2liYW5BcHBvZ2dpbz48Y3JlZGVuemlhbGlQYWdhdG9yZT5uL2E8L2NyZWRlbnppYWxpUGFnYXRvcmU+PGNhdXNhbGVWZXJzYW1lbnRvPi9SRlMvUkYyMDQzNjI4NTQvMTAwMDAuMDA8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 09:40:04.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=62d0aeb9-052b-45a1-a248-0b9619d27865</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 09:40:44.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 09:40:44.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID21826 avente IUV: RF320020493 terminata correttamente.
+[27-Sep-2019 09:40:44.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID55IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T09:40:37+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>16.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF320020493</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5254443</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>16.00</importoSingoloVersamento>
+      <causaleVersamento>/RFS/RF320020493/16.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+      <datiMarcaBolloDigitale>
+        <tipoBollo>01</tipoBollo>
+        <hashDocumento>bdh3vCzgL/vutKuoE3SUlgQyWQou71GBFu5DcNXceOA=</hashDocumento>
+        <provinciaResidenza>RM</provinciaResidenza>
+      </datiMarcaBolloDigitale>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 09:40:44.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID21826</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF320020493</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5254443</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDU1SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDA5OjQwOjM3KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTYuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkYzMjAwMjA0OTM8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjUyNTQ0NDM8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTYuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjMyMDAyMDQ5My8xNi4wMDwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48ZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48dGlwb0JvbGxvPjAxPC90aXBvQm9sbG8+PGhhc2hEb2N1bWVudG8+YmRoM3ZDemdML3Z1dEt1b0UzU1VsZ1F5V1FvdTcxR0JGdTVEY05YY2VPQT08L2hhc2hEb2N1bWVudG8+PHByb3ZpbmNpYVJlc2lkZW56YT5STTwvcHJvdmluY2lhUmVzaWRlbnphPjwvZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 09:40:44.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=290d3162-1a99-41f2-b197-0522494b5a2f</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 10:28:02.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 10:28:02.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID85392 avente IUV: RF657423270 terminata correttamente.
+[27-Sep-2019 10:28:02.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID47IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T10:27:55+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>16.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF657423270</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3927883</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>16.00</importoSingoloVersamento>
+      <causaleVersamento>/RFS/RF657423270/16.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+      <datiMarcaBolloDigitale>
+        <tipoBollo>01</tipoBollo>
+        <hashDocumento>bdh3vCzgL/vutKuoE3SUlgQyWQou71GBFu5DcNXceOA=</hashDocumento>
+        <provinciaResidenza>RM</provinciaResidenza>
+      </datiMarcaBolloDigitale>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 10:28:02.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID85392</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF657423270</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3927883</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDQ3SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEwOjI3OjU1KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTYuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkY2NTc0MjMyNzA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjM5Mjc4ODM8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTYuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjY1NzQyMzI3MC8xNi4wMDwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48ZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48dGlwb0JvbGxvPjAxPC90aXBvQm9sbG8+PGhhc2hEb2N1bWVudG8+YmRoM3ZDemdML3Z1dEt1b0UzU1VsZ1F5V1FvdTcxR0JGdTVEY05YY2VPQT08L2hhc2hEb2N1bWVudG8+PHByb3ZpbmNpYVJlc2lkZW56YT5STTwvcHJvdmluY2lhUmVzaWRlbnphPjwvZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 10:28:02.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=a5fc2224-6a74-4061-8c98-26c0c2c84e3b</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 10:28:47.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 10:28:47.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID55360 avente IUV: RF837760415 terminata correttamente.
+[27-Sep-2019 10:28:47.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID26IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T10:28:39+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>16.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF837760415</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5873510</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>16.00</importoSingoloVersamento>
+      <causaleVersamento>/RFS/RF837760415/16.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+      <datiMarcaBolloDigitale>
+        <tipoBollo>01</tipoBollo>
+        <hashDocumento>bdh3vCzgL/vutKuoE3SUlgQyWQou71GBFu5DcNXceOA=</hashDocumento>
+        <provinciaResidenza>RM</provinciaResidenza>
+      </datiMarcaBolloDigitale>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 10:28:47.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID55360</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF837760415</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5873510</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDI2SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEwOjI4OjM5KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTYuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkY4Mzc3NjA0MTU8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjU4NzM1MTA8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTYuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjgzNzc2MDQxNS8xNi4wMDwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48ZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48dGlwb0JvbGxvPjAxPC90aXBvQm9sbG8+PGhhc2hEb2N1bWVudG8+YmRoM3ZDemdML3Z1dEt1b0UzU1VsZ1F5V1FvdTcxR0JGdTVEY05YY2VPQT08L2hhc2hEb2N1bWVudG8+PHByb3ZpbmNpYVJlc2lkZW56YT5STTwvcHJvdmluY2lhUmVzaWRlbnphPjwvZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 10:28:47.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=3a538e00-f9a4-4c15-a733-40f67af8e029</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 10:34:31.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 10:34:31.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID39705 avente IUV: RF250388676 terminata correttamente.
+[27-Sep-2019 10:34:31.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID49IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T10:33:58+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>16.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF250388676</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3173934</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>16.00</importoSingoloVersamento>
+      <causaleVersamento>/RFS/RF250388676/16.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+      <datiMarcaBolloDigitale>
+        <tipoBollo>01</tipoBollo>
+        <hashDocumento>bdh3vCzgL/vutKuoE3SUlgQyWQou71GBFu5DcNXceOA=</hashDocumento>
+        <provinciaResidenza>RM</provinciaResidenza>
+      </datiMarcaBolloDigitale>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 10:34:31.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID39705</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF250388676</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3173934</codiceContestoPagamento>
+    <tipoFirma>1</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDQ5SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEwOjMzOjU4KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTYuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkYyNTAzODg2NzY8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjMxNzM5MzQ8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTYuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjI1MDM4ODY3Ni8xNi4wMDwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48ZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48dGlwb0JvbGxvPjAxPC90aXBvQm9sbG8+PGhhc2hEb2N1bWVudG8+YmRoM3ZDemdML3Z1dEt1b0UzU1VsZ1F5V1FvdTcxR0JGdTVEY05YY2VPQT08L2hhc2hEb2N1bWVudG8+PHByb3ZpbmNpYVJlc2lkZW56YT5STTwvcHJvdmluY2lhUmVzaWRlbnphPjwvZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 10:34:31.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=289896d7-24a3-45f4-9e8d-174ab40a1e5c</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 10:40:36.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 10:40:36.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID51208 avente IUV: RF568594958 terminata correttamente.
+[27-Sep-2019 10:40:36.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID53IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T10:40:32+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>1368.45</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF568594958</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>2527310</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>1368.45</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF568594958/1368.45</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 10:40:36.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID51208</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF568594958</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>2527310</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDUzSURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEwOjQwOjMyKzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTM2OC40NTwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT48dGlwb1ZlcnNhbWVudG8+QkJUPC90aXBvVmVyc2FtZW50bz48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz5SRjU2ODU5NDk1ODwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz48Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+MjUyNzMxMDwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+PGliYW5BZGRlYml0bz5JVDA2VDEwNjM5MTE3MDAwMDAwMDAwMTA1MzU8L2liYW5BZGRlYml0bz48ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPjxkYXRpU2luZ29sb1ZlcnNhbWVudG8+PGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xMzY4LjQ1PC9pbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+PGliYW5BY2NyZWRpdG8+SVQzME4wMTAzMDc2MjcxMDAwMDAxODIzNjAzPC9pYmFuQWNjcmVkaXRvPjxpYmFuQXBwb2dnaW8+SVQ1N04wNzYwMTE0ODAwMDAwMDExMDUwMDM2PC9pYmFuQXBwb2dnaW8+PGNyZWRlbnppYWxpUGFnYXRvcmU+bi9hPC9jcmVkZW56aWFsaVBhZ2F0b3JlPjxjYXVzYWxlVmVyc2FtZW50bz4vUkZTL1JGNTY4NTk0OTU4LzEzNjguNDU8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 10:40:36.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=d11de22d-3499-4d31-9ba2-a84851bd20a8</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 10:40:56.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 10:40:56.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID75539 avente IUV: RF127961186 terminata correttamente.
+[27-Sep-2019 10:40:56.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID59IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T10:40:46+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>16.00</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF127961186</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5051297</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>16.00</importoSingoloVersamento>
+      <causaleVersamento>/RFS/RF127961186/16.00</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+      <datiMarcaBolloDigitale>
+        <tipoBollo>01</tipoBollo>
+        <hashDocumento>bdh3vCzgL/vutKuoE3SUlgQyWQou71GBFu5DcNXceOA=</hashDocumento>
+        <provinciaResidenza>RM</provinciaResidenza>
+      </datiMarcaBolloDigitale>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 10:40:56.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID75539</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF127961186</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5051297</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDU5SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEwOjQwOjQ2KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTYuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+PHRpcG9WZXJzYW1lbnRvPkJCVDwvdGlwb1ZlcnNhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkYxMjc5NjExODY8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjUwNTEyOTc8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTYuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjEyNzk2MTE4Ni8xNi4wMDwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48ZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48dGlwb0JvbGxvPjAxPC90aXBvQm9sbG8+PGhhc2hEb2N1bWVudG8+YmRoM3ZDemdML3Z1dEt1b0UzU1VsZ1F5V1FvdTcxR0JGdTVEY05YY2VPQT08L2hhc2hEb2N1bWVudG8+PHByb3ZpbmNpYVJlc2lkZW56YT5STTwvcHJvdmluY2lhUmVzaWRlbnphPjwvZGF0aU1hcmNhQm9sbG9EaWdpdGFsZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 10:40:56.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=1246d86c-afaf-4659-be97-ed99c0d94283</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 12:33:58.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 12:33:58.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID65186 avente IUV: RF163970534 terminata correttamente.
+[27-Sep-2019 12:33:58.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID41IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T12:33:37+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>1246.83</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF163970534</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6499897</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>1246.83</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF163970534/1246.83</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 12:33:58.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID65186</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF163970534</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6499897</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDQxSURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEyOjMzOjM3KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTI0Ni44MzwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT48dGlwb1ZlcnNhbWVudG8+QkJUPC90aXBvVmVyc2FtZW50bz48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz5SRjE2Mzk3MDUzNDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz48Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+NjQ5OTg5NzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+PGliYW5BZGRlYml0bz5JVDA2VDEwNjM5MTE3MDAwMDAwMDAwMTA1MzU8L2liYW5BZGRlYml0bz48ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPjxkYXRpU2luZ29sb1ZlcnNhbWVudG8+PGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xMjQ2LjgzPC9pbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+PGliYW5BY2NyZWRpdG8+SVQzME4wMTAzMDc2MjcxMDAwMDAxODIzNjAzPC9pYmFuQWNjcmVkaXRvPjxpYmFuQXBwb2dnaW8+SVQ1N04wNzYwMTE0ODAwMDAwMDExMDUwMDM2PC9pYmFuQXBwb2dnaW8+PGNyZWRlbnppYWxpUGFnYXRvcmU+bi9hPC9jcmVkZW56aWFsaVBhZ2F0b3JlPjxjYXVzYWxlVmVyc2FtZW50bz4vUkZTL1JGMTYzOTcwNTM0LzEyNDYuODM8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 12:33:58.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=dd7087ad-41f4-41ba-aec2-d835621a63b8</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID54932 avente IUV: RF591575411 terminata correttamente.
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID45IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T12:34:21+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>502.10</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF591575411</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6769526</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>502.10</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF591575411/502.10</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID54932 avente IUV: RF457479057 terminata correttamente.
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID45IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T12:34:21+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>172.52</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF457479057</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5699605</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>172.52</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF591575411/172.52</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID54932</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF591575411</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6769526</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDQ1SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEyOjM0OjIxKzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+NTAyLjEwPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGNTkxNTc1NDExPC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz42NzY5NTI2PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjUwMi4xMDwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjU5MTU3NTQxMS81MDIuMTA8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF457479057</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5699605</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDQ1SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDEyOjM0OjIxKzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTcyLjUyPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGNDU3NDc5MDU3PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz41Njk5NjA1PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjE3Mi41MjwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjU5MTU3NTQxMS8xNzIuNTI8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 12:34:25.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=5c7e128c-9c2c-4989-8323-4b3e9e78bb02</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 16:29:38.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 16:29:38.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID51717 avente IUV: RF840319625 terminata correttamente.
+[27-Sep-2019 16:29:38.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID77IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T16:29:26+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>825.20</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF840319625</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3144598</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>825.20</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>biglietto n*123456</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 16:29:38.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID51717</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF840319625</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>3144598</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDc3SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDE2OjI5OjI2KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+ODI1LjIwPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGODQwMzE5NjI1PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz4zMTQ0NTk4PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjgyNS4yMDwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+YmlnbGlldHRvIG4qMTIzNDU2PC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvYWJjZGVmZzwvZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjwvZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjwvZGF0aVZlcnNhbWVudG8+PC9SUFQ+Cg==</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 16:29:38.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=f6b83596-4fac-429a-bd35-1e95533fa946</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[27-Sep-2019 17:17:29.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[27-Sep-2019 17:17:29.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - Richiesta ID carrello AGID19901 avente IUV: RF162760480 terminata correttamente.
+[27-Sep-2019 17:17:29.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID86IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-09-27T17:17:28+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-09-27</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>235.41</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF162760480</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5502763</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>235.41</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF162760480/235.41</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[27-Sep-2019 17:17:29.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID19901</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF162760480</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5502763</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDg2SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA5LTI3VDE3OjE3OjI4KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wOS0yNzwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MjM1LjQxPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGMTYyNzYwNDgwPC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz41NTAyNzYzPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjIzNS40MTwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjE2Mjc2MDQ4MC8yMzUuNDE8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[27-Sep-2019 17:17:29.000000] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPTeBollo.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=437f3436-e10f-4488-8f19-b6030fdce539</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+

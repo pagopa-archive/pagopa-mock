@@ -1,0 +1,284 @@
+[18-Nov-2019 09:56:48.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 09:56:48.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>111111895940704</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_19879</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>90.00</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>97735020584_05</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 09:56:48.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 09:56:48.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 09:56:48.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.
+[18-Nov-2019 15:23:03.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=1bc327c8-2886-4469-81c5-6e86c50d03bf&OpenSPCoop2IdMessaggio=58bbeeab-b5dd-4dd4-8beb-e1fb9d86e974&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaVerificaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 15:23:03.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=1bc327c8-2886-4469-81c5-6e86c50d03bf&OpenSPCoop2IdMessaggio=58bbeeab-b5dd-4dd4-8beb-e1fb9d86e974&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaVerificaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191030871223821</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>SI03K0C00VQWQ04089</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>POSOIT22XXX</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 15:23:03.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=1bc327c8-2886-4469-81c5-6e86c50d03bf&OpenSPCoop2IdMessaggio=58bbeeab-b5dd-4dd4-8beb-e1fb9d86e974&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaVerificaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 15:23:03.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=1bc327c8-2886-4469-81c5-6e86c50d03bf&OpenSPCoop2IdMessaggio=58bbeeab-b5dd-4dd4-8beb-e1fb9d86e974&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaVerificaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === Risposta del server alla RPT (paaVerificaRPT): 
+{"paaVerificaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":129.14,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 15:23:44.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 15:23:44.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191030871223821</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>SI03K0C00VQWQ04089</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>POSOIT22XXX</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>129.14</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>00053810149</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>00053810149_01</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 15:23:44.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 15:23:44.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 15:23:44.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.
+[18-Nov-2019 16:25:38.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:25:38.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>123456789012345</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>a697d490604146cd9a4a2205a2130e0e</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:25:38.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:25:38.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaVerificaRPT): 
+{"paaVerificaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":129.14,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:26:04.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=58a5378b-82eb-4caf-9647-00cc955e3257&OpenSPCoop2IdMessaggio=602dd720-47fc-42a2-95bf-7cfe387a3119&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 16:26:04.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=58a5378b-82eb-4caf-9647-00cc955e3257&OpenSPCoop2IdMessaggio=602dd720-47fc-42a2-95bf-7cfe387a3119&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>123456789012345</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>a697d490604146cd9a4a2205a2130e0e</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>129.14</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>05435910962</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>05435910962_01</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:26:04.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=58a5378b-82eb-4caf-9647-00cc955e3257&OpenSPCoop2IdMessaggio=602dd720-47fc-42a2-95bf-7cfe387a3119&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 16:26:04.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=58a5378b-82eb-4caf-9647-00cc955e3257&OpenSPCoop2IdMessaggio=602dd720-47fc-42a2-95bf-7cfe387a3119&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:26:04.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=58a5378b-82eb-4caf-9647-00cc955e3257&OpenSPCoop2IdMessaggio=602dd720-47fc-42a2-95bf-7cfe387a3119&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.
+[18-Nov-2019 16:29:49.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:29:49.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>123456789012345</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>1ffc4f087e3e4667bc789df02f9e7ee0</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:29:49.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:29:49.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaVerificaRPT): 
+{"paaVerificaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":129.14,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:30:07.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=fd080746-fa30-41e6-928d-b32de60a9635&OpenSPCoop2IdMessaggio=674ea3b7-da5b-4e19-ad11-9dfe35d15284&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 16:30:07.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=fd080746-fa30-41e6-928d-b32de60a9635&OpenSPCoop2IdMessaggio=674ea3b7-da5b-4e19-ad11-9dfe35d15284&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>123456789012345</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>1ffc4f087e3e4667bc789df02f9e7ee0</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>129.14</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>05435910962</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>05435910962_01</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:30:07.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=fd080746-fa30-41e6-928d-b32de60a9635&OpenSPCoop2IdMessaggio=674ea3b7-da5b-4e19-ad11-9dfe35d15284&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[18-Nov-2019 16:30:07.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=fd080746-fa30-41e6-928d-b32de60a9635&OpenSPCoop2IdMessaggio=674ea3b7-da5b-4e19-ad11-9dfe35d15284&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:30:07.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=fd080746-fa30-41e6-928d-b32de60a9635&OpenSPCoop2IdMessaggio=674ea3b7-da5b-4e19-ad11-9dfe35d15284&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.
+[18-Nov-2019 16:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>111111234567890</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>0b60775d89064af8bcef89f62817615c</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaVerificaRPT): 
+{"paaVerificaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":129.14,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:41:36.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:41:36.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>111111234567890</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>0b60775d89064af8bcef89f62817615c</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>ITBBITM1</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>129.14</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>05435910962</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>05435910962_01</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 16:41:36.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 16:41:36.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 16:41:36.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.
+[18-Nov-2019 17:50:27.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 17:50:27.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191780000000173</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>1930603000012432261</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>CRFIIT2SXXX</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 17:50:27.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 17:50:27.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaVerificaRPT): 
+{"paaVerificaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":129.14,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 17:51:14.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 17:51:14.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191780000000173</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>1930603000012432261</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>CRFIIT2SXXX</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>129.14</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>00057340119</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>00057340119_01</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[18-Nov-2019 17:51:14.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[18-Nov-2019 17:51:14.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":178.12,"ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[18-Nov-2019 17:51:14.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.

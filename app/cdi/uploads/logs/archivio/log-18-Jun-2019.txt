@@ -1,0 +1,2402 @@
+[18-Jun-2019 09:50:46] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 09:50:46] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF117124782 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 09:50:46] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF117124782</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>4726150</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 09:50:46] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:08:07</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:11:03</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:20:18</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:30:37</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:43:49</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID30294 avente IUV: RF896370100 terminata correttamente.
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID13IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T10:13:47+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale kk</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>3525.24</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF896370100</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5901662</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>1248.30</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF896370100/1248.30</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>991.72</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF842774626/991.72</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>572.65</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF982513158/572.65</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>106.16</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF444358276/106.16</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>606.41</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF357721942/606.41</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID30294 avente IUV: RF842774626 terminata correttamente.
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID13IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T10:13:47+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>881.25</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6561258</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>881.25</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF896370100/881.25</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID30294 avente IUV: RF982513158 terminata correttamente.
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID13IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T10:13:47+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>902.53</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF982513158</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>2125908</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>902.53</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF896370100/902.53</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID30294</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF896370100</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>5901662</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDEzSURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDEwOjEzOjQ3KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUga2s8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MzUyNS4yNDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT48dGlwb1ZlcnNhbWVudG8+QkJUPC90aXBvVmVyc2FtZW50bz48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz5SRjg5NjM3MDEwMDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz48Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+NTkwMTY2MjwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+PGliYW5BZGRlYml0bz5JVDA2VDEwNjM5MTE3MDAwMDAwMDAwMTA1MzU8L2liYW5BZGRlYml0bz48ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPjxkYXRpU2luZ29sb1ZlcnNhbWVudG8+PGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xMjQ4LjMwPC9pbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+PGliYW5BY2NyZWRpdG8+SVQzME4wMTAzMDc2MjcxMDAwMDAxODIzNjAzPC9pYmFuQWNjcmVkaXRvPjxpYmFuQXBwb2dnaW8+SVQ1N04wNzYwMTE0ODAwMDAwMDExMDUwMDM2PC9pYmFuQXBwb2dnaW8+PGNyZWRlbnppYWxpUGFnYXRvcmU+bi9hPC9jcmVkZW56aWFsaVBhZ2F0b3JlPjxjYXVzYWxlVmVyc2FtZW50bz4vUkZTL1JGODk2MzcwMTAwLzEyNDguMzA8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjk5MS43MjwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjg0Mjc3NDYyNi85OTEuNzI8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjU3Mi42NTwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjk4MjUxMzE1OC81NzIuNjU8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjEwNi4xNjwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjQ0NDM1ODI3Ni8xMDYuMTY8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjYwNi40MTwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjM1NzcyMTk0Mi82MDYuNDE8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>6561258</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDEzSURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDEwOjEzOjQ3KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+ODgxLjI1PC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGODQyNzc0NjI2PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz42NTYxMjU4PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjg4MS4yNTwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjg5NjM3MDEwMC84ODEuMjU8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF982513158</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>2125908</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDEzSURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDEwOjEzOjQ3KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+OTAyLjUzPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGOTgyNTEzMTU4PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz4yMTI1OTA4PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjkwMi41MzwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjxpYmFuQWNjcmVkaXRvPklUMzBOMDEwMzA3NjI3MTAwMDAwMTgyMzYwMzwvaWJhbkFjY3JlZGl0bz48aWJhbkFwcG9nZ2lvPklUNTdOMDc2MDExNDgwMDAwMDAxMTA1MDAzNjwvaWJhbkFwcG9nZ2lvPjxjcmVkZW56aWFsaVBhZ2F0b3JlPm4vYTwvY3JlZGVuemlhbGlQYWdhdG9yZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjg5NjM3MDEwMC85MDIuNTM8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS9hYmNkZWZnPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+PC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+PC9kYXRpVmVyc2FtZW50bz48L1JQVD4K</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[18-Jun-2019 10:14:46] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=c7e54f72-e65e-4f84-8cff-d17634270d66</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 10:18:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 10:18:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF117124782 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 10:18:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF117124782</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>4726150</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 10:18:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:08:07</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:11:03</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:20:18</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:30:37</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:43:49</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:36:29] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:36:29] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV a ha esito: .
+[18-Jun-2019 11:36:29] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>a</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>a</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:36:29] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <fault>
+        <faultCode>PPT_RPT_SCONOSCIUTA</faultCode>
+        <faultString>RPT sconosciuta.</faultString>
+        <id>NodoDeiPagamentiSPC</id>
+        <description>RPT sconosciuta.</description>
+      </fault>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:37:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:37:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF117124782 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 11:37:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF117124782</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>4726150</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:37:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:08:07</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:11:03</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:20:18</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:30:37</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:43:49</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - =============== SOAP ACTION: nodoInviaCarrelloRPT ===============
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID24208 avente IUV: RF104605909 terminata correttamente.
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID39IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T11:41:14+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>268.40</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF104605909</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>45887</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>268.40</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF104605909/268.40</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID24208 avente IUV: RF406453694 terminata correttamente.
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID39IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T11:41:14+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>1427.12</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF406453694</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>761180</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>1427.12</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF104605909/1427.12</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - Richiesta ID carrello AGID24208 avente IUV: RF815558111 terminata correttamente.
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RPT: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>77777777777</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRichiesta>AGID39IDM</identificativoMessaggioRichiesta>
+  <dataOraMessaggioRichiesta>2019-06-18T11:41:14+02:00</dataOraMessaggioRichiesta>
+  <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Kenshiro Kasumi</anagraficaVersante>
+    <indirizzoVersante>Divina Scuola di Hokuto</indirizzoVersante>
+    <civicoVersante>100</civicoVersante>
+    <capVersante>00100</capVersante>
+    <localitaVersante>Croce del Sud</localitaVersante>
+    <provinciaVersante>RM</provinciaVersante>
+    <nazioneVersante>IT</nazioneVersante>
+    <e-mailVersante>kenshiro.kasumi@divinascuolahokuto.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+    <indirizzoPagatore>Divina Scuola di Hokuto</indirizzoPagatore>
+    <civicoPagatore>100</civicoPagatore>
+    <capPagatore>00100</capPagatore>
+    <localitaPagatore>Croce del Sud</localitaPagatore>
+    <provinciaPagatore>RM</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>kenshiro.kasumi@divinascuolahokuto.it</e-mailPagatore>
+  </soggettoPagatore>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Ente Intermediato di Test da AgID TEST</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Viale Liszt</indirizzoBeneficiario>
+    <civicoBeneficiario>21</civicoBeneficiario>
+    <capBeneficiario>00100</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>RM</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <datiVersamento>
+    <dataEsecuzionePagamento>2019-06-18</dataEsecuzionePagamento>
+    <importoTotaleDaVersare>281.28</importoTotaleDaVersare>
+    <tipoVersamento>BBT</tipoVersamento>
+    <identificativoUnivocoVersamento>RF815558111</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>810717</codiceContestoPagamento>
+    <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+    <firmaRicevuta>0</firmaRicevuta>
+    <datiSingoloVersamento>
+      <importoSingoloVersamento>281.28</importoSingoloVersamento>
+      <ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+      <ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+      <credenzialiPagatore>n/a</credenzialiPagatore>
+      <causaleVersamento>/RFS/RF104605909/281.28</causaleVersamento>
+      <datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+    </datiSingoloVersamento>
+  </datiVersamento>
+</RPT>
+
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header>
+                                    <ppt:intestazioneCarrelloPPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <identificativoCarrello>AGID24208</identificativoCarrello>
+                              </ppt:intestazioneCarrelloPPT>
+                                 </soapenv:Header>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaCarrelloRPT>
+                                       <password>TestECTE01</password>
+                                       <identificativoPSP>AGID_01</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_02</identificativoCanale>
+                                       <listaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF104605909</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>45887</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDM5SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDExOjQxOjE0KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MjY4LjQwPC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGMTA0NjA1OTA5PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz40NTg4NzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+PGliYW5BZGRlYml0bz5JVDA2VDEwNjM5MTE3MDAwMDAwMDAwMTA1MzU8L2liYW5BZGRlYml0bz48ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPjxkYXRpU2luZ29sb1ZlcnNhbWVudG8+PGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4yNjguNDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48aWJhbkFjY3JlZGl0bz5JVDMwTjAxMDMwNzYyNzEwMDAwMDE4MjM2MDM8L2liYW5BY2NyZWRpdG8+PGliYW5BcHBvZ2dpbz5JVDU3TjA3NjAxMTQ4MDAwMDAwMTEwNTAwMzY8L2liYW5BcHBvZ2dpbz48Y3JlZGVuemlhbGlQYWdhdG9yZT5uL2E8L2NyZWRlbnppYWxpUGFnYXRvcmU+PGNhdXNhbGVWZXJzYW1lbnRvPi9SRlMvUkYxMDQ2MDU5MDkvMjY4LjQwPC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvYWJjZGVmZzwvZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjwvZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjwvZGF0aVZlcnNhbWVudG8+PC9SUFQ+Cg==</rpt>
+  </elementoListaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF406453694</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>761180</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDM5SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDExOjQxOjE0KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTQyNy4xMjwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT48dGlwb1ZlcnNhbWVudG8+QkJUPC90aXBvVmVyc2FtZW50bz48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz5SRjQwNjQ1MzY5NDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz48Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+NzYxMTgwPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48aWJhbkFkZGViaXRvPklUMDZUMTA2MzkxMTcwMDAwMDAwMDAxMDUzNTwvaWJhbkFkZGViaXRvPjxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+PGRhdGlTaW5nb2xvVmVyc2FtZW50bz48aW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPjE0MjcuMTI8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz48aWJhbkFjY3JlZGl0bz5JVDMwTjAxMDMwNzYyNzEwMDAwMDE4MjM2MDM8L2liYW5BY2NyZWRpdG8+PGliYW5BcHBvZ2dpbz5JVDU3TjA3NjAxMTQ4MDAwMDAwMTEwNTAwMzY8L2liYW5BcHBvZ2dpbz48Y3JlZGVuemlhbGlQYWdhdG9yZT5uL2E8L2NyZWRlbnppYWxpUGFnYXRvcmU+PGNhdXNhbGVWZXJzYW1lbnRvPi9SRlMvUkYxMDQ2MDU5MDkvMTQyNy4xMjwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+  <elementoListaRPT>
+    <identificativoDominio>77777777777</identificativoDominio>
+    <identificativoUnivocoVersamento>RF815558111</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>810717</codiceContestoPagamento>
+    <tipoFirma>0</tipoFirma>
+    <rpt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlBUIHhtbG5zPSJodHRwOi8vd3d3LmRpZ2l0cGEuZ292Lml0L3NjaGVtYXMvMjAxMS9QYWdhbWVudGkvIj48dmVyc2lvbmVPZ2dldHRvPjYuMi4wPC92ZXJzaW9uZU9nZ2V0dG8+PGRvbWluaW8+PGlkZW50aWZpY2F0aXZvRG9taW5pbz43Nzc3Nzc3Nzc3NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPjwvZG9taW5pbz48aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+QUdJRDM5SURNPC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTA2LTE4VDExOjQxOjE0KzAyOjAwPC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9WZXJzYW50ZT48Y2l2aWNvVmVyc2FudGU+MTAwPC9jaXZpY29WZXJzYW50ZT48Y2FwVmVyc2FudGU+MDAxMDA8L2NhcFZlcnNhbnRlPjxsb2NhbGl0YVZlcnNhbnRlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhVmVyc2FudGU+PHByb3ZpbmNpYVZlcnNhbnRlPlJNPC9wcm92aW5jaWFWZXJzYW50ZT48bmF6aW9uZVZlcnNhbnRlPklUPC9uYXppb25lVmVyc2FudGU+PGUtbWFpbFZlcnNhbnRlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPktTTUtTSDgwQTAxSDUwMUQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjxhbmFncmFmaWNhUGFnYXRvcmU+S2Vuc2hpcm8gS2FzdW1pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPkRpdmluYSBTY3VvbGEgZGkgSG9rdXRvPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmU+MTAwPC9jaXZpY29QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MDAxMDA8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkNyb2NlIGRlbCBTdWQ8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPlJNPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmtlbnNoaXJvLmthc3VtaUBkaXZpbmFzY3VvbGFob2t1dG8uaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz43Nzc3Nzc3Nzc3NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkVudGUgSW50ZXJtZWRpYXRvIGRpIFRlc3QgZGEgQWdJRCBURVNUPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhbGUgTGlzenQ8L2luZGlyaXp6b0JlbmVmaWNpYXJpbz48Y2l2aWNvQmVuZWZpY2lhcmlvPjIxPC9jaXZpY29CZW5lZmljaWFyaW8+PGNhcEJlbmVmaWNpYXJpbz4wMDEwMDwvY2FwQmVuZWZpY2lhcmlvPjxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPlJNPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxkYXRpVmVyc2FtZW50bz48ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0wNi0xODwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MjgxLjI4PC9pbXBvcnRvVG90YWxlRGFWZXJzYXJlPjx0aXBvVmVyc2FtZW50bz5CQlQ8L3RpcG9WZXJzYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPlJGODE1NTU4MTExPC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz44MTA3MTc8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxpYmFuQWRkZWJpdG8+SVQwNlQxMDYzOTExNzAwMDAwMDAwMDEwNTM1PC9pYmFuQWRkZWJpdG8+PGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT48ZGF0aVNpbmdvbG9WZXJzYW1lbnRvPjxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MjgxLjI4PC9pbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+PGliYW5BY2NyZWRpdG8+SVQzME4wMTAzMDc2MjcxMDAwMDAxODIzNjAzPC9pYmFuQWNjcmVkaXRvPjxpYmFuQXBwb2dnaW8+SVQ1N04wNzYwMTE0ODAwMDAwMDExMDUwMDM2PC9pYmFuQXBwb2dnaW8+PGNyZWRlbnppYWxpUGFnYXRvcmU+bi9hPC9jcmVkZW56aWFsaVBhZ2F0b3JlPjxjYXVzYWxlVmVyc2FtZW50bz4vUkZTL1JGMTA0NjA1OTA5LzI4MS4yODwvY2F1c2FsZVZlcnNhbWVudG8+PGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45L2FiY2RlZmc8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvVmVyc2FtZW50bz48L2RhdGlWZXJzYW1lbnRvPjwvUlBUPgo=</rpt>
+  </elementoListaRPT>
+                                    </listaRPT>
+                                 </ws:nodoInviaCarrelloRPT>
+                               </soapenv:Body>
+                            </soapenv:Envelope>
+
+[18-Jun-2019 11:41:25] [pagopatest.agid.gov.it/cdi/nodoInviaCarrelloRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoInviaCarrelloRPTRisposta>
+      <esitoComplessivoOperazione>OK</esitoComplessivoOperazione>
+      <url>https://acardste.vaservices.eu/wallet/welcome?idSession=05e50f3c-8539-43fa-a403-d675c5b42254</url>
+    </pptnodoInviaCarrelloRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:47:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:47:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 11:47:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:47:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:50:49] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:50:49] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 11:50:49] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:50:49] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:50:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:50:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 11:50:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:50:52] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 11:50:56] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 11:50:56] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 11:50:56] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 11:50:56] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 12:11:08] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 12:11:08] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 12:11:08] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 12:11:08] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 12:11:11] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 12:11:11] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 12:11:11] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 12:11:11] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 12:54:14] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 12:54:14] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF117124782 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 12:54:14] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF117124782</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>4726150</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 12:54:14] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:04:55</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:08:07</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:10:02</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:11:03</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:19:16</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:20:18</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:29:36</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:30:37</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:42:49</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-17T14:43:49</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 13:22:25] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 13:22:25] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 13:22:25] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 13:22:25] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 13:23:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 13:23:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 13:23:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 13:23:03] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 13:23:43] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 13:23:43] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 13:23:43] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 13:23:43] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 13:24:35] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 13:24:35] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 13:24:35] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 13:24:35] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 13:25:21] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 13:25:21] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 13:25:21] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 13:25:21] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 14:09:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 14:09:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 14:09:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 14:09:05] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[18-Jun-2019 14:16:01] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - =============== SOAP ACTION: nodoChiediStatoRPT ===============
+[18-Jun-2019 14:16:01] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - La richiesta con IUV RF842774626 ha esito: RT_ESITO_SCONOSCIUTO_PA.
+[18-Jun-2019 14:16:01] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - REQUEST: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoChiediStatoRPT>
+                                       <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+                                       <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+                                       <password>TestECTE01</password>
+                                       <identificativoDominio>77777777777</identificativoDominio>
+                                       <identificativoUnivocoVersamento>RF842774626</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>6561258</codiceContestoPagamento>
+                                    </ws:nodoChiediStatoRPT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[18-Jun-2019 14:16:01] [pagopatest.agid.gov.it/cdi/nodoChiediStatoRPT.php] : [INFO] - RESPONSE: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://NodoPagamentiSPC.spcoop.gov.it/servizi/PagamentiTelematiciRPT" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenvBody>
+    <pptnodoChiediStatoRPTRisposta>
+      <esito>
+        <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+        <redirect>0</redirect>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_RICEVUTA_NODO</stato>
+          <descrizione>RPT ricevuta dal Nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_ACCETTATA_NODO</stato>
+          <descrizione>RPT accettata dal Nodo come valida.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:14:46</data>
+          <stato>RPT_PARCHEGGIATA_NODO</stato>
+          <descrizione>RPT parcheggiata sul nodo in attesa di essere sbloccata per il pagamento con WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:19:52</data>
+          <stato>RPT_ANNULLATA_WISP</stato>
+          <descrizione>RPT annullata dal WISP 2.0</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:22:45</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:23:46</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:26:56</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:27:57</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:31:13</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:32:14</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_GENERATA_NODO</stato>
+          <descrizione>RT negativa generata dal nodo.</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:35:35</data>
+          <stato>RT_INVIATA_PA</stato>
+          <descrizione>RT inviata all'Intermediario dell’Ente Creditore - azione in attesa di risposta</descrizione>
+        </elementoStoricoRPT>
+        <elementoStoricoRPT>
+          <data>2019-06-18T10:36:36</data>
+          <stato>RT_ESITO_SCONOSCIUTO_PA</stato>
+          <descrizione>Esito dell'accettazione RT dell'Intermediario PA non interpretabile.</descrizione>
+        </elementoStoricoRPT>
+      </esito>
+    </pptnodoChiediStatoRPTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+

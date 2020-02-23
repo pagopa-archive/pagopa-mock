@@ -1,0 +1,90 @@
+<informativaPSP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:noNamespaceSchemaLocation="CatalogoDatiInformativi_1_0_11.xsd">
+	<identificativoFlusso>WISP_1_3_20170721</identificativoFlusso>
+	<identificativoPSP>BPBAIT3B</identificativoPSP>
+	<ragioneSociale>Banca Popolare di Bari - Società cooperativa per azioni</ragioneSociale>
+	<informativaMaster>
+		<dataPubblicazione>2019-10-31T00:01:00</dataPubblicazione>
+		<dataInizioValidita>2019-10-31T00:01:00</dataInizioValidita>
+		<urlInformazioniPSP>
+www.https://www.popolarebari.it/
+		</urlInformazioniPSP>
+		<stornoPagamento>0</stornoPagamento>
+		<marcaBolloDigitale>0</marcaBolloDigitale>
+		<logoPSP>
+iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAIAAADmAupWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABCSURBVGhD7c8BAQAwDMOg+zfd+2DBAW/HFNYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYdC28fT4NcrFwhyDkAAAAASUVORK5CYII=
+		</logoPSP>
+	</informativaMaster>
+	<listaInformativaDetail>
+		<informativaDetail>
+			<identificativoIntermediario>13212880150</identificativoIntermediario>
+			<identificativoCanale>13212880150_03</identificativoCanale>
+			<tipoVersamento>PO</tipoVersamento>
+			<modelloPagamento>4</modelloPagamento>
+			<priorita>0</priorita>
+			<canaleApp>0</canaleApp>
+			<identificazioneServizio>
+				<nomeServizio>BANCA POPOLARE DI BARI - PosPa</nomeServizio>
+				<logoServizio>iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAIAAADmAupWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABCSURBVGhD7c8BAQAwDMOg+zfd+2DBAW/HFNYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYV1hXWFdYdC28fT4NcrFwhyDkAAAAASUVORK5CYII=</logoServizio>
+			</identificazioneServizio>
+			<listaInformazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>IT</codiceLingua>
+					<descrizioneServizio>Il Servizio consente di eseguire pagamenti a favore delle PA con carte Nexi sui circuiti Visa, VPAY, Mastercard e Maestro.</descrizioneServizio>
+					<disponibilitaServizio>24 ore su 24, 7 giorni su 7</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.bancaimpresa.pagamentipa.test.nexi.it/agidpa_portal/CIPBITMM_jsp/PaginaInformativaICBPI.jsp?lang=ita</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>DE</codiceLingua>
+					<descrizioneServizio>Mit dem Service können Sie mit Nexi-Karten auf den Kanälen Visa, VPAY, Mastercard und Maestro Zahlungen an die PA leisten.</descrizioneServizio>
+					<disponibilitaServizio>24 Stunden / 7 Tage die Woche</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.bancaimpresa.pagamentipa.nexi.it/agidpa_portal/CIPBITMM_jsp/PaginaInformativaICBPI.jsp?lang=ger</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>EN</codiceLingua>
+					<descrizioneServizio>The service allows you to make payments to the PA using Nexi cards on the Visa, VPAY, Mastercard and Maestro channels.</descrizioneServizio>
+					<disponibilitaServizio>Operating 24 hours a day, seven days a week</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.bancaimpresa.pagamentipa.nexi.it/agidpa_portal/CIPBITMM_jsp/PaginaInformativaICBPI.jsp?lang=eng</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>FR</codiceLingua>
+					<descrizioneServizio>Le service vous permet d'effectuer des paiements au PA en utilisant des cartes Nexi sur les chaînes Visa, VPAY, Mastercard et Maestro.</descrizioneServizio>
+					<disponibilitaServizio>Fonctionnement 24 heures sur 24, 7 jours sur 7.</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.bancaimpresa.pagamentipa.nexi.it/agidpa_portal/CIPBITMM_jsp/PaginaInformativaICBPI.jsp?lang=fra</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>SL</codiceLingua>
+					<descrizioneServizio>Storitev vam omogoča, da plačate PA z uporabo kartice Nexi na kanalih Visa, VPAY, Mastercard in Maestro.</descrizioneServizio>
+					<disponibilitaServizio>24 ur dnevno, 7 dni v tednu</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.bancaimpresa.pagamentipa.nexi.it/agidpa_portal/CIPBITMM_jsp/PaginaInformativaICBPI.jsp?lang=slv</urlInformazioniCanale>
+				</informazioniServizio>
+			</listaInformazioniServizio>
+			<listaParoleChiave>
+				<paroleChiave>Visa</paroleChiave>
+				<paroleChiave>Mastercard</paroleChiave>
+				<paroleChiave>Maestro</paroleChiave>
+				<paroleChiave>Visa Electron</paroleChiave>
+			</listaParoleChiave>
+			<costiServizio>
+				<tipoCostoTransazione>1</tipoCostoTransazione>
+				<tipoCommissione>0</tipoCommissione>
+				<listaFasceCostoServizio>
+					<fasciaCostoServizio>
+						<importoMassimoFascia>75.00</importoMassimoFascia>
+						<costoFisso>0.00</costoFisso>
+						<valoreCommissione>2.50</valoreCommissione>
+					</fasciaCostoServizio>
+					<fasciaCostoServizio>
+						<importoMassimoFascia>150.00</importoMassimoFascia>
+						<costoFisso>0.00</costoFisso>
+						<valoreCommissione>3.00</valoreCommissione>
+					</fasciaCostoServizio>
+					<fasciaCostoServizio>
+						<importoMassimoFascia>1500.00</importoMassimoFascia>
+						<costoFisso>0.00</costoFisso>
+						<valoreCommissione>3.50</valoreCommissione>
+					</fasciaCostoServizio>
+				</listaFasceCostoServizio>
+			</costiServizio>
+		</informativaDetail>
+	</listaInformativaDetail>
+</informativaPSP>

@@ -1,0 +1,142 @@
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== SERVER PSP pspInviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>00644060287</identificativoDominio>
+          <identificativoUnivocoVersamento>RF73013300000000001950000</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>n/a</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMDY0NDA2MDI4NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+MDY1YzcwN2FhZDBlYjhmNGIzNjk5ZWM5NDkyZjAyZDZlMzU8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTAtMTFUMTA6MTY6MzU8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnNzbGNsZDU2aDQ4bDQyNGQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+CiAgICA8YW5hZ3JhZmljYVBhZ2F0b3JlPmNsYXVkaWEgYXNzYWxpbmk8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxlLW1haWxQYWdhdG9yZT5hc3NhbGluaWNAY29tdW5lLnBhZG92YS5pdDwvZS1tYWlsUGFnYXRvcmU+CiAgPC9zb2dnZXR0b1BhZ2F0b3JlPgogIDxlbnRlQmVuZWZpY2lhcmlvPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgICAgPHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgICAgPGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMDY0NDA2MDI4NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgPC9pZGVudGlmaWNhdGl2b1VuaXZvY29CZW5lZmljaWFyaW8+CiAgICA8ZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz5Db211bmUgZGkgUGFkb3ZhPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPgogICAgPGNvZGljZVVuaXRPcGVyQmVuZWZpY2lhcmlvPjEwMzE8L2NvZGljZVVuaXRPcGVyQmVuZWZpY2lhcmlvPgogICAgPGRlbm9tVW5pdE9wZXJCZW5lZmljaWFyaW8+UmFnaW9uZXJpYTwvZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIGRlbCBNdW5pY2lwaW88L2luZGlyaXp6b0JlbmVmaWNpYXJpbz4KICAgIDxjaXZpY29CZW5lZmljaWFyaW8+NjwvY2l2aWNvQmVuZWZpY2lhcmlvPgogICAgPGNhcEJlbmVmaWNpYXJpbz4zNTEyMjwvY2FwQmVuZWZpY2lhcmlvPgogICAgPGxvY2FsaXRhQmVuZWZpY2lhcmlvPlBhZG92YTwvbG9jYWxpdGFCZW5lZmljaWFyaW8+CiAgICA8cHJvdmluY2lhQmVuZWZpY2lhcmlvPlBEPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+CiAgICA8bmF6aW9uZUJlbmVmaWNpYXJpbz5JVDwvbmF6aW9uZUJlbmVmaWNpYXJpbz4KICA8L2VudGVCZW5lZmljaWFyaW8+CiAgPGRhdGlWZXJzYW1lbnRvPgogICAgPGRhdGFFc2VjdXppb25lUGFnYW1lbnRvPjIwMTktMTAtMTE8L2RhdGFFc2VjdXppb25lUGFnYW1lbnRvPgogICAgPGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTUuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+CiAgICA8dGlwb1ZlcnNhbWVudG8+Q1A8L3RpcG9WZXJzYW1lbnRvPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkY3MzAxMzMwMDAwMDAwMDAwMTk1MDAwMDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz5uL2E8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPgogICAgPGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT4KICAgIDxkYXRpU2luZ29sb1ZlcnNhbWVudG8+CiAgICAgIDxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTUuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQ1Mk8wNjIyNTEyMTg2MDY3MDAwMDc1NzdQPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjczMDEzMzAwMDAwMDAwMDAxOTUwMDAwLzE1LjAwL1RYVC9vcnRvbGFuaSBnaXVzZXBwZSAyNi0wMi0xOTY0IENvcnJpWFBhZG92YSAyMDE5LzIwMjA8L2NhdXNhbGVWZXJzYW1lbnRvPgogICAgICA8ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvQ09SUklYUEFET1ZBPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>192841000117</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>15.00</importoTotalePagato>
+      <timestampOperazione>2019-10-11T10:18:57.693+02:00</timestampOperazione>
+      <codiceAutorizzativo>203015</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Esito DB: 
+MYSQL - Esito inserimento pspInviaCarrelloRPTCarte: 1 record.
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== SERVER PSP pspInviaCarrelloRPTCarte REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>00644060287</identificativoDominio>
+          <identificativoUnivocoVersamento>RF73013300000000001950000</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>n/a</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMDY0NDA2MDI4NzwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+MDY1YzcwN2FhZDBlYjhmNGIzNjk5ZWM5NDkyZjAyZDZlMzU8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTAtMTFUMTA6MTY6MzU8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnNzbGNsZDU2aDQ4bDQyNGQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+CiAgICA8YW5hZ3JhZmljYVBhZ2F0b3JlPmNsYXVkaWEgYXNzYWxpbmk8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxlLW1haWxQYWdhdG9yZT5hc3NhbGluaWNAY29tdW5lLnBhZG92YS5pdDwvZS1tYWlsUGFnYXRvcmU+CiAgPC9zb2dnZXR0b1BhZ2F0b3JlPgogIDxlbnRlQmVuZWZpY2lhcmlvPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgICAgPHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgICAgPGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMDY0NDA2MDI4NzwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgPC9pZGVudGlmaWNhdGl2b1VuaXZvY29CZW5lZmljaWFyaW8+CiAgICA8ZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz5Db211bmUgZGkgUGFkb3ZhPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPgogICAgPGNvZGljZVVuaXRPcGVyQmVuZWZpY2lhcmlvPjEwMzE8L2NvZGljZVVuaXRPcGVyQmVuZWZpY2lhcmlvPgogICAgPGRlbm9tVW5pdE9wZXJCZW5lZmljaWFyaW8+UmFnaW9uZXJpYTwvZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIGRlbCBNdW5pY2lwaW88L2luZGlyaXp6b0JlbmVmaWNpYXJpbz4KICAgIDxjaXZpY29CZW5lZmljaWFyaW8+NjwvY2l2aWNvQmVuZWZpY2lhcmlvPgogICAgPGNhcEJlbmVmaWNpYXJpbz4zNTEyMjwvY2FwQmVuZWZpY2lhcmlvPgogICAgPGxvY2FsaXRhQmVuZWZpY2lhcmlvPlBhZG92YTwvbG9jYWxpdGFCZW5lZmljaWFyaW8+CiAgICA8cHJvdmluY2lhQmVuZWZpY2lhcmlvPlBEPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+CiAgICA8bmF6aW9uZUJlbmVmaWNpYXJpbz5JVDwvbmF6aW9uZUJlbmVmaWNpYXJpbz4KICA8L2VudGVCZW5lZmljaWFyaW8+CiAgPGRhdGlWZXJzYW1lbnRvPgogICAgPGRhdGFFc2VjdXppb25lUGFnYW1lbnRvPjIwMTktMTAtMTE8L2RhdGFFc2VjdXppb25lUGFnYW1lbnRvPgogICAgPGltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+MTUuMDA8L2ltcG9ydG9Ub3RhbGVEYVZlcnNhcmU+CiAgICA8dGlwb1ZlcnNhbWVudG8+Q1A8L3RpcG9WZXJzYW1lbnRvPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+UkY3MzAxMzMwMDAwMDAwMDAwMTk1MDAwMDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz5uL2E8L2NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPgogICAgPGZpcm1hUmljZXZ1dGE+MDwvZmlybWFSaWNldnV0YT4KICAgIDxkYXRpU2luZ29sb1ZlcnNhbWVudG8+CiAgICAgIDxpbXBvcnRvU2luZ29sb1ZlcnNhbWVudG8+MTUuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQ1Mk8wNjIyNTEyMTg2MDY3MDAwMDc1NzdQPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGUy9SRjczMDEzMzAwMDAwMDAwMDAxOTUwMDAwLzE1LjAwL1RYVC9vcnRvbGFuaSBnaXVzZXBwZSAyNi0wMi0xOTY0IENvcnJpWFBhZG92YSAyMDE5LzIwMjA8L2NhdXNhbGVWZXJzYW1lbnRvPgogICAgICA8ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvQ09SUklYUEFET1ZBPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>192841000117</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>15.00</importoTotalePagato>
+      <timestampOperazione>2019-10-11T10:18:57.693+02:00</timestampOperazione>
+      <codiceAutorizzativo>203015</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT Carte: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== RPT 1 di 1 ricevuta dal nodo: 
+IUV: RF73013300000000001950000
+CCP: n/a
+Contenuto: <RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+      <identificativoDominio>00644060287</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>065c707aad0eb8f4b3699ec9492f02d6e35</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>2019-10-11T10:16:35</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>OTH</autenticazioneSoggetto>
+    <soggettoPagatore>
+      <identificativoUnivocoPagatore>
+        <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+        <codiceIdentificativoUnivoco>sslcld56h48l424d</codiceIdentificativoUnivoco>
+      </identificativoUnivocoPagatore>
+      <anagraficaPagatore>claudia assalini</anagraficaPagatore>
+      <e-mailPagatore>assalinic@comune.padova.it</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+      <identificativoUnivocoBeneficiario>
+        <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+        <codiceIdentificativoUnivoco>00644060287</codiceIdentificativoUnivoco>
+      </identificativoUnivocoBeneficiario>
+      <denominazioneBeneficiario>Comune di Padova</denominazioneBeneficiario>
+      <codiceUnitOperBeneficiario>1031</codiceUnitOperBeneficiario>
+      <denomUnitOperBeneficiario>Ragioneria</denomUnitOperBeneficiario>
+      <indirizzoBeneficiario>Via del Municipio</indirizzoBeneficiario>
+      <civicoBeneficiario>6</civicoBeneficiario>
+      <capBeneficiario>35122</capBeneficiario>
+      <localitaBeneficiario>Padova</localitaBeneficiario>
+      <provinciaBeneficiario>PD</provinciaBeneficiario>
+      <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+      <dataEsecuzionePagamento>2019-10-11</dataEsecuzionePagamento>
+      <importoTotaleDaVersare>15.00</importoTotaleDaVersare>
+      <tipoVersamento>CP</tipoVersamento>
+      <identificativoUnivocoVersamento>RF73013300000000001950000</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>n/a</codiceContestoPagamento>
+      <firmaRicevuta>0</firmaRicevuta>
+      <datiSingoloVersamento>
+        <importoSingoloVersamento>15.00</importoSingoloVersamento>
+        <ibanAccredito>IT52O062251218606700007577P</ibanAccredito>
+        <causaleVersamento>/RFS/RF73013300000000001950000/15.00/TXT/ortolani giuseppe 26-02-1964 CorriXPadova 2019/2020</causaleVersamento>
+        <datiSpecificiRiscossione>9/CORRIXPADOVA</datiSpecificiRiscossione>
+      </datiSingoloVersamento>
+    </datiVersamento>
+</RPT>
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Richiesta RT : 
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== RT : 
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta RT : 
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Richiesta RR : 
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== RR : 
+
+[11-Oct-2019 10:19:00.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=1b82c7f3-f94b-4a92-b071-091aae773d5e&OpenSPCoop2IdMessaggio=6214d7d3-c399-44d6-b8c0-03eebbb7864d&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta RR : 
+

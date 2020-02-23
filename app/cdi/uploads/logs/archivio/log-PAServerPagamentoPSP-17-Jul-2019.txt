@@ -1,0 +1,22 @@
+[17-Jul-2019 10:44:22] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[17-Jul-2019 10:44:22] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191900494854973</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_56094</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[17-Jul-2019 10:44:22] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[17-Jul-2019 10:44:22] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"paaVerificaRPTRisposta":{"esito":"OK"}}

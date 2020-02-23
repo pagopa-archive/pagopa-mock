@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informativaPSP>
+	<identificativoFlusso>20190528000001</identificativoFlusso>
+	<identificativoPSP>PASCITMM</identificativoPSP>
+	<ragioneSociale>Banca Monte dei Paschi di Siena</ragioneSociale>
+	<informativaMaster>
+		<dataPubblicazione>2019-06-03T09:00:00</dataPubblicazione>
+		<dataInizioValidita>2019-06-03T09:00:00</dataInizioValidita>
+		<urlInformazioniPSP>www.mps.it</urlInformazioniPSP>
+		<stornoPagamento>0</stornoPagamento>
+		<marcaBolloDigitale>0</marcaBolloDigitale>
+		<logoPSP>iVBORw0KGgoAAAANSUhEUgAAAFAAAAAoCAYAAABpYH0BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgSWxsdXN0cmF0b3IgQ1M1IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE3NjdCOUY5NzA1RTExRTdCQzg4ODU5MDRBN0QxMjBEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE3NjdCOUZBNzA1RTExRTdCQzg4ODU5MDRBN0QxMjBEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTc2N0I5Rjc3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTc2N0I5Rjg3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4P0AzgAAARA0lEQVR42uxaaXQc5ZW91fsmtaRuydos27IsL5I3LDAY2yy2wWwBgxMYwySAWZLAMAkkJAMkEwIhA0xgzCE5w3JOyBxggCQEBoMD2AbbeN+FbdmyhDZr35du9d7zvvJtu+wRGTCcMz9G3zlX3V1dVV11v/feve8raclkEqPjzIdplIJRAkcJHCXw//GwPOOZfOoWTQMSSQSD3bB7MpBTPnWhJy93sTvHX2ayWzxD9a1d/Q1Nh0KBwY97a+o2JxGD050lh2mwJ4CQlsTzGUHUW+LwJ0xInDzzAsHLgqjgDsF6bv+p4HZBteDvBOcIfi34iyCdn+8W9As+EKQJfiF4UVAkeFTwZ54/wP1LBH8SZAnWCqbz3If4uxcJjgh+8pUJPJU7DfFIBJFIEDkzypZ4x+Q/5inwV8y6YyX6a+rluzB6zU5MWLwQ6ZOKcPAPf9zbtGXHw92NR9922rKQsNvhi2q4ud+JJ7ICCAiZzqSWOv0mvk4UPMIbsZNAr+BVQVzwvuAzEqOGsgmfCmyC9wT3Cl4Q7BXsFmwXtAveFGwR7CCBiuxtvMccblPXsEqwWTDn64hA82U23wnyoqEQYokwCs6Z80h+afkLzkxvflJ+3upwoWXjDjRu3Yz0wrGS+BpCnX3wlRTnTbx8yQ2JULyw7UjlO2aJuLDdiqKoGYOmJPY7okhPnKgSBYImwWxBOUlU264QjGEUXcZI+geSpoZDMJ9kPyloFiwV3CD4Dbf3k0xw+wTBO4JKQYT7q6hbJ+jjtve+vhqoIi8aRTwRxdhz5q4qnr/goazySUgrKULh3POQjCdQuGQ+pt56PcYuma8fEh4YRMu2PRhqakbFXStvK7tq2Xvh2ABioWEMmpM4N2RFdsyMYe2Ez8wUHDBE1suMrhf5WUXJFL4PGa6xn6/TSf4qEqnS+12BioAew/4jGdvUtpmCfxP4v7YaqPMnpw+FB1B88aIfWkKJewIdHTC5HUgm4sg9fw4ySsfDZDmZ7d6ScUJcK7oPHkX3/iqZBhMmX3PZZYGW9ucadm+7c8DqQKGQVxGy4EN3BI64nsZxRpwi7nnWpB8KDvK0XYKjfG83XGM6X1WNTPCa7xecJ1giyBXMGIEsQ/k98X4n09/Dz07B8FeKQE0zYTjQA9/E0lKn3fWUOc0Gz/gCIcyM2ffdjqxpJTp5Hbs+xYa7fo4tP3sCFpf8rnCSe95sFC+7BJGhADp2H8D071x/h69o4pJgsAtJOe+UiAW25ImrTzDC1AXv4e+3G25eRdLjfP8zwzX+E1+VsIw33PwSQ2QaRyq6zIZtTr4q0annZNxPkflqKZyMxfXfGjNt6hvxQRGPuTPhyc9D+fdWwJ6Rpu/UtnUvAs3tGH/lInz06AOoe/tD5FTMQPv2fXo0xoaGEezsQmbpBJStWP5yUriKx2IImY6zRhlR5E0lUf8s+L7ALShl5Km6GBRcI4jx+wcoChXctkgwyZDmqn7uMohhCWucOt9k/rSbpFYzmr/NiTqL9fQrDe0xZCC/rGLRWXd+e21MRCTY0YUJVy1G/sKzT+ykBMThz4TTl4UXcmeh4v67Me/xn6B5w3b0VtUif8HZqFu9HmaJ2rx5c/DWtXfcFG6reyWU5sPz3gD6RFBcSc3G4n368BrqnHGMoWWpMdTrTKZoz+fcj5+lQI1svjexfMAgSorU7q+lBsYQxpQVVz/iFcFoXLsZ/hlTkTf/VIUP9fQhvbgIXZVVYrQ69Pf6Fc4uQ+NfN6I3x4dxly7A/lW/R7R/CJOuXXr/vt8994pHYsYmNiaqimxST7VzaUcUkRmC/6RlWUrlNDOCVGo1UkV/wJqo7MrHvKRrGW1DjLI+qngXo1LZmU7uG6eKl5E09Xkjv1Oe8XuCw3QIdZykchL/Jif4Yk7cJyxBqfJRbfGPmVo4WN1wXnIoBE3siX/mFHk9Ls6x4RBaN+9G66ZdaHhvAyxOOxY/+ht07v4Uu37Vi4oHv4/ss8rRV10Pz9g8NH+0Hc7llyG3YsYMiyOjwDkcbp4etqDRGlb3qW7oWf7wpYLlglpenLqo3/G7ctaqq1TwC57m9rMNc2pjGgZospUw3SdYJlhNo/0w972XdkcR3iZ4hWK2gZNSyd9exrT+0FCL/52l418MHnbA8P03Tf7yyVf4ppWir65eF4v0CYUnrvLY+q0IHGvDrHtXCoEfw+x04OwH74Yz24e1D90ntXGP1MLpCHf3yvwkMfcRuVaTGT2V1ciaUXplVAJksgiJPSE2SdMjqoOnXsduRI2/Clx8v5GqrCLtLkZhahwwvN9n2PYS388mcWAdTY3v8PVWpvg1JDEVhRdRnVW9fcyQ2pWM7M8M5/qMUX4stY/J4U2/yJHphScvD2POmQmbN+3E3pH+QVg9brgLxsA7sQixYAjxUBjZc8rhseQj2N4NmwiN8pDhnn54ivIw0NSEsRfPg39q6bxhCSyTnn9C4HF3kXLVKSH4hNF0LVs8B1uwO5kyRj/oGkFVVS37JRX+D4wkNTmz6PlgiMQHqMBP8XcyeFyf4bw9BgulavAtgu8aSoH9tDUEp0mUs6zu7bXoOVgNhy/z1DbFZpVtGbqRDrZ2wiZkmh12nVjVuaSJ3bHYbUKPpqd7f00DhkWEgm2dSATDJVbNC6tcojX5P9xtypelZityUqz1Fi0lBLH/pYYXMgrH05BPZ1qCKg7WsfPZIoLe8/XThGWkEWbvnPKp2og2JqO4KK/4ukswVkTAmL5qRIeCepR1HzgCk9OGcG8/uvYfRu/hWvF5CYnI4ROeMCG2peiS+dJDT5fjAipivcmkCbZ4EpaTBGoGU5zqDOpobi38/lesaeks/CkSe0foTpSIvEEBKGf6/Yk19Q5GynKKihKqcYYIWs/XUsN5iwwROcTJ2GQ4Jnwaf/0WIcAZPNaOyGAAA3VNOgYbWoQYBxKSms2fbEfN6veQc3YZBhubse7WH0u7FoZ3wjhs+sEv4SubjPTxYzFY14y0cQVSJ20w2Wxw5fjlbwJHRef7pLVzJLSZ9IBq/L3gQt74Yt58SiiWMsVuE3xk8HiLWeA1vk9F4AR2I0sNta+G0XgXlV+R+FtDl/IjKm8NFxZ+TPK2UYXVmMbz+wyEqTo7KMjn54stLRt3hno/PeLyzZiiq2jr1t2wOByYfNPVcIg9cY7xIVwrPe5wRO+V1VKXJtbEZLGi72gdhtt6MG1lIXY++SzSXynEtNu+heH2LnRV10btJifCpoQUt6QULU1F0lymTg5XX1byQvJoli284DS2e7UkMW6oO0lGRgX3U4Q2CP7VcKM30AeqGvocu53JtCQZhgguFlzP+rqaplyZ9csFVtZajZ9Tra+HDkFdU0SyK9lVdOkFWb4ZkxFo7YAjK0OEIR1OIS8oRLiysjHc3Y1AUweSkTg01RNHI7rqWtNdyCqbBEd2FiKxgP4+bXyh3KkJiarD/cNJuU6TN3XnTbQAKcK6DDd86LQUNQ43Se0wCND+04yxmYI0hfsf5DndLAG7iFTdLeHkDLB8GMe6Ea5h3+d9NiUS8aPuvBz0HvkMgZYOad/SYbZaERkIICnRlohFkZDIU9ul8EkkSt0TO2NL94hfNOuER8Q8u9Oz9eMb12xE4aJ5sKa5q2PJAIakC4lq+jROpMqp2nKd4G0uOSllu4CerpGRAoORXUXSHmA05XPfAA2ynxEZYJtWTGukIukhRsomg3o/zpRO1eP9BqX+8r1w3bvrNykDrXRRLSBYPS4MNbUgJN5OkRSPR4VQUVqzRU8eTfYxCcFKNNQxnsJcdO6VCY8mMf6Ki3Qhat9Zifa9B9dZZLLV2qBTfGDiuLqmMSqepT+7kutye5lGZq4UgwZ7GUlXUfFzwVZGlovYSU8W4GdVFv7IffcyLUGi/4Pispq1LsHJUul90xkTaPV61gw0NKO3+qieloloXKIsjO4j1bqxVpEXHhwSe9KpOzapfgj3Dcq2ftjcbrgkersOHII9y4tQbx8SkSgCsm/v0bp3XMJXlyWBYYlCpnFK4UrZalWSqO8alM/oycACX8eW7iUuOBjTG4Zty/h4YBuPL6JRPkThWsr0dhmEYohRO+2MCBxsba2s/a8P69MKC6CERK39KT/Yve+wnq4mSVO1yKAMdDQQkGi0SLNhRiIeQ+65Z6G/tl5qZSeKr74EPVVH9ZTu2H9o7VCovc9qt6PdnNBzSBv5YVaPofE/fexhZHTT5z3NehUawR8mDSp+gcFnFtEnLuTnNZyQvUznXJYINe45IwID/R0we90POzIz0PT+JlFdv7RqmboQdO7/FOnF4+D0ZsLu88Lu9kKzWUSIo3Bm+aXzyMeR197Su5iM0glwpHsRCQbRuqfyQWvcIgqcRKslrq8JnnajqUZ/Fl+3jLAIOpUtVw47kzZam/G0EjCY4dR5f25oEVNLXjM5Ccu5TVmbVkZdKbNAjRvP5CmlyWnPRP3mDS8NtLV1FF54Ltp3HBc4/6xpaPpgC9p27ILblysRGJEU7RVxGUQkPAR/6WRUvfIG3NljMH7pRdj31Isou/0GtO6sXHesaueOXLsfddaYIA738QdLNkOkqcJ/My3FPQYCpxhu4kamImhpGtjudRm8mtuQiqDnS7AkpIQi5eP+TBECLdA3+XjhDT6587At/HIPla5wjRFCAggca9+RXlBwS1y6CxWFqu+NDgbRvHGb1Lx+RLoDksJB3QdazHb01tQi0juI0uuvPrEIq2pf5Wuvn6sNRoIumwuvpQ+jUXo5PlhayO7iKFOnjM27qmvf4M0epL1ooVfLZcSdzyj7FiMnl3WtjjZmHI+LMXIXsttJTVjqgdNqTpCauLHsRsL8HGFEr/8CLeTJBdVV7lK9lw0EOpE9YeqvFz398E+VpQn3D8CVm4OOnfvQUXkAcRGW+HBUf4DiyvPDLik/8apLoQTILZ4xd94c/GX5rdd1t9S+mecqRJ8phmcyxcZo+mLql5lUz2liklpICBqiLvA3jreP0HJ9qUXmz3kw9Tcea2oazJoNQ10d66TXLfKVFM8uWFCBli271bIU/NOmQLOa4CocA5vXBbs/U7qUDGROmojcc2aic18VPnnsqX/sbqh5yS0RnSW2ZY07jD32GDJPPtZcyfathNZjFlOvls+Gl3L2U0/fZjEle9gVLGDrFaXd+QXrm1rbq2J7N477qDp4tWEBNvXs5HZ6wm/QvszkOqKdluoaWqYvTODxuxP7osyz1eZES9XelXVbtz7aVXkEwUap27GkdCYe+KdOg690kqSvA46MDPhLSmGzu8TCHB7e/+rrKzpqDj3jcvolVDR0m+LYb4/qkaedegM3s/ZYuaj6hEFxHyTM7FvXsTZ1s9162XDdcbZrDSTqRyQj1c7NJaFGInJ4DEjkVfzdbtbJ9Ux96xk9WNc/iO9TBHVUH/yoZceeD1z5OWOT0ehEq8eJRDgmJlpDxqQJyDt/DqLBYKLmgw9f3fbks9eEBvo2u11+JM0acmNmbHBFsMkZhS9xiqhdyPSopjdTncgKCsgmdg+vch3OSrPdR/OdwZsbMLRRaq3u96xzt/BB/W0UCx+F6nV+H+RvT2c/fDnLwG8Zic+ww2nmIkPkjP61Q/2zpWrPPO5shPoHttZ//Mmlrmz/FNf2zEXOLN90m9edIR6w7+Abb+3tPly9JtDf2WjT3HB4MuRYEYu4hipbFO9L+noT2unFJMpUO8JIrGFRX2Eo9EupxCHajTXsItbzZm+k6Ji4OHoJRekFWpt3aZjrKUQLSOCbfM5iYsl4n11JNvezsyR0cQK+eMEc/Q/V0X9vGyVwlMBRAkfHKIH/R+O/BRgAB6oFZHFz4OwAAAAASUVORK5CYII=</logoPSP>
+	</informativaMaster>
+	<listaInformativaDetail>
+		<informativaDetail>
+			<identificativoIntermediario>00884060526</identificativoIntermediario>
+			<identificativoCanale>00884060526_02</identificativoCanale>
+			<tipoVersamento>CP</tipoVersamento>
+			<modelloPagamento>1</modelloPagamento>
+			<priorita>0</priorita>
+			<canaleApp>0</canaleApp>
+			<identificazioneServizio>
+				<nomeServizio>MPS pagamento con carta di credito</nomeServizio>
+				<logoServizio>iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTc2N0I5RkQ3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTc2N0I5RkU3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNzY3QjlGQjcwNUUxMUU3QkM4ODg1OTA0QTdEMTIwRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNzY3QjlGQzcwNUUxMUU3QkM4ODg1OTA0QTdEMTIwRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuqwK1sAAABYSURBVHja7M8BDQAACAMgtX/nW8M5aEAnqV+m3lFSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlK6bQUYAG5SA4mllxYWAAAAAElFTkSuQmCC</logoServizio>
+			</identificazioneServizio>
+			 <listaInformazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>IT</codiceLingua>
+				  <descrizioneServizio>Con MPS puoi effettuare pagamenti online con carta di credito a favore di Pubbliche Amministrazioni e gestori di pubblici servizi.</descrizioneServizio>
+				  <disponibilitaServizio>Il servizio e' disponibile 24 ore su 24</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				  <!--condizioniEconomicheMassime>DA COMPILARE - Presenti nel nuovo template</condizioniEconomicheMassime-->
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>DE</codiceLingua>
+				  <descrizioneServizio>MPS ermöglicht Zahlungen an die öffentliche Verwaltung online mit Kreditkarte.</descrizioneServizio>
+				  <disponibilitaServizio>Dieser Dienst steht 24/24 Stunden zur Verfügung.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>EN</codiceLingua>
+				  <descrizioneServizio>With MPS, you can now make online credit card payments to Public Administrations and public service providers.</descrizioneServizio>
+				  <disponibilitaServizio>The service is available 24 hours a day.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>FR</codiceLingua>
+				  <descrizioneServizio>MPS vous permet d'effectuer des paiements en ligne par carte de crédit aux Administrations Publiques et aux prestataires de services publics</descrizioneServizio>
+				  <disponibilitaServizio>Le service est disponible 24 heures sur 24.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>SL</codiceLingua>
+				  <descrizioneServizio>Z banko MPS lahko izvajate spletna plačila javnim ustanovam in upravljalcem javnih storitev s kreditno kartico.</descrizioneServizio>
+				  <disponibilitaServizio>Storitev je na voljo 24 ur na dan.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+			  </listaInformazioniServizio>			
+			<listaParoleChiave>
+	  <paroleChiave>Maestro</paroleChiave>
+	  <paroleChiave>Mastercard</paroleChiave>
+
+	  <paroleChiave>Visa</paroleChiave>
+	  <paroleChiave>Visa Electron</paroleChiave>
+	  <paroleChiave>V-Pay</paroleChiave>
+			</listaParoleChiave>
+	    <costiServizio>
+        <tipoCostoTransazione>1</tipoCostoTransazione>
+        <tipoCommissione>0</tipoCommissione>
+        <listaFasceCostoServizio>
+          <fasciaCostoServizio>
+            <importoMassimoFascia>0.10</importoMassimoFascia>
+            <costoFisso>0.00</costoFisso>
+            <valoreCommissione>0.20</valoreCommissione>
+          </fasciaCostoServizio>
+        </listaFasceCostoServizio>
+      </costiServizio>
+		</informativaDetail>
+		<informativaDetail>
+			<identificativoIntermediario>00884060526</identificativoIntermediario>
+			<identificativoCanale>00884060526_02_ONUS</identificativoCanale>
+			<tipoVersamento>CP</tipoVersamento>
+			<modelloPagamento>1</modelloPagamento>
+			<priorita>0</priorita>
+			<canaleApp>0</canaleApp>
+			<identificazioneServizio>
+				<nomeServizio>MPS pagamento con carta di credito</nomeServizio>
+				<logoServizio>iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAIAAAD+THXTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTc2N0I5RkQ3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTc2N0I5RkU3MDVFMTFFN0JDODg4NTkwNEE3RDEyMEQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNzY3QjlGQjcwNUUxMUU3QkM4ODg1OTA0QTdEMTIwRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNzY3QjlGQzcwNUUxMUU3QkM4ODg1OTA0QTdEMTIwRCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuqwK1sAAABYSURBVHja7M8BDQAACAMgtX/nW8M5aEAnqV+m3lFSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlJSUlK6bQUYAG5SA4mllxYWAAAAAElFTkSuQmCC</logoServizio>
+			</identificazioneServizio>
+			 <listaInformazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>IT</codiceLingua>
+				  <descrizioneServizio>Con MPS puoi effettuare pagamenti online con carta di credito a favore di Pubbliche Amministrazioni e gestori di pubblici servizi.</descrizioneServizio>
+				  <disponibilitaServizio>Il servizio e' disponibile 24 ore su 24</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				  <!--condizioniEconomicheMassime>DA COMPILARE - Presenti nel nuovo template</condizioniEconomicheMassime-->
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>DE</codiceLingua>
+				  <descrizioneServizio>MPS ermöglicht Zahlungen an die öffentliche Verwaltung online mit Kreditkarte.</descrizioneServizio>
+				  <disponibilitaServizio>Dieser Dienst steht 24/24 Stunden zur Verfügung.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>EN</codiceLingua>
+				  <descrizioneServizio>With MPS, you can now make online credit card payments to Public Administrations and public service providers.</descrizioneServizio>
+				  <disponibilitaServizio>The service is available 24 hours a day.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>FR</codiceLingua>
+				  <descrizioneServizio>MPS vous permet d'effectuer des paiements en ligne par carte de crédit aux Administrations Publiques et aux prestataires de services publics</descrizioneServizio>
+				  <disponibilitaServizio>Le service est disponible 24 heures sur 24.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+				  <codiceLingua>SL</codiceLingua>
+				  <descrizioneServizio>Z banko MPS lahko izvajate spletna plačila javnim ustanovam in upravljalcem javnih storitev s kreditno kartico.</descrizioneServizio>
+				  <disponibilitaServizio>Storitev je na voljo 24 ur na dan.</disponibilitaServizio>
+				  <urlInformazioniCanale>www.mps.it</urlInformazioniCanale>
+				</informazioniServizio>
+			  </listaInformazioniServizio>		
+			<listaParoleChiave>
+	  <paroleChiave>Maestro</paroleChiave>
+	  <paroleChiave>Mastercard</paroleChiave>
+
+	  <paroleChiave>Visa</paroleChiave>
+	  <paroleChiave>Visa Electron</paroleChiave>
+	  <paroleChiave>V-Pay</paroleChiave>
+			</listaParoleChiave>
+	    <costiServizio>
+        <tipoCostoTransazione>1</tipoCostoTransazione>
+        <tipoCommissione>0</tipoCommissione>
+        <listaFasceCostoServizio>
+          <fasciaCostoServizio>
+            <importoMassimoFascia>0.10</importoMassimoFascia>
+            <costoFisso>0.00</costoFisso>
+            <valoreCommissione>0.20</valoreCommissione>
+          </fasciaCostoServizio>
+        </listaFasceCostoServizio>
+      </costiServizio>
+		</informativaDetail>		
+	</listaInformativaDetail>
+</informativaPSP>

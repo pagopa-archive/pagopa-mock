@@ -1,0 +1,152 @@
+[12-Jul-2019 15:43:02] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:43:02] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/ppthead" xmlns:ws="http://ws.pagamenti.telematici.gov/" xmlns:pag="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+     <soapenv:Header>
+        <ppt:intestazionePPT>
+           <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+           <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+           <identificativoDominio>77777777777</identificativoDominio>
+           <identificativoUnivocoVersamento>RF214834977</identificativoUnivocoVersamento>
+           <codiceContestoPagamento>5859619</codiceContestoPagamento>
+        </ppt:intestazionePPT>
+     </soapenv:Header>
+     <soapenv:Body>
+        <ws:paaAttivaRPT>
+           <identificativoPSP>?</identificativoPSP>
+           <datiPagamentoPSP>
+              <importoSingoloVersamento>?</importoSingoloVersamento>
+              <!--Optional:-->
+              <ibanAppoggio>?</ibanAppoggio>
+              <!--Optional:-->
+              <bicAppoggio>?</bicAppoggio>
+              <!--Optional:-->
+              <soggettoVersante>
+                 <pag:identificativoUnivocoVersante>
+                    <pag:tipoIdentificativoUnivoco>?</pag:tipoIdentificativoUnivoco>
+                    <pag:codiceIdentificativoUnivoco>?</pag:codiceIdentificativoUnivoco>
+                 </pag:identificativoUnivocoVersante>
+                 <pag:anagraficaVersante>?</pag:anagraficaVersante>
+                 <!--Optional:-->
+                 <pag:indirizzoVersante>?</pag:indirizzoVersante>
+                 <!--Optional:-->
+                 <pag:civicoVersante>?</pag:civicoVersante>
+                 <!--Optional:-->
+                 <pag:capVersante>?</pag:capVersante>
+                 <!--Optional:-->
+                 <pag:localitaVersante>?</pag:localitaVersante>
+                 <!--Optional:-->
+                 <pag:provinciaVersante>?</pag:provinciaVersante>
+                 <!--Optional:-->
+                 <pag:nazioneVersante>?</pag:nazioneVersante>
+                 <!--Optional:-->
+                 <pag:e-mailVersante>?</pag:e-mailVersante>
+              </soggettoVersante>
+              <!--Optional:-->
+              <ibanAddebito>?</ibanAddebito>
+              <!--Optional:-->
+              <bicAddebito>?</bicAddebito>
+              <!--Optional:-->
+              <soggettoPagatore>
+                 <pag:identificativoUnivocoPagatore>
+                    <pag:tipoIdentificativoUnivoco>?</pag:tipoIdentificativoUnivoco>
+                    <pag:codiceIdentificativoUnivoco>?</pag:codiceIdentificativoUnivoco>
+                 </pag:identificativoUnivocoPagatore>
+                 <pag:anagraficaPagatore>?</pag:anagraficaPagatore>
+                 <!--Optional:-->
+                 <pag:indirizzoPagatore>?</pag:indirizzoPagatore>
+                 <!--Optional:-->
+                 <pag:civicoPagatore>?</pag:civicoPagatore>
+                 <!--Optional:-->
+                 <pag:capPagatore>?</pag:capPagatore>
+                 <!--Optional:-->
+                 <pag:localitaPagatore>?</pag:localitaPagatore>
+                 <!--Optional:-->
+                 <pag:provinciaPagatore>?</pag:provinciaPagatore>
+                 <!--Optional:-->
+                 <pag:nazionePagatore>?</pag:nazionePagatore>
+                 <!--Optional:-->
+                 <pag:e-mailPagatore>?</pag:e-mailPagatore>
+              </soggettoPagatore>
+           </datiPagamentoPSP>
+           <!--Optional:-->
+           <identificativoIntermediarioPSP>?</identificativoIntermediarioPSP>
+           <!--Optional:-->
+           <identificativoCanalePSP>?</identificativoCanalePSP>
+        </ws:paaAttivaRPT>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 15:43:02] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:43:02] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"paaAttivaRPTRisposta":{"esito":"OK"}}
+[12-Jul-2019 16:13:29] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 16:13:29] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191900494854973</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_46985</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 16:13:29] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 16:13:29] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"paaVerificaRPTRisposta":{"esito":"OK"}}
+[12-Jul-2019 16:14:24] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 16:14:24] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191900494854973</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_56621</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaVerificaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+    </ppt:paaVerificaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 16:14:24] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 16:14:24] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"paaVerificaRPTRisposta":{"esito":"OK"}}
+[12-Jul-2019 16:23:30] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=e7ed345e-b587-4780-89cc-aa8c82dfe717&OpenSPCoop2IdMessaggio=5dada0ab-d9fd-47ec-adb9-282fc3b36a67&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[12-Jul-2019 16:23:30] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=e7ed345e-b587-4780-89cc-aa8c82dfe717&OpenSPCoop2IdMessaggio=5dada0ab-d9fd-47ec-adb9-282fc3b36a67&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === SERVER PA Pagamento PSP paaVerificaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>191900494854973</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_78513</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>100.00</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>97735020584_05</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 16:23:30] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=e7ed345e-b587-4780-89cc-aa8c82dfe717&OpenSPCoop2IdMessaggio=5dada0ab-d9fd-47ec-adb9-282fc3b36a67&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - =================================================================
+[12-Jul-2019 16:23:30] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php?OpenSPCoop2IdTransazione=e7ed345e-b587-4780-89cc-aa8c82dfe717&OpenSPCoop2IdMessaggio=5dada0ab-d9fd-47ec-adb9-282fc3b36a67&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=PagamentiTelematiciCCP6T&OpenSPCoop2Azione=paaAttivaRPT&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - === Risposta del server alla RPT: 
+{"paaAttivaRPTRisposta":{"esito":"OK"}}

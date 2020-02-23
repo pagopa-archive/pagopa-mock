@@ -1,0 +1,100 @@
+<?php
+
+require_once "Helper.php";
+
+    class RT {
+
+        public function getXML($post_params) {
+            $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><RT></RT>');
+
+            $xml->addAttribute("xmlns", "http://www.digitpa.gov.it/schemas/2011/Pagamenti/");
+            $xml->addChild("versioneOggetto", $post_params["versioneOggetto"]);
+            $dominio = $xml->addChild("dominio");
+            $dominio->addChild("identificativoDominio", $post_params["identificativoDominio"]);
+            $xml->addChild("identificativoMessaggioRicevuta", $post_params["identificativoMessaggioRicevuta"]);
+            $xml->addChild("dataOraMessaggioRicevuta", $post_params["dataOraMessaggioRicevuta"]);
+            $xml->addChild("riferimentoMessaggioRichiesta", $post_params["riferimentoMessaggioRichiesta"]);
+            $xml->addChild("riferimentoDataRichiesta", $post_params["riferimentoDataRichiesta"]);
+
+            //istitutoAttestante
+            $istitutoAttestante = $xml->addChild("istitutoAttestante");
+            $identificativoUnivocoAttestante = $istitutoAttestante->addChild("identificativoUnivocoAttestante");
+            $identificativoUnivocoAttestante->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoAttestante"]);
+            $identificativoUnivocoAttestante->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoAttestante"]);
+            $istitutoAttestante->addChild("denominazioneAttestante", $post_params["denominazioneAttestante"]);
+            $istitutoAttestante->addChild("codiceUnitOperAttestante", $post_params["codiceUnitOperAttestante"]);
+            $istitutoAttestante->addChild("denomUnitOperAttestante", $post_params["denomUnitOperAttestante"]);
+            $istitutoAttestante->addChild("indirizzoAttestante", $post_params["indirizzoAttestante"]);
+            $istitutoAttestante->addChild("civicoAttestante", $post_params["civicoAttestante"]);
+            $istitutoAttestante->addChild("capAttestante", $post_params["capAttestante"]);
+            $istitutoAttestante->addChild("localitaAttestante", $post_params["localitaAttestante"]);
+            $istitutoAttestante->addChild("provinciaAttestante", $post_params["provinciaAttestante"]);
+            $istitutoAttestante->addChild("nazioneAttestante", $post_params["nazioneAttestante"]);
+
+            //enteBeneficiario
+            $enteBeneficiario = $xml->addChild("enteBeneficiario");
+            $identificativoUnivocoBeneficiario = $enteBeneficiario->addChild("identificativoUnivocoBeneficiario");
+            $identificativoUnivocoBeneficiario->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoBeneficiario"]);
+            $identificativoUnivocoBeneficiario->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoBeneficiario"]);
+            $enteBeneficiario->addChild("denominazioneBeneficiario", $post_params["denominazioneBeneficiario"]);
+            $enteBeneficiario->addChild("indirizzoBeneficiario", $post_params["indirizzoBeneficiario"]);
+            $enteBeneficiario->addChild("civicoBeneficiario", $post_params["civicoBeneficiario"]);
+            $enteBeneficiario->addChild("capBeneficiario", $post_params["capBeneficiario"]);
+            $enteBeneficiario->addChild("localitaBeneficiario", $post_params["localitaBeneficiario"]);
+            $enteBeneficiario->addChild("provinciaBeneficiario", $post_params["provinciaBeneficiario"]);
+            $enteBeneficiario->addChild("nazioneBeneficiario", $post_params["nazioneBeneficiario"]);
+
+            //Versante
+            $soggettoVersante = $xml->addChild("soggettoVersante");
+            $identificativoUnivocoVersante = $soggettoVersante->addChild("identificativoUnivocoVersante");
+            $identificativoUnivocoVersante->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoVersante"]);
+            $identificativoUnivocoVersante->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoVersante"]);
+            $soggettoVersante->addChild("anagraficaVersante", $post_params["anagraficaVersante"]);
+            $soggettoVersante->addChild("indirizzoVersante", $post_params["indirizzoVersante"]);
+            $soggettoVersante->addChild("civicoVersante", $post_params["civicoVersante"]);
+            $soggettoVersante->addChild("capVersante", $post_params["capVersante"]);
+            $soggettoVersante->addChild("localitaVersante", $post_params["localitaVersante"]);
+            $soggettoVersante->addChild("provinciaVersante", $post_params["provinciaVersante"]);
+            $soggettoVersante->addChild("nazioneVersante", $post_params["nazioneVersante"]);
+            $soggettoVersante->addChild("e-mailVersante", $post_params["e-mailVersante"]);
+
+            //Pagatore
+            $soggettoPagatore = $xml->addChild("soggettoPagatore");
+            $identificativoUnivocoPagatore = $soggettoPagatore->addChild("identificativoUnivocoPagatore");
+            $identificativoUnivocoPagatore->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoPagatore"]);
+            $identificativoUnivocoPagatore->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoPagatore"]);
+            $soggettoPagatore->addChild("anagraficaPagatore", $post_params["anagraficaPagatore"]);
+            $soggettoPagatore->addChild("indirizzoPagatore", $post_params["indirizzoPagatore"]);
+            $soggettoPagatore->addChild("civicoPagatore", $post_params["civicoPagatore"]);
+            $soggettoPagatore->addChild("capPagatore", $post_params["capPagatore"]);
+            $soggettoPagatore->addChild("localitaPagatore", $post_params["localitaPagatore"]);
+            $soggettoPagatore->addChild("provinciaPagatore", $post_params["provinciaPagatore"]);
+            $soggettoPagatore->addChild("nazionePagatore", $post_params["nazionePagatore"]);
+            $soggettoPagatore->addChild("e-mailPagatore", $post_params["e-mailPagatore"]);
+
+            //Pagamento
+            $numPagamenti=$post_params["dropdownNumPagamenti"];
+
+            $datiPagamento = $xml->addChild("datiPagamento");
+            $datiPagamento->addChild("codiceEsitoPagamento", $post_params["codiceEsitoPagamento"]);
+            $datiPagamento->addChild("importoTotalePagato",  sprintf('%0.2f', (float) $post_params["importoTotalePagato"]));
+            $datiPagamento->addChild("identificativoUnivocoVersamento", $post_params["identificativoUnivocoVersamento"]);
+            $datiPagamento->addChild("CodiceContestoPagamento", $post_params["codiceContestoPagamento"]);
+
+            //singoli pagamenti
+            for ($i=1; $i<=$numPagamenti; $i++) {
+                $datiSingoloPagamento=$datiPagamento->addChild("datiSingoloPagamento");
+
+                $datiSingoloPagamento->addChild("singoloImportoPagato",  sprintf('%0.2f', (float) $post_params["singoloImportoPagato" . $i]));
+                $datiSingoloPagamento->addChild("esitoSingoloPagamento", $post_params["esitoSingoloPagamento" . $i]);
+                $datiSingoloPagamento->addChild("dataEsitoSingoloPagamento", $post_params["dataEsitoSingoloPagamento" . $i]);
+                $datiSingoloPagamento->addChild("identificativoUnivocoRiscossione", $post_params["identificativoUnivocoRiscossione" . $i]);
+                $datiSingoloPagamento->addChild("causaleVersamento", $post_params["causaleVersamento" . $i]);
+                $datiSingoloPagamento->addChild("datiSpecificiRiscossione", $post_params["datiSpecificiRiscossione" . $i]);
+
+            }
+
+            return $xml->asXML();
+        }
+
+}

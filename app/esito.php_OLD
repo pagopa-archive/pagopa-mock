@@ -1,0 +1,9 @@
+<?php
+//echo htmlspecialchars($_GET["s"]);
+//echo $_SERVER["QUERY_STRING"];
+parse_str($_SERVER["QUERY_STRING"], $query_array);
+//var_dump($query_array);
+echo "<h1>Esito Transazione: ".$query_array["esito"]."</h1>";
+//var_dump($_SERVER);
+echo "<a href=https://pagopatest.agid.gov.it>BACK</a>";
+?>

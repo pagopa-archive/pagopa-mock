@@ -1,0 +1,84 @@
+<?php
+ini_set("soap.wsdl_cache_enabled","0");
+   
+
+
+
+class Response
+{
+	function intestazionePPT($header) 
+{
+	$iuv = $header->identificativoUnivocoVersamento;
+	$log = fopen("../logs/paaInviaRT.log", "a") or die("Unable to open file!");
+        fwrite($log,"\n==========".$iuv."========");
+	fclose($log);
+
+
+} 
+
+
+
+
+
+
+    function paaInviaRT($params)
+    {
+	    $rt = $params->rt;
+	    //scrivo RT su file
+	   $xmlRT = simplexml_load_string($rt);
+        $IUV=(string)$xmlRT->datiPagamento->identificativoUnivocoVersamento;
+
+	    
+	    $rtfile = fopen("../logs/rtfile.xml", "a") or die("Unable to open file!");
+	   
+	    fwrite($rtfile,$rt);
+            fclose($rtfile);
+	    $log = fopen("../logs/paaInviaRT.log", "a") or die("Unable to open file!");
+	    fwrite($log,"\n");
+	    fwrite($log,"ricevuto: ".date('c')."\n");
+	    fwrite($log,"IUV: ".$IUV."\n");
+            fwrite($log,"IUV(Type ".gettype($IUV)."\n");
+	    fwrite($log,$xmlRT->asXML());
+            fwrite($log, "\n\n");
+
+        
+	if($IUV=='10000000000501315')){
+		fwrite($log,"RT PUSH timeout 120 secondi");
+		sleep(120);
+	}	
+
+	    fclose($log);
+        $oResponse = new StdClass();
+	$oResponse->esito = 'OK';
+        $oEncoded = new SoapVar(
+            $oResponse,
+            SOAP_ENC_OBJECT,
+            null,
+            null,
+            'response',
+            'urn:query:type:v2.0'
+        );
+
+        return $oEncoded;
+    }
+}
+
+$oServer = new SoapServer(
+    '../wsdl/PaPerNodo.wsdl',
+    [
+        'encoding' => 'UTF-8',
+        'send_errors' => true,
+        'soap_version' => SOAP_1_2,
+    ]
+);
+
+
+
+
+
+$oResponse = new Response();
+$oServer->setObject($oResponse);
+$oServer->handle();
+
+
+?>

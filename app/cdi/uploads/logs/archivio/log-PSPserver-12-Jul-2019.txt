@@ -1,0 +1,129 @@
+[12-Jul-2019 15:33:29] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:33:29] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === SERVER PA pspInviaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <ws:pspInviaRPT>
+           <identificativoDominio>77777777777</identificativoDominio>
+           <!--Optional:-->
+           <identificativoPSP>AGID_01</identificativoPSP>
+           <!--Optional:-->
+           <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+           <!--Optional:-->
+           <identificativoCanale>97735020584_02</identificativoCanale>
+           <!--Optional:-->
+           <modelloPagamento>1</modelloPagamento>
+           <!--Zero or more repetitions:-->
+           <elementoListaRPT>
+              <identificativoUnivocoVersamento>?</identificativoUnivocoVersamento>
+              <codiceContestoPagamento>?</codiceContestoPagamento>
+              <!--Optional:-->
+              <parametriProfiloPagamento>?</parametriProfiloPagamento>
+              <!--Optional:-->
+              <tipoFirma>0</tipoFirma>
+              <rpt>cid:1095326832855</rpt>
+           </elementoListaRPT>
+        </ws:pspInviaRPT>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 15:33:29] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:33:29] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"pspInviaRPTRisposta":{"esitoComplessivoOperazione":"OK"}}
+[12-Jul-2019 15:37:57] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:37:57] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === SERVER PA pspInviaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <ws:pspInviaRPT>
+           <identificativoDominio>77777777777</identificativoDominio>
+           <!--Optional:-->
+           <identificativoPSP>AGID_01</identificativoPSP>
+           <!--Optional:-->
+           <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+           <!--Optional:-->
+           <identificativoCanale>97735020584_02</identificativoCanale>
+           <!--Optional:-->
+           <modelloPagamento>1</modelloPagamento>
+           <!--Zero or more repetitions:-->
+           <elementoListaRPT>
+              <identificativoUnivocoVersamento>?</identificativoUnivocoVersamento>
+              <codiceContestoPagamento>?</codiceContestoPagamento>
+              <!--Optional:-->
+              <parametriProfiloPagamento>?</parametriProfiloPagamento>
+              <!--Optional:-->
+              <tipoFirma>0</tipoFirma>
+              <rpt>cid:1095326832855</rpt>
+           </elementoListaRPT>
+        </ws:pspInviaRPT>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 15:37:57] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:37:57] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === Risposta del server alla RPT: 
+{"pspInviaRPTRisposta":{"esitoComplessivoOperazione":"OK"}}
+[12-Jul-2019 15:39:07] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:39:07] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === SERVER PA pspInviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <ws:pspInviaCarrelloRPT>
+           <identificativoPSP>AGID_01</identificativoPSP>
+           <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+           <identificativoCanale>97735020584_02</identificativoCanale>
+           <modelloPagamento>1</modelloPagamento>
+           <!--Optional:-->
+           <parametriProfiloPagamento>?</parametriProfiloPagamento>
+           <listaRPT>
+              <!--1 or more repetitions:-->
+              <elementoListaCarrelloRPT>
+                 <identificativoDominio>77777777777</identificativoDominio>
+                 <identificativoUnivocoVersamento>?</identificativoUnivocoVersamento>
+                 <codiceContestoPagamento>?</codiceContestoPagamento>
+                 <!--Optional:-->
+                 <tipoFirma>?</tipoFirma>
+                 <rpt>cid:1413591790141</rpt>
+              </elementoListaCarrelloRPT>
+           </listaRPT>
+        </ws:pspInviaCarrelloRPT>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 15:39:07] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:39:07] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTRisposta":{"esitoComplessivoOperazione":"OK"}}
+[12-Jul-2019 15:41:03] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:41:03] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === SERVER PA pspInviaCarrelloRPTCarte REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+     <soapenv:Header/>
+     <soapenv:Body>
+        <ws:pspInviaCarrelloRPTCarte>
+           <identificativoPSP>AGID_01</identificativoPSP>
+           <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+           <identificativoCanale>97735020584_02</identificativoCanale>
+           <modelloPagamento>1</modelloPagamento>
+           <!--Optional:-->
+           <parametriProfiloPagamento>?</parametriProfiloPagamento>
+           <listaRPT>
+              <!--1 or more repetitions:-->
+              <elementoListaCarrelloRPT>
+                 <identificativoDominio>?</identificativoDominio>
+                 <identificativoUnivocoVersamento>?</identificativoUnivocoVersamento>
+                 <codiceContestoPagamento>?</codiceContestoPagamento>
+                 <!--Optional:-->
+                 <tipoFirma>?</tipoFirma>
+                 <rpt>cid:11230188144</rpt>
+              </elementoListaCarrelloRPT>
+           </listaRPT>
+           <rrn>?</rrn>
+           <esitoTransazioneCarta>?</esitoTransazioneCarta>
+           <importoTotalePagato>?</importoTotalePagato>
+           <timestampOperazione>?</timestampOperazione>
+           <codiceAutorizzativo>?</codiceAutorizzativo>
+        </ws:pspInviaCarrelloRPTCarte>
+     </soapenv:Body>
+</soapenv:Envelope>
+
+[12-Jul-2019 15:41:03] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - =================================================================
+[12-Jul-2019 15:41:03] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - === Risposta del server al carrello RPT Carte: 
+{"pspInviaCarrelloRPTCarteRisposta":{"esitoComplessivoOperazione":"OK"}}

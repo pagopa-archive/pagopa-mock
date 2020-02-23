@@ -1,0 +1,24 @@
+[06-Sep-2019 09:46:27] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - Le RPT in coda (paaAttivaRPT) sono state inviate.
+[06-Sep-2019 09:50:13] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 2 avente IUV 990000000007846.
+[06-Sep-2019 09:50:13] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 3 avente IUV 990000000007846.
+[06-Sep-2019 10:13:46] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 2 avente IUV 990000000007846.
+[06-Sep-2019 10:13:46] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 3 avente IUV 990000000007846.
+[06-Sep-2019 10:13:46] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 4 avente IUV 990000000007846.
+[06-Sep-2019 10:13:47] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 5 avente IUV 990000000007846.
+[06-Sep-2019 10:13:47] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 6 avente IUV 990000000007846.
+[06-Sep-2019 12:31:34] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 7 avente IUV 990000000007846.
+[06-Sep-2019 14:06:06] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 2 avente IUV 990000000007846.
+[06-Sep-2019 14:06:07] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 3 avente IUV 990000000007846.
+[06-Sep-2019 14:06:07] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 4 avente IUV 990000000007846.
+[06-Sep-2019 14:06:07] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 5 avente IUV 990000000007846.
+[06-Sep-2019 14:06:07] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 6 avente IUV 990000000007846.
+[06-Sep-2019 14:06:08] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 7 avente IUV 990000000007846.
+[06-Sep-2019 15:36:38] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 2 avente IUV 990000000007846.
+[06-Sep-2019 15:36:38] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 3 avente IUV 990000000007846.
+[06-Sep-2019 15:36:39] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 4 avente IUV 990000000007846.
+[06-Sep-2019 15:36:39] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 5 avente IUV 990000000007846.
+[06-Sep-2019 15:36:39] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 6 avente IUV 990000000007846.
+[06-Sep-2019 15:36:39] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 7 avente IUV 990000000007846.
+[06-Sep-2019 15:56:45] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 8 avente IUV 990000000007846 e CCP PSP_22431 è stata inviata al NodoSPC.
+[06-Sep-2019 15:57:12] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 9 avente IUV 990000000007846 e CCP PSP_09552 è stata inviata al NodoSPC.
+[06-Sep-2019 16:05:20] [pagopatest.agid.gov.it/cdi/serverPA/PAServerCoda.php] : [INFO] - La RPT in coda (paaAttivaRPT) con id 10 avente IUV 990000000007846 e CCP PSP_33676 è stata inviata al NodoSPC.

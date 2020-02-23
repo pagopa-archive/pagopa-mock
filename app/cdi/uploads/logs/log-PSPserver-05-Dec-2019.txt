@@ -1,0 +1,863 @@
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER PSP pspInviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>80211730587</identificativoDominio>
+          <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>n/a</codiceContestoPagamento>
+          <rpt>PFJQVCB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8gc2NoZW1hLnhzZCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPgogIDx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz4KICA8ZG9taW5pbz4KICAgIDxpZGVudGlmaWNhdGl2b0RvbWluaW8+ODAyMTE3MzA1ODc8L2lkZW50aWZpY2F0aXZvRG9taW5pbz4KICA8L2RvbWluaW8+CiAgPGlkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTU6NDA6MDc3PC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT4KICA8ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTEyLTA1VDE1OjQwOjA3PC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPgogIDxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz4KICA8c29nZ2V0dG9WZXJzYW50ZT4KICAgIDxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT4KICAgICAgPHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgICAgPGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz52c2NncHA4NnMxN2MzNTJiPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPgogICAgPGFuYWdyYWZpY2FWZXJzYW50ZT5HaXVzZXBwZSBWaXNjb21pPC9hbmFncmFmaWNhVmVyc2FudGU+CiAgPC9zb2dnZXR0b1ZlcnNhbnRlPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnZzY2dwcDg2czE3YzM1MmI8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+CiAgICA8YW5hZ3JhZmljYVBhZ2F0b3JlPkdpdXNlcHBlIFZpc2NvbWk8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT52aWEgZy4gZmFsY29uZSAsMiAgODgwNjA8L2luZGlyaXp6b1BhZ2F0b3JlPgogICAgPGxvY2FsaXRhUGFnYXRvcmU+RGF2b2xpPC9sb2NhbGl0YVBhZ2F0b3JlPgogICAgPG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPgogIDwvc29nZ2V0dG9QYWdhdG9yZT4KICA8ZW50ZUJlbmVmaWNpYXJpbz4KICAgIDxpZGVudGlmaWNhdGl2b1VuaXZvY29CZW5lZmljaWFyaW8+CiAgICAgIDx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICAgIDxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+MDM2NTc3MzEwMDA8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgPGRlbm9taW5hemlvbmVCZW5lZmljaWFyaW8+SXN0aXR1dG8gU3VwZXJpb3JlIGRpIFNhbml0w6A8L2Rlbm9taW5hemlvbmVCZW5lZmljaWFyaW8+CiAgICA8ZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz5Jc3RpdHV0byBTdXBlcmlvcmUgZGkgU2FuaXTDoDwvZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz4KICAgIDxjYXBCZW5lZmljaWFyaW8+MDAxNjE8L2NhcEJlbmVmaWNpYXJpbz4KICAgIDxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz4KICAgIDxwcm92aW5jaWFCZW5lZmljaWFyaW8+cm08L3Byb3ZpbmNpYUJlbmVmaWNpYXJpbz4KICAgIDxuYXppb25lQmVuZWZpY2lhcmlvPklUPC9uYXppb25lQmVuZWZpY2lhcmlvPgogIDwvZW50ZUJlbmVmaWNpYXJpbz4KICA8ZGF0aVZlcnNhbWVudG8+CiAgICA8ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0xMi0wNTwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+CiAgICA8aW1wb3J0b1RvdGFsZURhVmVyc2FyZT41MC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4zMDA4Mzg5NDI5OTM5OTU0NTI8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+CiAgICA8Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+bi9hPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz4KICAgIDxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+CiAgICAgICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz41MC4wMDwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPgogICAgICA8aWJhbkFjY3JlZGl0bz5JVDgyQzAzMTExMDMyMDYwMDAwMDAwMDI4NDc8L2liYW5BY2NyZWRpdG8+CiAgICAgIDxjYXVzYWxlVmVyc2FtZW50bz5kaSBlbGVtZW50aSBjaGltaWNpIGluIHByZXBhcmF0aSBlcmJvcmlzdGljaSBlIGRlbGxlIG1lZGljaW5lIG5vbiBjb252ZW56aW9uYWxpIGZpbm8gYSBkdWUgZWxlbWVudGkgKHBlciBvZ25pIGVsZW1lbnRvIGFnZ2l1bnRpdm8pPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzBLTTwvZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPgogICAgPC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+CiAgPC9kYXRpVmVyc2FtZW50bz4KPC9SUFQ+</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193390000233</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>50.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T15:40:39.931+01:00</timestampOperazione>
+      <codiceAutorizzativo>106385</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Esito DB: 
+MYSQL - Esito inserimento pspInviaCarrelloRPTCarte: 1 record.
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER numero RPT: 
+1
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER PSP InviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>80211730587</identificativoDominio>
+          <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>n/a</codiceContestoPagamento>
+          <rpt>PFJQVCB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8gc2NoZW1hLnhzZCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPgogIDx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz4KICA8ZG9taW5pbz4KICAgIDxpZGVudGlmaWNhdGl2b0RvbWluaW8+ODAyMTE3MzA1ODc8L2lkZW50aWZpY2F0aXZvRG9taW5pbz4KICA8L2RvbWluaW8+CiAgPGlkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTU6NDA6MDc3PC9pZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2hpZXN0YT4KICA8ZGF0YU9yYU1lc3NhZ2dpb1JpY2hpZXN0YT4yMDE5LTEyLTA1VDE1OjQwOjA3PC9kYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPgogIDxhdXRlbnRpY2F6aW9uZVNvZ2dldHRvPk4vQTwvYXV0ZW50aWNhemlvbmVTb2dnZXR0bz4KICA8c29nZ2V0dG9WZXJzYW50ZT4KICAgIDxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT4KICAgICAgPHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgICAgPGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz52c2NncHA4NnMxN2MzNTJiPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPgogICAgPGFuYWdyYWZpY2FWZXJzYW50ZT5HaXVzZXBwZSBWaXNjb21pPC9hbmFncmFmaWNhVmVyc2FudGU+CiAgPC9zb2dnZXR0b1ZlcnNhbnRlPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnZzY2dwcDg2czE3YzM1MmI8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+CiAgICA8YW5hZ3JhZmljYVBhZ2F0b3JlPkdpdXNlcHBlIFZpc2NvbWk8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT52aWEgZy4gZmFsY29uZSAsMiAgODgwNjA8L2luZGlyaXp6b1BhZ2F0b3JlPgogICAgPGxvY2FsaXRhUGFnYXRvcmU+RGF2b2xpPC9sb2NhbGl0YVBhZ2F0b3JlPgogICAgPG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPgogIDwvc29nZ2V0dG9QYWdhdG9yZT4KICA8ZW50ZUJlbmVmaWNpYXJpbz4KICAgIDxpZGVudGlmaWNhdGl2b1VuaXZvY29CZW5lZmljaWFyaW8+CiAgICAgIDx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICAgIDxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+MDM2NTc3MzEwMDA8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4KICAgIDwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgPGRlbm9taW5hemlvbmVCZW5lZmljaWFyaW8+SXN0aXR1dG8gU3VwZXJpb3JlIGRpIFNhbml0w6A8L2Rlbm9taW5hemlvbmVCZW5lZmljaWFyaW8+CiAgICA8ZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz5Jc3RpdHV0byBTdXBlcmlvcmUgZGkgU2FuaXTDoDwvZGVub21Vbml0T3BlckJlbmVmaWNpYXJpbz4KICAgIDxjYXBCZW5lZmljaWFyaW8+MDAxNjE8L2NhcEJlbmVmaWNpYXJpbz4KICAgIDxsb2NhbGl0YUJlbmVmaWNpYXJpbz5Sb21hPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz4KICAgIDxwcm92aW5jaWFCZW5lZmljaWFyaW8+cm08L3Byb3ZpbmNpYUJlbmVmaWNpYXJpbz4KICAgIDxuYXppb25lQmVuZWZpY2lhcmlvPklUPC9uYXppb25lQmVuZWZpY2lhcmlvPgogIDwvZW50ZUJlbmVmaWNpYXJpbz4KICA8ZGF0aVZlcnNhbWVudG8+CiAgICA8ZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+MjAxOS0xMi0wNTwvZGF0YUVzZWN1emlvbmVQYWdhbWVudG8+CiAgICA8aW1wb3J0b1RvdGFsZURhVmVyc2FyZT41MC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4zMDA4Mzg5NDI5OTM5OTU0NTI8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+CiAgICA8Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+bi9hPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz4KICAgIDxmaXJtYVJpY2V2dXRhPjA8L2Zpcm1hUmljZXZ1dGE+CiAgICAgICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz41MC4wMDwvaW1wb3J0b1NpbmdvbG9WZXJzYW1lbnRvPgogICAgICA8aWJhbkFjY3JlZGl0bz5JVDgyQzAzMTExMDMyMDYwMDAwMDAwMDI4NDc8L2liYW5BY2NyZWRpdG8+CiAgICAgIDxjYXVzYWxlVmVyc2FtZW50bz5kaSBlbGVtZW50aSBjaGltaWNpIGluIHByZXBhcmF0aSBlcmJvcmlzdGljaSBlIGRlbGxlIG1lZGljaW5lIG5vbiBjb252ZW56aW9uYWxpIGZpbm8gYSBkdWUgZWxlbWVudGkgKHBlciBvZ25pIGVsZW1lbnRvIGFnZ2l1bnRpdm8pPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzBLTTwvZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPgogICAgPC9kYXRpU2luZ29sb1ZlcnNhbWVudG8+CiAgPC9kYXRpVmVyc2FtZW50bz4KPC9SUFQ+</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193390000233</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>50.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T15:40:39.931+01:00</timestampOperazione>
+      <codiceAutorizzativo>106385</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 15:40:40.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 15:41:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RT ===============================
+[05-Dec-2019 15:41:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT in coda con ID locale 76 avente IUV 300838942993995452 e CCP n/a è stata inviata al NodoSPC.
+[05-Dec-2019 15:41:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>80211730587</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRicevuta>Y1J4T6FQWE3HGUI</identificativoMessaggioRicevuta>
+  <dataOraMessaggioRicevuta>2019-12-05T15:40:40+01:00</dataOraMessaggioRicevuta>
+  <riferimentoMessaggioRichiesta>2019-12-05T15:40:077</riferimentoMessaggioRichiesta>
+  <riferimentoDataRichiesta>2019-12-05</riferimentoDataRichiesta>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>03657731000</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Istituto Superiore di Sanità</denominazioneBeneficiario>
+    <capBeneficiario>00161</capBeneficiario>
+    <localitaBeneficiario>Roma</localitaBeneficiario>
+    <provinciaBeneficiario>rm</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>vscgpp86s17c352b</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Giuseppe Viscomi</anagraficaVersante>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>vscgpp86s17c352b</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Giuseppe Viscomi</anagraficaPagatore>
+    <indirizzoPagatore>via g. falcone ,2  88060</indirizzoPagatore>
+    <localitaPagatore>Davoli</localitaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiPagamento>
+    <codiceEsitoPagamento>0</codiceEsitoPagamento>
+    <importoTotalePagato>50.00</importoTotalePagato>
+    <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+    <CodiceContestoPagamento>n/a</CodiceContestoPagamento>
+    <datiSingoloPagamento>
+      <singoloImportoPagato>50.00</singoloImportoPagato>
+      <esitoSingoloPagamento>OK</esitoSingoloPagamento>
+      <dataEsitoSingoloPagamento>2019-12-05</dataEsitoSingoloPagamento>
+      <identificativoUnivocoRiscossione>78059</identificativoUnivocoRiscossione>
+      <causaleVersamento>di elementi chimici in preparati erboristici e delle medicine non convenzionali fino a due elementi (per ogni elemento aggiuntivo)</causaleVersamento>
+      <datiSpecificiRiscossione>9/0KM</datiSpecificiRiscossione>
+    </datiSingoloPagamento>
+  </datiPagamento>
+</RT>
+
+[05-Dec-2019 15:41:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RT inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRT>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoDominio>80211730587</identificativoDominio>
+                                       <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>n/a</codiceContestoPagamento>
+  
+                                       <rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjgwMjExNzMwNTg3PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPlkxSjRUNkZRV0UzSEdVSTwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTU6NDA6NDArMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+MjAxOS0xMi0wNVQxNTo0MDowNzc8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMzY1NzczMTAwMDwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPklzdGl0dXRvIFN1cGVyaW9yZSBkaSBTYW5pdMOgPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxjYXBCZW5lZmljaWFyaW8+MDAxNjE8L2NhcEJlbmVmaWNpYXJpbz48bG9jYWxpdGFCZW5lZmljaWFyaW8+Um9tYTwvbG9jYWxpdGFCZW5lZmljaWFyaW8+PHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5ybTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPjxuYXppb25lQmVuZWZpY2lhcmlvPklUPC9uYXppb25lQmVuZWZpY2lhcmlvPjwvZW50ZUJlbmVmaWNpYXJpbz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnZzY2dwcDg2czE3YzM1MmI8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+R2l1c2VwcGUgVmlzY29taTwvYW5hZ3JhZmljYVZlcnNhbnRlPjxlLW1haWxWZXJzYW50ZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsVmVyc2FudGU+PC9zb2dnZXR0b1ZlcnNhbnRlPjxzb2dnZXR0b1BhZ2F0b3JlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+dnNjZ3BwODZzMTdjMzUyYjwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PGFuYWdyYWZpY2FQYWdhdG9yZT5HaXVzZXBwZSBWaXNjb21pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPnZpYSBnLiBmYWxjb25lICwyICA4ODA2MDwvaW5kaXJpenpvUGFnYXRvcmU+PGxvY2FsaXRhUGFnYXRvcmU+RGF2b2xpPC9sb2NhbGl0YVBhZ2F0b3JlPjxuYXppb25lUGFnYXRvcmU+SVQ8L25hemlvbmVQYWdhdG9yZT48ZS1tYWlsUGFnYXRvcmU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZGF0aVBhZ2FtZW50bz48Y29kaWNlRXNpdG9QYWdhbWVudG8+MDwvY29kaWNlRXNpdG9QYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVQYWdhdG8+NTAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MzAwODM4OTQyOTkzOTk1NDUyPC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxDb2RpY2VDb250ZXN0b1BhZ2FtZW50bz5uL2E8L0NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxkYXRpU2luZ29sb1BhZ2FtZW50bz48c2luZ29sb0ltcG9ydG9QYWdhdG8+NTAuMDA8L3NpbmdvbG9JbXBvcnRvUGFnYXRvPjxlc2l0b1NpbmdvbG9QYWdhbWVudG8+T0s8L2VzaXRvU2luZ29sb1BhZ2FtZW50bz48ZGF0YUVzaXRvU2luZ29sb1BhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT43ODA1OTwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUmlzY29zc2lvbmU+PGNhdXNhbGVWZXJzYW1lbnRvPmRpIGVsZW1lbnRpIGNoaW1pY2kgaW4gcHJlcGFyYXRpIGVyYm9yaXN0aWNpIGUgZGVsbGUgbWVkaWNpbmUgbm9uIGNvbnZlbnppb25hbGkgZmlubyBhIGR1ZSBlbGVtZW50aSAocGVyIG9nbmkgZWxlbWVudG8gYWdnaXVudGl2byk8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS8wS008L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=</rt>
+                                    </ws:nodoInviaRT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 15:41:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RT: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenvBody>
+    <pptnodoInviaRTRisposta>
+      <nodoInviaRTRisposta>
+        <fault>
+          <faultCode>PPT_STAZIONE_INT_PA_TIMEOUT</faultCode>
+          <faultString>Timeout risposta dalla Stazione.</faultString>
+          <id>NodoDeiPagamentiSPC</id>
+          <description>Timeout risposta dalla Stazione.</description>
+        </fault>
+        <esito>KO</esito>
+      </nodoInviaRTRisposta>
+    </pptnodoInviaRTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[05-Dec-2019 15:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RR ===============================
+[05-Dec-2019 15:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR in coda con ID locale 76 avente IUV 300838942993995452 e CCP n/a è stata inviata al NodoSPC.
+[05-Dec-2019 15:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RR xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/Revoche/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>80211730587</identificativoDominio>
+    <identificativoStazioneRichiedente/>
+  </dominio>
+  <identificativoMessaggioRevoca/>
+  <dataOraMessaggioRevoca/>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>vscgpp86s17c352b</codiceIdentificativoUnivoco>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante>Giuseppe Viscomi</anagraficaVersante>
+    <indirizzoVersante/>
+    <civicoVersante/>
+    <capVersante/>
+    <localitaVersante/>
+    <provinciaVersante/>
+    <nazioneVersante/>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>vscgpp86s17c352b</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>Giuseppe Viscomi</anagraficaPagatore>
+    <indirizzoPagatore>via g. falcone ,2  88060</indirizzoPagatore>
+    <civicoPagatore/>
+    <capPagatore/>
+    <localitaPagatore>Davoli</localitaPagatore>
+    <provinciaPagatore/>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiRevoca>
+    <importoTotaleRevocato>0.00</importoTotaleRevocato>
+    <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>n/a</codiceContestoPagamento>
+    <tipoRevoca>0</tipoRevoca>
+    <datiSingolaRevoca>
+      <singoloImportoRevocato>0.00</singoloImportoRevocato>
+      <identificativoUnivocoRiscossione/>
+      <causaleRevoca>Revoca 1 300838942993995452</causaleRevoca>
+      <datiAggiuntiviRevoca>Test1</datiAggiuntiviRevoca>
+    </datiSingolaRevoca>
+  </datiRevoca>
+</RR>
+
+[05-Dec-2019 15:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RR inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRichiestaRevoca>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>                                     
+                                       <identificativoDominio>80211730587</identificativoDominio>
+                                       <identificativoUnivocoVersamento>300838942993995452</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>n/a</codiceContestoPagamento>
+  
+                                       <rr>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlIgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS9SZXZvY2hlLyI+PHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPjxkb21pbmlvPjxpZGVudGlmaWNhdGl2b0RvbWluaW8+ODAyMTE3MzA1ODc8L2lkZW50aWZpY2F0aXZvRG9taW5pbz48aWRlbnRpZmljYXRpdm9TdGF6aW9uZVJpY2hpZWRlbnRlLz48L2RvbWluaW8+PGlkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmV2b2NhLz48ZGF0YU9yYU1lc3NhZ2dpb1Jldm9jYS8+PGlzdGl0dXRvQXR0ZXN0YW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvQXR0ZXN0YW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+OTc3MzUwMjA1ODQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PGRlbm9taW5hemlvbmVBdHRlc3RhbnRlPkFnZW56aWEgcGVyIGwnSXRhbGlhIERpZ2l0YWxlPC9kZW5vbWluYXppb25lQXR0ZXN0YW50ZT48Y29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPm4vYTwvY29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPjxkZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2Rlbm9tVW5pdE9wZXJBdHRlc3RhbnRlPjxpbmRpcml6em9BdHRlc3RhbnRlPlZpYSBMaXN6dDwvaW5kaXJpenpvQXR0ZXN0YW50ZT48Y2l2aWNvQXR0ZXN0YW50ZT4yMTwvY2l2aWNvQXR0ZXN0YW50ZT48Y2FwQXR0ZXN0YW50ZT4wMDE0NDwvY2FwQXR0ZXN0YW50ZT48bG9jYWxpdGFBdHRlc3RhbnRlPlJvbWE8L2xvY2FsaXRhQXR0ZXN0YW50ZT48cHJvdmluY2lhQXR0ZXN0YW50ZT5STTwvcHJvdmluY2lhQXR0ZXN0YW50ZT48bmF6aW9uZUF0dGVzdGFudGU+SVQ8L25hemlvbmVBdHRlc3RhbnRlPjwvaXN0aXR1dG9BdHRlc3RhbnRlPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+dnNjZ3BwODZzMTdjMzUyYjwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PGFuYWdyYWZpY2FWZXJzYW50ZT5HaXVzZXBwZSBWaXNjb21pPC9hbmFncmFmaWNhVmVyc2FudGU+PGluZGlyaXp6b1ZlcnNhbnRlLz48Y2l2aWNvVmVyc2FudGUvPjxjYXBWZXJzYW50ZS8+PGxvY2FsaXRhVmVyc2FudGUvPjxwcm92aW5jaWFWZXJzYW50ZS8+PG5hemlvbmVWZXJzYW50ZS8+PGUtbWFpbFZlcnNhbnRlPmRhbmllbGUubGFuZHJvQGFnaWQuZ292Lml0PC9lLW1haWxWZXJzYW50ZT48L3NvZ2dldHRvVmVyc2FudGU+PHNvZ2dldHRvUGFnYXRvcmU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkY8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz52c2NncHA4NnMxN2MzNTJiPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPkdpdXNlcHBlIFZpc2NvbWk8L2FuYWdyYWZpY2FQYWdhdG9yZT48aW5kaXJpenpvUGFnYXRvcmU+dmlhIGcuIGZhbGNvbmUgLDIgIDg4MDYwPC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmUvPjxjYXBQYWdhdG9yZS8+PGxvY2FsaXRhUGFnYXRvcmU+RGF2b2xpPC9sb2NhbGl0YVBhZ2F0b3JlPjxwcm92aW5jaWFQYWdhdG9yZS8+PG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPjxlLW1haWxQYWdhdG9yZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsUGFnYXRvcmU+PC9zb2dnZXR0b1BhZ2F0b3JlPjxkYXRpUmV2b2NhPjxpbXBvcnRvVG90YWxlUmV2b2NhdG8+MC4wMDwvaW1wb3J0b1RvdGFsZVJldm9jYXRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjMwMDgzODk0Mjk5Mzk5NTQ1MjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz48Y29kaWNlQ29udGVzdG9QYWdhbWVudG8+bi9hPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48dGlwb1Jldm9jYT4wPC90aXBvUmV2b2NhPjxkYXRpU2luZ29sYVJldm9jYT48c2luZ29sb0ltcG9ydG9SZXZvY2F0bz4wLjAwPC9zaW5nb2xvSW1wb3J0b1Jldm9jYXRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZS8+PGNhdXNhbGVSZXZvY2E+UmV2b2NhIDEgMzAwODM4OTQyOTkzOTk1NDUyPC9jYXVzYWxlUmV2b2NhPjxkYXRpQWdnaXVudGl2aVJldm9jYT5UZXN0MTwvZGF0aUFnZ2l1bnRpdmlSZXZvY2E+PC9kYXRpU2luZ29sYVJldm9jYT48L2RhdGlSZXZvY2E+PC9SUj4K</rr>
+                                    </ws:nodoInviaRichiestaRevoca>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 15:41:19.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RR: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:nodoInviaRichiestaRevocaRisposta>
+      <fault>
+        <faultCode>PPT_SINTASSI_EXTRAXSD</faultCode>
+        <faultString>Errore di sintassi extra XSD.</faultString>
+        <id>NodoDeiPagamentiSPC</id>
+        <description>Error while parsing &lt;ws:nodoInviaRT xmlns:ws="http://ws.pagamenti.telematici.gov/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                               &lt;identificativoIntermediarioPSP>97735020584&lt;/identificativoIntermediarioPSP>
+                                               &lt;identificativoCanale>97735020584_04&lt;/identificativoCanale>
+                                               &lt;password>pwd_AgID&lt;/password>
+                                               &lt;identificativoPSP>AGID_02&lt;/identificativoPSP>
+                                               &lt;identificativoDominio>80211730587&lt;/identificativoDominio>
+                                               &lt;identificativoUnivocoVersamento>300838942993995452&lt;/identificativoUnivocoVersamento>
+                                               &lt;codiceContestoPagamento>n/a&lt;/codiceContestoPagamento>
+                                               &lt;rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjgwMjExNzMwNTg3PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPlkxSjRUNkZRV0UzSEdVSTwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTU6NDA6NDArMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+MjAxOS0xMi0wNVQxNTo0MDowNzc8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMzY1NzczMTAwMDwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPklzdGl0dXRvIFN1cGVyaW9yZSBkaSBTYW5pdMOgPC9kZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPjxjYXBCZW5lZmljaWFyaW8+MDAxNjE8L2NhcEJlbmVmaWNpYXJpbz48bG9jYWxpdGFCZW5lZmljaWFyaW8+Um9tYTwvbG9jYWxpdGFCZW5lZmljaWFyaW8+PHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5ybTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPjxuYXppb25lQmVuZWZpY2lhcmlvPklUPC9uYXppb25lQmVuZWZpY2lhcmlvPjwvZW50ZUJlbmVmaWNpYXJpbz48c29nZ2V0dG9WZXJzYW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RjwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPnZzY2dwcDg2czE3YzM1MmI8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbnRlPjxhbmFncmFmaWNhVmVyc2FudGU+R2l1c2VwcGUgVmlzY29taTwvYW5hZ3JhZmljYVZlcnNhbnRlPjxlLW1haWxWZXJzYW50ZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsVmVyc2FudGU+PC9zb2dnZXR0b1ZlcnNhbnRlPjxzb2dnZXR0b1BhZ2F0b3JlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5GPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+dnNjZ3BwODZzMTdjMzUyYjwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PGFuYWdyYWZpY2FQYWdhdG9yZT5HaXVzZXBwZSBWaXNjb21pPC9hbmFncmFmaWNhUGFnYXRvcmU+PGluZGlyaXp6b1BhZ2F0b3JlPnZpYSBnLiBmYWxjb25lICwyICA4ODA2MDwvaW5kaXJpenpvUGFnYXRvcmU+PGxvY2FsaXRhUGFnYXRvcmU+RGF2b2xpPC9sb2NhbGl0YVBhZ2F0b3JlPjxuYXppb25lUGFnYXRvcmU+SVQ8L25hemlvbmVQYWdhdG9yZT48ZS1tYWlsUGFnYXRvcmU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFBhZ2F0b3JlPjwvc29nZ2V0dG9QYWdhdG9yZT48ZGF0aVBhZ2FtZW50bz48Y29kaWNlRXNpdG9QYWdhbWVudG8+MDwvY29kaWNlRXNpdG9QYWdhbWVudG8+PGltcG9ydG9Ub3RhbGVQYWdhdG8+NTAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MzAwODM4OTQyOTkzOTk1NDUyPC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW1lbnRvPjxDb2RpY2VDb250ZXN0b1BhZ2FtZW50bz5uL2E8L0NvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjxkYXRpU2luZ29sb1BhZ2FtZW50bz48c2luZ29sb0ltcG9ydG9QYWdhdG8+NTAuMDA8L3NpbmdvbG9JbXBvcnRvUGFnYXRvPjxlc2l0b1NpbmdvbG9QYWdhbWVudG8+T0s8L2VzaXRvU2luZ29sb1BhZ2FtZW50bz48ZGF0YUVzaXRvU2luZ29sb1BhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT43ODA1OTwvaWRlbnRpZmljYXRpdm9Vbml2b2NvUmlzY29zc2lvbmU+PGNhdXNhbGVWZXJzYW1lbnRvPmRpIGVsZW1lbnRpIGNoaW1pY2kgaW4gcHJlcGFyYXRpIGVyYm9yaXN0aWNpIGUgZGVsbGUgbWVkaWNpbmUgbm9uIGNvbnZlbnppb25hbGkgZmlubyBhIGR1ZSBlbGVtZW50aSAocGVyIG9nbmkgZWxlbWVudG8gYWdnaXVudGl2byk8L2NhdXNhbGVWZXJzYW1lbnRvPjxkYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+OS8wS008L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=&lt;/rt>
+                                            &lt;/ws:nodoInviaRT>: parser error "'identificativoPSP' expected but identificativoIntermediarioPSP found" while parsing /{http://ws.pagamenti.telematici.gov/}nodoInviaRT/identificativoIntermediarioPSPidentificativoCanalepasswordidentificativoPSPidentificativoDominioidentificativoUnivocoVersamentocodiceContestoPagamentort
+          ^</description>
+        </fault>
+        <esito>KO</esito>
+      </ppt:nodoInviaRichiestaRevocaRisposta>
+    </soapenv:Body>
+  </soapenv:Envelope>
+
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER PSP pspInviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>02336340159</identificativoDominio>
+          <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMjMzNjM0MDE1OTwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+ZjJiNTNkYmE5ZTU2OWIxNDExNzgwMzgwYTkzZDY2ZTkwMWM8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTc6MzY6MDE8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgPGFuYWdyYWZpY2FQYWdhdG9yZT5SRVNUSUFOSSBTUEE8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT4KICAgIDxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+CiAgICA8bG9jYWxpdGFQYWdhdG9yZT5BTEVTU0FORFJJQTwvbG9jYWxpdGFQYWdhdG9yZT4KICAgIDxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+CiAgICA8bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+CiAgICA8ZS1tYWlsUGFnYXRvcmU+cG9zdGFAcmVzdGlhbmkuY29tPC9lLW1haWxQYWdhdG9yZT4KICA8L3NvZ2dldHRvUGFnYXRvcmU+CiAgPGVudGVCZW5lZmljaWFyaW8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAyMzM2MzQwMTU5PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgIDxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIHNhbiBNYXJ0aW5vPC9pbmRpcml6em9CZW5lZmljaWFyaW8+CiAgICA8Y2l2aWNvQmVuZWZpY2lhcmlvPjkxPC9jaXZpY29CZW5lZmljaWFyaW8+CiAgICA8Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+CiAgICA8bG9jYWxpdGFCZW5lZmljaWFyaW8+Qmlhc3Nvbm88L2xvY2FsaXRhQmVuZWZpY2lhcmlvPgogICAgPHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5NSTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPgogICAgPG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+CiAgPC9lbnRlQmVuZWZpY2lhcmlvPgogIDxkYXRpVmVyc2FtZW50bz4KICAgIDxkYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4KICAgIDxpbXBvcnRvVG90YWxlRGFWZXJzYXJlPjEwMC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4wMDAwMDAwMDAwMTEyMzg4MTwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz44MjIyZjczY2RlYzg0NmViYWFhZTJmMGNhNTdkMTI3NzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+CiAgICA8ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPgogICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xMDAuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQyOU8wNTIxNjMyNTQwMDAwMDAwMDAyNzAwPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzg4MS8xMDAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzAwMTQ4MjUwMDYxPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193391000341</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>100.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T17:36:27.492+01:00</timestampOperazione>
+      <codiceAutorizzativo>103444</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Esito DB: 
+MYSQL - Esito inserimento pspInviaCarrelloRPTCarte: 1 record.
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER numero RPT: 
+1
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== SERVER PSP InviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>02336340159</identificativoDominio>
+          <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMjMzNjM0MDE1OTwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+ZjJiNTNkYmE5ZTU2OWIxNDExNzgwMzgwYTkzZDY2ZTkwMWM8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTc6MzY6MDE8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgPGFuYWdyYWZpY2FQYWdhdG9yZT5SRVNUSUFOSSBTUEE8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT4KICAgIDxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+CiAgICA8bG9jYWxpdGFQYWdhdG9yZT5BTEVTU0FORFJJQTwvbG9jYWxpdGFQYWdhdG9yZT4KICAgIDxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+CiAgICA8bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+CiAgICA8ZS1tYWlsUGFnYXRvcmU+cG9zdGFAcmVzdGlhbmkuY29tPC9lLW1haWxQYWdhdG9yZT4KICA8L3NvZ2dldHRvUGFnYXRvcmU+CiAgPGVudGVCZW5lZmljaWFyaW8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAyMzM2MzQwMTU5PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgIDxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIHNhbiBNYXJ0aW5vPC9pbmRpcml6em9CZW5lZmljaWFyaW8+CiAgICA8Y2l2aWNvQmVuZWZpY2lhcmlvPjkxPC9jaXZpY29CZW5lZmljaWFyaW8+CiAgICA8Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+CiAgICA8bG9jYWxpdGFCZW5lZmljaWFyaW8+Qmlhc3Nvbm88L2xvY2FsaXRhQmVuZWZpY2lhcmlvPgogICAgPHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5NSTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPgogICAgPG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+CiAgPC9lbnRlQmVuZWZpY2lhcmlvPgogIDxkYXRpVmVyc2FtZW50bz4KICAgIDxkYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4KICAgIDxpbXBvcnRvVG90YWxlRGFWZXJzYXJlPjEwMC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4wMDAwMDAwMDAwMTEyMzg4MTwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz44MjIyZjczY2RlYzg0NmViYWFhZTJmMGNhNTdkMTI3NzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+CiAgICA8ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPgogICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xMDAuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQyOU8wNTIxNjMyNTQwMDAwMDAwMDAyNzAwPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzg4MS8xMDAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzAwMTQ4MjUwMDYxPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193391000341</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>100.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T17:36:27.492+01:00</timestampOperazione>
+      <codiceAutorizzativo>103444</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 17:36:27.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 17:36:33.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RT ===============================
+[05-Dec-2019 17:36:33.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT in coda con ID locale 77 avente IUV 00000000001123881 e CCP 8222f73cdec846ebaaae2f0ca57d1277 è stata inviata al NodoSPC.
+[05-Dec-2019 17:36:33.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>02336340159</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRicevuta>G8BPS5OJ2UZA79I</identificativoMessaggioRicevuta>
+  <dataOraMessaggioRicevuta>2019-12-05T17:36:27+01:00</dataOraMessaggioRicevuta>
+  <riferimentoMessaggioRichiesta>f2b53dba9e569b1411780380a93d66e901c</riferimentoMessaggioRichiesta>
+  <riferimentoDataRichiesta>2019-12-05</riferimentoDataRichiesta>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>02336340159</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Comune di Biassono</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Via san Martino</indirizzoBeneficiario>
+    <civicoBeneficiario>91</civicoBeneficiario>
+    <capBeneficiario>20853</capBeneficiario>
+    <localitaBeneficiario>Biassono</localitaBeneficiario>
+    <provinciaBeneficiario>MI</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco/>
+      <codiceIdentificativoUnivoco/>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante/>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>00148250061</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>RESTIANI SPA</anagraficaPagatore>
+    <indirizzoPagatore>VIA UMBERTO GIORDANO 5</indirizzoPagatore>
+    <capPagatore>15121</capPagatore>
+    <localitaPagatore>ALESSANDRIA</localitaPagatore>
+    <provinciaPagatore>AL</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiPagamento>
+    <codiceEsitoPagamento>0</codiceEsitoPagamento>
+    <importoTotalePagato>100.00</importoTotalePagato>
+    <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+    <CodiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</CodiceContestoPagamento>
+    <datiSingoloPagamento>
+      <singoloImportoPagato>100.00</singoloImportoPagato>
+      <esitoSingoloPagamento>OK</esitoSingoloPagamento>
+      <dataEsitoSingoloPagamento>2019-12-05</dataEsitoSingoloPagamento>
+      <identificativoUnivocoRiscossione>55130</identificativoUnivocoRiscossione>
+      <causaleVersamento>/RFB/00000000001123881/100.00/TXT/Ricarica Portafoglio CURIT</causaleVersamento>
+      <datiSpecificiRiscossione>9/00148250061</datiSpecificiRiscossione>
+    </datiSingoloPagamento>
+  </datiPagamento>
+</RT>
+
+[05-Dec-2019 17:36:33.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RT inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRT>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoDominio>02336340159</identificativoDominio>
+                                       <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</codiceContestoPagamento>
+  
+                                       <rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjAyMzM2MzQwMTU5PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPkc4QlBTNU9KMlVaQTc5STwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTc6MzY6MjcrMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+ZjJiNTNkYmE5ZTU2OWIxNDExNzgwMzgwYTkzZDY2ZTkwMWM8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMjMzNjM0MDE1OTwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz48aW5kaXJpenpvQmVuZWZpY2lhcmlvPlZpYSBzYW4gTWFydGlubzwvaW5kaXJpenpvQmVuZWZpY2lhcmlvPjxjaXZpY29CZW5lZmljaWFyaW8+OTE8L2Npdmljb0JlbmVmaWNpYXJpbz48Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+PGxvY2FsaXRhQmVuZWZpY2lhcmlvPkJpYXNzb25vPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPk1JPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MTUxMjE8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkFMRVNTQU5EUklBPC9sb2NhbGl0YVBhZ2F0b3JlPjxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+PG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPjxlLW1haWxQYWdhdG9yZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsUGFnYXRvcmU+PC9zb2dnZXR0b1BhZ2F0b3JlPjxkYXRpUGFnYW1lbnRvPjxjb2RpY2VFc2l0b1BhZ2FtZW50bz4wPC9jb2RpY2VFc2l0b1BhZ2FtZW50bz48aW1wb3J0b1RvdGFsZVBhZ2F0bz4xMDAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM4ODE8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PENvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjgyMjJmNzNjZGVjODQ2ZWJhYWFlMmYwY2E1N2QxMjc3PC9Db2RpY2VDb250ZXN0b1BhZ2FtZW50bz48ZGF0aVNpbmdvbG9QYWdhbWVudG8+PHNpbmdvbG9JbXBvcnRvUGFnYXRvPjEwMC4wMDwvc2luZ29sb0ltcG9ydG9QYWdhdG8+PGVzaXRvU2luZ29sb1BhZ2FtZW50bz5PSzwvZXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxkYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjIwMTktMTItMDU8L2RhdGFFc2l0b1NpbmdvbG9QYWdhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1Jpc2Nvc3Npb25lPjU1MTMwPC9pZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzg4MS8xMDAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvMDAxNDgyNTAwNjE8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=</rt>
+                                    </ws:nodoInviaRT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 17:36:33.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RT: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenvBody>
+    <pptnodoInviaRTRisposta>
+      <nodoInviaRTRisposta>
+        <fault>
+          <faultCode>PPT_SINTASSI_XSD</faultCode>
+          <faultString>Errore di sintassi XSD.</faultString>
+          <id>NodoDeiPagamentiSPC</id>
+          <description>Errore validazione XML [RT/soggettoVersante/identificativoUnivocoVersante/tipoIdentificativoUnivoco] - cvc-length-valid: il valore "" con lunghezza = "0" non è valido come facet rispetto alla lunghezza "1" per il tipo "stTipoIdentificativoUnivocoPersFG".</description>
+        </fault>
+        <esito>KO</esito>
+      </nodoInviaRTRisposta>
+    </pptnodoInviaRTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[05-Dec-2019 17:36:36.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RR ===============================
+[05-Dec-2019 17:36:36.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR in coda con ID locale 77 avente IUV 00000000001123881 e CCP 8222f73cdec846ebaaae2f0ca57d1277 è stata inviata al NodoSPC.
+[05-Dec-2019 17:36:36.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RR xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/Revoche/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>02336340159</identificativoDominio>
+    <identificativoStazioneRichiedente/>
+  </dominio>
+  <identificativoMessaggioRevoca/>
+  <dataOraMessaggioRevoca/>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco/>
+      <codiceIdentificativoUnivoco/>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante/>
+    <indirizzoVersante/>
+    <civicoVersante/>
+    <capVersante/>
+    <localitaVersante/>
+    <provinciaVersante/>
+    <nazioneVersante/>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>00148250061</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>RESTIANI SPA</anagraficaPagatore>
+    <indirizzoPagatore>VIA UMBERTO GIORDANO 5</indirizzoPagatore>
+    <civicoPagatore/>
+    <capPagatore>15121</capPagatore>
+    <localitaPagatore>ALESSANDRIA</localitaPagatore>
+    <provinciaPagatore>AL</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiRevoca>
+    <importoTotaleRevocato>0.00</importoTotaleRevocato>
+    <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</codiceContestoPagamento>
+    <tipoRevoca>0</tipoRevoca>
+    <datiSingolaRevoca>
+      <singoloImportoRevocato>0.00</singoloImportoRevocato>
+      <identificativoUnivocoRiscossione/>
+      <causaleRevoca>Revoca 1 00000000001123881</causaleRevoca>
+      <datiAggiuntiviRevoca>Test1</datiAggiuntiviRevoca>
+    </datiSingolaRevoca>
+  </datiRevoca>
+</RR>
+
+[05-Dec-2019 17:36:36.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RR inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRichiestaRevoca>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>                                     
+                                       <identificativoDominio>02336340159</identificativoDominio>
+                                       <identificativoUnivocoVersamento>00000000001123881</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277</codiceContestoPagamento>
+  
+                                       <rr>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlIgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS9SZXZvY2hlLyI+PHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPjxkb21pbmlvPjxpZGVudGlmaWNhdGl2b0RvbWluaW8+MDIzMzYzNDAxNTk8L2lkZW50aWZpY2F0aXZvRG9taW5pbz48aWRlbnRpZmljYXRpdm9TdGF6aW9uZVJpY2hpZWRlbnRlLz48L2RvbWluaW8+PGlkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmV2b2NhLz48ZGF0YU9yYU1lc3NhZ2dpb1Jldm9jYS8+PGlzdGl0dXRvQXR0ZXN0YW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvQXR0ZXN0YW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+OTc3MzUwMjA1ODQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PGRlbm9taW5hemlvbmVBdHRlc3RhbnRlPkFnZW56aWEgcGVyIGwnSXRhbGlhIERpZ2l0YWxlPC9kZW5vbWluYXppb25lQXR0ZXN0YW50ZT48Y29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPm4vYTwvY29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPjxkZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2Rlbm9tVW5pdE9wZXJBdHRlc3RhbnRlPjxpbmRpcml6em9BdHRlc3RhbnRlPlZpYSBMaXN6dDwvaW5kaXJpenpvQXR0ZXN0YW50ZT48Y2l2aWNvQXR0ZXN0YW50ZT4yMTwvY2l2aWNvQXR0ZXN0YW50ZT48Y2FwQXR0ZXN0YW50ZT4wMDE0NDwvY2FwQXR0ZXN0YW50ZT48bG9jYWxpdGFBdHRlc3RhbnRlPlJvbWE8L2xvY2FsaXRhQXR0ZXN0YW50ZT48cHJvdmluY2lhQXR0ZXN0YW50ZT5STTwvcHJvdmluY2lhQXR0ZXN0YW50ZT48bmF6aW9uZUF0dGVzdGFudGU+SVQ8L25hemlvbmVBdHRlc3RhbnRlPjwvaXN0aXR1dG9BdHRlc3RhbnRlPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48aW5kaXJpenpvVmVyc2FudGUvPjxjaXZpY29WZXJzYW50ZS8+PGNhcFZlcnNhbnRlLz48bG9jYWxpdGFWZXJzYW50ZS8+PHByb3ZpbmNpYVZlcnNhbnRlLz48bmF6aW9uZVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmUvPjxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+PGxvY2FsaXRhUGFnYXRvcmU+QUxFU1NBTkRSSUE8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPkFMPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmRhbmllbGUubGFuZHJvQGFnaWQuZ292Lml0PC9lLW1haWxQYWdhdG9yZT48L3NvZ2dldHRvUGFnYXRvcmU+PGRhdGlSZXZvY2E+PGltcG9ydG9Ub3RhbGVSZXZvY2F0bz4wLjAwPC9pbXBvcnRvVG90YWxlUmV2b2NhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM4ODE8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjgyMjJmNzNjZGVjODQ2ZWJhYWFlMmYwY2E1N2QxMjc3PC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48dGlwb1Jldm9jYT4wPC90aXBvUmV2b2NhPjxkYXRpU2luZ29sYVJldm9jYT48c2luZ29sb0ltcG9ydG9SZXZvY2F0bz4wLjAwPC9zaW5nb2xvSW1wb3J0b1Jldm9jYXRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZS8+PGNhdXNhbGVSZXZvY2E+UmV2b2NhIDEgMDAwMDAwMDAwMDExMjM4ODE8L2NhdXNhbGVSZXZvY2E+PGRhdGlBZ2dpdW50aXZpUmV2b2NhPlRlc3QxPC9kYXRpQWdnaXVudGl2aVJldm9jYT48L2RhdGlTaW5nb2xhUmV2b2NhPjwvZGF0aVJldm9jYT48L1JSPgo=</rr>
+                                    </ws:nodoInviaRichiestaRevoca>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 17:36:36.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RR: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:nodoInviaRichiestaRevocaRisposta>
+      <fault>
+        <faultCode>PPT_SINTASSI_EXTRAXSD</faultCode>
+        <faultString>Errore di sintassi extra XSD.</faultString>
+        <id>NodoDeiPagamentiSPC</id>
+        <description>Error while parsing &lt;ws:nodoInviaRT xmlns:ws="http://ws.pagamenti.telematici.gov/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                               &lt;identificativoIntermediarioPSP>97735020584&lt;/identificativoIntermediarioPSP>
+                                               &lt;identificativoCanale>97735020584_04&lt;/identificativoCanale>
+                                               &lt;password>pwd_AgID&lt;/password>
+                                               &lt;identificativoPSP>AGID_02&lt;/identificativoPSP>
+                                               &lt;identificativoDominio>02336340159&lt;/identificativoDominio>
+                                               &lt;identificativoUnivocoVersamento>00000000001123881&lt;/identificativoUnivocoVersamento>
+                                               &lt;codiceContestoPagamento>8222f73cdec846ebaaae2f0ca57d1277&lt;/codiceContestoPagamento>
+                                               &lt;rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjAyMzM2MzQwMTU5PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPkc4QlBTNU9KMlVaQTc5STwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTc6MzY6MjcrMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+ZjJiNTNkYmE5ZTU2OWIxNDExNzgwMzgwYTkzZDY2ZTkwMWM8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMjMzNjM0MDE1OTwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz48aW5kaXJpenpvQmVuZWZpY2lhcmlvPlZpYSBzYW4gTWFydGlubzwvaW5kaXJpenpvQmVuZWZpY2lhcmlvPjxjaXZpY29CZW5lZmljaWFyaW8+OTE8L2Npdmljb0JlbmVmaWNpYXJpbz48Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+PGxvY2FsaXRhQmVuZWZpY2lhcmlvPkJpYXNzb25vPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPk1JPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MTUxMjE8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkFMRVNTQU5EUklBPC9sb2NhbGl0YVBhZ2F0b3JlPjxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+PG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPjxlLW1haWxQYWdhdG9yZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsUGFnYXRvcmU+PC9zb2dnZXR0b1BhZ2F0b3JlPjxkYXRpUGFnYW1lbnRvPjxjb2RpY2VFc2l0b1BhZ2FtZW50bz4wPC9jb2RpY2VFc2l0b1BhZ2FtZW50bz48aW1wb3J0b1RvdGFsZVBhZ2F0bz4xMDAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM4ODE8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PENvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjgyMjJmNzNjZGVjODQ2ZWJhYWFlMmYwY2E1N2QxMjc3PC9Db2RpY2VDb250ZXN0b1BhZ2FtZW50bz48ZGF0aVNpbmdvbG9QYWdhbWVudG8+PHNpbmdvbG9JbXBvcnRvUGFnYXRvPjEwMC4wMDwvc2luZ29sb0ltcG9ydG9QYWdhdG8+PGVzaXRvU2luZ29sb1BhZ2FtZW50bz5PSzwvZXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxkYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjIwMTktMTItMDU8L2RhdGFFc2l0b1NpbmdvbG9QYWdhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1Jpc2Nvc3Npb25lPjU1MTMwPC9pZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzg4MS8xMDAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvMDAxNDgyNTAwNjE8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=&lt;/rt>
+                                            &lt;/ws:nodoInviaRT>: parser error "'identificativoPSP' expected but identificativoIntermediarioPSP found" while parsing /{http://ws.pagamenti.telematici.gov/}nodoInviaRT/identificativoIntermediarioPSPidentificativoCanalepasswordidentificativoPSPidentificativoDominioidentificativoUnivocoVersamentocodiceContestoPagamentort
+          ^</description>
+        </fault>
+        <esito>KO</esito>
+      </ppt:nodoInviaRichiestaRevocaRisposta>
+    </soapenv:Body>
+  </soapenv:Envelope>
+
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== SERVER PSP pspInviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>02336340159</identificativoDominio>
+          <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMjMzNjM0MDE1OTwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+MDliNzI1ZGRlNjg2NmU0NDU1ZTg0YjhhYjlhYmE1M2Q5NzU8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTc6NDM6NDE8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgPGFuYWdyYWZpY2FQYWdhdG9yZT5SRVNUSUFOSSBTUEE8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT4KICAgIDxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+CiAgICA8bG9jYWxpdGFQYWdhdG9yZT5BTEVTU0FORFJJQTwvbG9jYWxpdGFQYWdhdG9yZT4KICAgIDxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+CiAgICA8bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+CiAgICA8ZS1tYWlsUGFnYXRvcmU+cG9zdGFAcmVzdGlhbmkuY29tPC9lLW1haWxQYWdhdG9yZT4KICA8L3NvZ2dldHRvUGFnYXRvcmU+CiAgPGVudGVCZW5lZmljaWFyaW8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAyMzM2MzQwMTU5PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgIDxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIHNhbiBNYXJ0aW5vPC9pbmRpcml6em9CZW5lZmljaWFyaW8+CiAgICA8Y2l2aWNvQmVuZWZpY2lhcmlvPjkxPC9jaXZpY29CZW5lZmljaWFyaW8+CiAgICA8Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+CiAgICA8bG9jYWxpdGFCZW5lZmljaWFyaW8+Qmlhc3Nvbm88L2xvY2FsaXRhQmVuZWZpY2lhcmlvPgogICAgPHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5NSTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPgogICAgPG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+CiAgPC9lbnRlQmVuZWZpY2lhcmlvPgogIDxkYXRpVmVyc2FtZW50bz4KICAgIDxkYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4KICAgIDxpbXBvcnRvVG90YWxlRGFWZXJzYXJlPjE1MC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4wMDAwMDAwMDAwMTEyMzk4MjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz45NzRkYzE4M2VlOTE0ZDY4ODRkZDliNWQzMjIxOGZjMzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+CiAgICA8ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPgogICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xNTAuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQyOU8wNTIxNjMyNTQwMDAwMDAwMDAyNzAwPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzk4Mi8xNTAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzAwMTQ4MjUwMDYxPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193391000345</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>150.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T17:44:07.835+01:00</timestampOperazione>
+      <codiceAutorizzativo>994315</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Esito DB: 
+MYSQL - Esito inserimento pspInviaCarrelloRPTCarte: 1 record.
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== SERVER numero RPT: 
+1
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== SERVER PSP InviaCarrelloRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay_j="http://www.cnipa.gov.it/schemas/2010/Pagamenti/Ack_1_0/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:pspInviaCarrelloRPTCarte>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanale>97735020584_04</identificativoCanale>
+      <modelloPagamento>1</modelloPagamento>
+      <listaRPT>
+        <elementoListaCarrelloRPT>
+          <identificativoDominio>02336340159</identificativoDominio>
+          <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+          <codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</codiceContestoPagamento>
+          <rpt>PFJQVCB4bWxucz0iaHR0cDovL3d3dy5kaWdpdHBhLmdvdi5pdC9zY2hlbWFzLzIwMTEvUGFnYW1lbnRpLyI+CiAgPHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPgogIDxkb21pbmlvPgogICAgPGlkZW50aWZpY2F0aXZvRG9taW5pbz4wMjMzNjM0MDE1OTwvaWRlbnRpZmljYXRpdm9Eb21pbmlvPgogIDwvZG9taW5pbz4KICA8aWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNoaWVzdGE+MDliNzI1ZGRlNjg2NmU0NDU1ZTg0YjhhYjlhYmE1M2Q5NzU8L2lkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmljaGllc3RhPgogIDxkYXRhT3JhTWVzc2FnZ2lvUmljaGllc3RhPjIwMTktMTItMDVUMTc6NDM6NDE8L2RhdGFPcmFNZXNzYWdnaW9SaWNoaWVzdGE+CiAgPGF1dGVudGljYXppb25lU29nZ2V0dG8+T1RIPC9hdXRlbnRpY2F6aW9uZVNvZ2dldHRvPgogIDxzb2dnZXR0b1BhZ2F0b3JlPgogICAgPGlkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1BhZ2F0b3JlPgogICAgPGFuYWdyYWZpY2FQYWdhdG9yZT5SRVNUSUFOSSBTUEE8L2FuYWdyYWZpY2FQYWdhdG9yZT4KICAgIDxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT4KICAgIDxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+CiAgICA8bG9jYWxpdGFQYWdhdG9yZT5BTEVTU0FORFJJQTwvbG9jYWxpdGFQYWdhdG9yZT4KICAgIDxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+CiAgICA8bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+CiAgICA8ZS1tYWlsUGFnYXRvcmU+cG9zdGFAcmVzdGlhbmkuY29tPC9lLW1haWxQYWdhdG9yZT4KICA8L3NvZ2dldHRvUGFnYXRvcmU+CiAgPGVudGVCZW5lZmljaWFyaW8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPgogICAgICA8dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPgogICAgICA8Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAyMzM2MzQwMTU5PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+CiAgICA8L2lkZW50aWZpY2F0aXZvVW5pdm9jb0JlbmVmaWNpYXJpbz4KICAgIDxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz4KICAgIDxpbmRpcml6em9CZW5lZmljaWFyaW8+VmlhIHNhbiBNYXJ0aW5vPC9pbmRpcml6em9CZW5lZmljaWFyaW8+CiAgICA8Y2l2aWNvQmVuZWZpY2lhcmlvPjkxPC9jaXZpY29CZW5lZmljaWFyaW8+CiAgICA8Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+CiAgICA8bG9jYWxpdGFCZW5lZmljaWFyaW8+Qmlhc3Nvbm88L2xvY2FsaXRhQmVuZWZpY2lhcmlvPgogICAgPHByb3ZpbmNpYUJlbmVmaWNpYXJpbz5NSTwvcHJvdmluY2lhQmVuZWZpY2lhcmlvPgogICAgPG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+CiAgPC9lbnRlQmVuZWZpY2lhcmlvPgogIDxkYXRpVmVyc2FtZW50bz4KICAgIDxkYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4yMDE5LTEyLTA1PC9kYXRhRXNlY3V6aW9uZVBhZ2FtZW50bz4KICAgIDxpbXBvcnRvVG90YWxlRGFWZXJzYXJlPjE1MC4wMDwvaW1wb3J0b1RvdGFsZURhVmVyc2FyZT4KICAgIDx0aXBvVmVyc2FtZW50bz5DUDwvdGlwb1ZlcnNhbWVudG8+CiAgICA8aWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4wMDAwMDAwMDAwMTEyMzk4MjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvVmVyc2FtZW50bz4KICAgIDxjb2RpY2VDb250ZXN0b1BhZ2FtZW50bz45NzRkYzE4M2VlOTE0ZDY4ODRkZDliNWQzMjIxOGZjMzwvY29kaWNlQ29udGVzdG9QYWdhbWVudG8+CiAgICA8ZmlybWFSaWNldnV0YT4wPC9maXJtYVJpY2V2dXRhPgogICAgPGRhdGlTaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4xNTAuMDA8L2ltcG9ydG9TaW5nb2xvVmVyc2FtZW50bz4KICAgICAgPGliYW5BY2NyZWRpdG8+SVQyOU8wNTIxNjMyNTQwMDAwMDAwMDAyNzAwPC9pYmFuQWNjcmVkaXRvPgogICAgICA8Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzk4Mi8xNTAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz4KICAgICAgPGRhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT45LzAwMTQ4MjUwMDYxPC9kYXRpU3BlY2lmaWNpUmlzY29zc2lvbmU+CiAgICA8L2RhdGlTaW5nb2xvVmVyc2FtZW50bz4KICA8L2RhdGlWZXJzYW1lbnRvPgo8L1JQVD4=</rpt>
+        </elementoListaCarrelloRPT>
+      </listaRPT>
+      <rrn>193391000345</rrn>
+      <esitoTransazioneCarta>00</esitoTransazioneCarta>
+      <importoTotalePagato>150.00</importoTotalePagato>
+      <timestampOperazione>2019-12-05T17:44:07.835+01:00</timestampOperazione>
+      <codiceAutorizzativo>994315</codiceAutorizzativo>
+    </ppt:pspInviaCarrelloRPTCarte>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[05-Dec-2019 17:44:08.000000] [pagopatest.agid.gov.it/cdi/serverPSP/soapServerPSP.php?OpenSPCoop2IdTransazione=514cf256-8207-444c-87b1-ee7b5bb10d44&OpenSPCoop2IdMessaggio=96127ad6-f483-4e65-8571-96d229c6fe94&OpenSPCoop2PddDetails=Porta+di+Dominio+OpenSPCoop+Enterprise+2.3.0&OpenSPCoop2Pdd=PdDOpenSPCoopEnterprise%2F2.3.0&OpenSPCoop2TipoServizio=PROXY&OpenSPCoop2Servizio=FespPsp&OpenSPCoop2Azione=pspInviaCarrelloRPTCarte&OpenSPCoop2TipoMittente=PROXY&OpenSPCoop2TipoDestinatario=PROXY&OpenSPCoop2Mittente=NodoDeiPagamentiDellaPATest&OpenSPCoop2Destinatario=AgidTest] : [INFO] - 
+=================================================================
+=== Risposta del server al carrello RPT: 
+{"pspInviaCarrelloRPTResponse":{"esitoComplessivoOperazione":"OK"}}
+[05-Dec-2019 17:44:13.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RT ===============================
+[05-Dec-2019 17:44:13.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT in coda con ID locale 78 avente IUV 00000000001123982 e CCP 974dc183ee914d6884dd9b5d32218fc3 è stata inviata al NodoSPC.
+[05-Dec-2019 17:44:13.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RT inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>02336340159</identificativoDominio>
+  </dominio>
+  <identificativoMessaggioRicevuta>0IMLJ2U1V47N5Z8</identificativoMessaggioRicevuta>
+  <dataOraMessaggioRicevuta>2019-12-05T17:44:08+01:00</dataOraMessaggioRicevuta>
+  <riferimentoMessaggioRichiesta>09b725dde6866e4455e84b8ab9aba53d975</riferimentoMessaggioRichiesta>
+  <riferimentoDataRichiesta>2019-12-05</riferimentoDataRichiesta>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <enteBeneficiario>
+    <identificativoUnivocoBeneficiario>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>02336340159</codiceIdentificativoUnivoco>
+    </identificativoUnivocoBeneficiario>
+    <denominazioneBeneficiario>Comune di Biassono</denominazioneBeneficiario>
+    <indirizzoBeneficiario>Via san Martino</indirizzoBeneficiario>
+    <civicoBeneficiario>91</civicoBeneficiario>
+    <capBeneficiario>20853</capBeneficiario>
+    <localitaBeneficiario>Biassono</localitaBeneficiario>
+    <provinciaBeneficiario>MI</provinciaBeneficiario>
+    <nazioneBeneficiario>IT</nazioneBeneficiario>
+  </enteBeneficiario>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco/>
+      <codiceIdentificativoUnivoco/>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante/>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>00148250061</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>RESTIANI SPA</anagraficaPagatore>
+    <indirizzoPagatore>VIA UMBERTO GIORDANO 5</indirizzoPagatore>
+    <capPagatore>15121</capPagatore>
+    <localitaPagatore>ALESSANDRIA</localitaPagatore>
+    <provinciaPagatore>AL</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiPagamento>
+    <codiceEsitoPagamento>0</codiceEsitoPagamento>
+    <importoTotalePagato>150.00</importoTotalePagato>
+    <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+    <CodiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</CodiceContestoPagamento>
+    <datiSingoloPagamento>
+      <singoloImportoPagato>150.00</singoloImportoPagato>
+      <esitoSingoloPagamento>OK</esitoSingoloPagamento>
+      <dataEsitoSingoloPagamento>2019-12-05</dataEsitoSingoloPagamento>
+      <identificativoUnivocoRiscossione>80861</identificativoUnivocoRiscossione>
+      <causaleVersamento>/RFB/00000000001123982/150.00/TXT/Ricarica Portafoglio CURIT</causaleVersamento>
+      <datiSpecificiRiscossione>9/00148250061</datiSpecificiRiscossione>
+    </datiSingoloPagamento>
+  </datiPagamento>
+</RT>
+
+[05-Dec-2019 17:44:13.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RT inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRT>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoDominio>02336340159</identificativoDominio>
+                                       <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</codiceContestoPagamento>
+  
+                                       <rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjAyMzM2MzQwMTU5PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPjBJTUxKMlUxVjQ3TjVaODwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTc6NDQ6MDgrMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+MDliNzI1ZGRlNjg2NmU0NDU1ZTg0YjhhYjlhYmE1M2Q5NzU8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMjMzNjM0MDE1OTwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz48aW5kaXJpenpvQmVuZWZpY2lhcmlvPlZpYSBzYW4gTWFydGlubzwvaW5kaXJpenpvQmVuZWZpY2lhcmlvPjxjaXZpY29CZW5lZmljaWFyaW8+OTE8L2Npdmljb0JlbmVmaWNpYXJpbz48Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+PGxvY2FsaXRhQmVuZWZpY2lhcmlvPkJpYXNzb25vPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPk1JPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MTUxMjE8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkFMRVNTQU5EUklBPC9sb2NhbGl0YVBhZ2F0b3JlPjxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+PG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPjxlLW1haWxQYWdhdG9yZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsUGFnYXRvcmU+PC9zb2dnZXR0b1BhZ2F0b3JlPjxkYXRpUGFnYW1lbnRvPjxjb2RpY2VFc2l0b1BhZ2FtZW50bz4wPC9jb2RpY2VFc2l0b1BhZ2FtZW50bz48aW1wb3J0b1RvdGFsZVBhZ2F0bz4xNTAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM5ODI8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PENvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjk3NGRjMTgzZWU5MTRkNjg4NGRkOWI1ZDMyMjE4ZmMzPC9Db2RpY2VDb250ZXN0b1BhZ2FtZW50bz48ZGF0aVNpbmdvbG9QYWdhbWVudG8+PHNpbmdvbG9JbXBvcnRvUGFnYXRvPjE1MC4wMDwvc2luZ29sb0ltcG9ydG9QYWdhdG8+PGVzaXRvU2luZ29sb1BhZ2FtZW50bz5PSzwvZXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxkYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjIwMTktMTItMDU8L2RhdGFFc2l0b1NpbmdvbG9QYWdhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1Jpc2Nvc3Npb25lPjgwODYxPC9pZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzk4Mi8xNTAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvMDAxNDgyNTAwNjE8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=</rt>
+                                    </ws:nodoInviaRT>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 17:44:13.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RT: <soapenvEnvelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenvBody>
+    <pptnodoInviaRTRisposta>
+      <nodoInviaRTRisposta>
+        <fault>
+          <faultCode>PPT_SINTASSI_XSD</faultCode>
+          <faultString>Errore di sintassi XSD.</faultString>
+          <id>NodoDeiPagamentiSPC</id>
+          <description>Errore validazione XML [RT/soggettoVersante/identificativoUnivocoVersante/tipoIdentificativoUnivoco] - cvc-length-valid: il valore "" con lunghezza = "0" non è valido come facet rispetto alla lunghezza "1" per il tipo "stTipoIdentificativoUnivocoPersFG".</description>
+        </fault>
+        <esito>KO</esito>
+      </nodoInviaRTRisposta>
+    </pptnodoInviaRTRisposta>
+  </soapenvBody>
+</soapenvEnvelope>
+
+[05-Dec-2019 17:44:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - =============================== RR ===============================
+[05-Dec-2019 17:44:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR in coda con ID locale 78 avente IUV 00000000001123982 e CCP 974dc183ee914d6884dd9b5d32218fc3 è stata inviata al NodoSPC.
+[05-Dec-2019 17:44:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - RR inviata: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RR xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/Revoche/">
+  <versioneOggetto>6.2.0</versioneOggetto>
+  <dominio>
+    <identificativoDominio>02336340159</identificativoDominio>
+    <identificativoStazioneRichiedente/>
+  </dominio>
+  <identificativoMessaggioRevoca/>
+  <dataOraMessaggioRevoca/>
+  <istitutoAttestante>
+    <identificativoUnivocoAttestante>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>97735020584</codiceIdentificativoUnivoco>
+    </identificativoUnivocoAttestante>
+    <denominazioneAttestante>Agenzia per l'Italia Digitale</denominazioneAttestante>
+    <codiceUnitOperAttestante>n/a</codiceUnitOperAttestante>
+    <denomUnitOperAttestante>n/a</denomUnitOperAttestante>
+    <indirizzoAttestante>Via Liszt</indirizzoAttestante>
+    <civicoAttestante>21</civicoAttestante>
+    <capAttestante>00144</capAttestante>
+    <localitaAttestante>Roma</localitaAttestante>
+    <provinciaAttestante>RM</provinciaAttestante>
+    <nazioneAttestante>IT</nazioneAttestante>
+  </istitutoAttestante>
+  <soggettoVersante>
+    <identificativoUnivocoVersante>
+      <tipoIdentificativoUnivoco/>
+      <codiceIdentificativoUnivoco/>
+    </identificativoUnivocoVersante>
+    <anagraficaVersante/>
+    <indirizzoVersante/>
+    <civicoVersante/>
+    <capVersante/>
+    <localitaVersante/>
+    <provinciaVersante/>
+    <nazioneVersante/>
+    <e-mailVersante>daniele.landro@agid.gov.it</e-mailVersante>
+  </soggettoVersante>
+  <soggettoPagatore>
+    <identificativoUnivocoPagatore>
+      <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+      <codiceIdentificativoUnivoco>00148250061</codiceIdentificativoUnivoco>
+    </identificativoUnivocoPagatore>
+    <anagraficaPagatore>RESTIANI SPA</anagraficaPagatore>
+    <indirizzoPagatore>VIA UMBERTO GIORDANO 5</indirizzoPagatore>
+    <civicoPagatore/>
+    <capPagatore>15121</capPagatore>
+    <localitaPagatore>ALESSANDRIA</localitaPagatore>
+    <provinciaPagatore>AL</provinciaPagatore>
+    <nazionePagatore>IT</nazionePagatore>
+    <e-mailPagatore>daniele.landro@agid.gov.it</e-mailPagatore>
+  </soggettoPagatore>
+  <datiRevoca>
+    <importoTotaleRevocato>0.00</importoTotaleRevocato>
+    <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+    <codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</codiceContestoPagamento>
+    <tipoRevoca>0</tipoRevoca>
+    <datiSingolaRevoca>
+      <singoloImportoRevocato>0.00</singoloImportoRevocato>
+      <identificativoUnivocoRiscossione/>
+      <causaleRevoca>Revoca 1 00000000001123982</causaleRevoca>
+      <datiAggiuntiviRevoca>Test1</datiAggiuntiviRevoca>
+    </datiSingolaRevoca>
+  </datiRevoca>
+</RR>
+
+[05-Dec-2019 17:44:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Richiesta RR inviata: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.pagamenti.telematici.gov/">
+                                 <soapenv:Header/>
+                                 <soapenv:Body>
+                                    <ws:nodoInviaRichiestaRevoca>
+                                       <identificativoPSP>AGID_02</identificativoPSP>
+                                       <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+                                       <identificativoCanale>97735020584_04</identificativoCanale>
+                                       <password>pwd_AgID</password>                                     
+                                       <identificativoDominio>02336340159</identificativoDominio>
+                                       <identificativoUnivocoVersamento>00000000001123982</identificativoUnivocoVersamento>
+                                       <codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3</codiceContestoPagamento>
+  
+                                       <rr>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlIgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS9SZXZvY2hlLyI+PHZlcnNpb25lT2dnZXR0bz42LjIuMDwvdmVyc2lvbmVPZ2dldHRvPjxkb21pbmlvPjxpZGVudGlmaWNhdGl2b0RvbWluaW8+MDIzMzYzNDAxNTk8L2lkZW50aWZpY2F0aXZvRG9taW5pbz48aWRlbnRpZmljYXRpdm9TdGF6aW9uZVJpY2hpZWRlbnRlLz48L2RvbWluaW8+PGlkZW50aWZpY2F0aXZvTWVzc2FnZ2lvUmV2b2NhLz48ZGF0YU9yYU1lc3NhZ2dpb1Jldm9jYS8+PGlzdGl0dXRvQXR0ZXN0YW50ZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvQXR0ZXN0YW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz5HPC90aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPjxjb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+OTc3MzUwMjA1ODQ8L2NvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz48L2lkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PGRlbm9taW5hemlvbmVBdHRlc3RhbnRlPkFnZW56aWEgcGVyIGwnSXRhbGlhIERpZ2l0YWxlPC9kZW5vbWluYXppb25lQXR0ZXN0YW50ZT48Y29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPm4vYTwvY29kaWNlVW5pdE9wZXJBdHRlc3RhbnRlPjxkZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2Rlbm9tVW5pdE9wZXJBdHRlc3RhbnRlPjxpbmRpcml6em9BdHRlc3RhbnRlPlZpYSBMaXN6dDwvaW5kaXJpenpvQXR0ZXN0YW50ZT48Y2l2aWNvQXR0ZXN0YW50ZT4yMTwvY2l2aWNvQXR0ZXN0YW50ZT48Y2FwQXR0ZXN0YW50ZT4wMDE0NDwvY2FwQXR0ZXN0YW50ZT48bG9jYWxpdGFBdHRlc3RhbnRlPlJvbWE8L2xvY2FsaXRhQXR0ZXN0YW50ZT48cHJvdmluY2lhQXR0ZXN0YW50ZT5STTwvcHJvdmluY2lhQXR0ZXN0YW50ZT48bmF6aW9uZUF0dGVzdGFudGU+SVQ8L25hemlvbmVBdHRlc3RhbnRlPjwvaXN0aXR1dG9BdHRlc3RhbnRlPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48aW5kaXJpenpvVmVyc2FudGUvPjxjaXZpY29WZXJzYW50ZS8+PGNhcFZlcnNhbnRlLz48bG9jYWxpdGFWZXJzYW50ZS8+PHByb3ZpbmNpYVZlcnNhbnRlLz48bmF6aW9uZVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2l2aWNvUGFnYXRvcmUvPjxjYXBQYWdhdG9yZT4xNTEyMTwvY2FwUGFnYXRvcmU+PGxvY2FsaXRhUGFnYXRvcmU+QUxFU1NBTkRSSUE8L2xvY2FsaXRhUGFnYXRvcmU+PHByb3ZpbmNpYVBhZ2F0b3JlPkFMPC9wcm92aW5jaWFQYWdhdG9yZT48bmF6aW9uZVBhZ2F0b3JlPklUPC9uYXppb25lUGFnYXRvcmU+PGUtbWFpbFBhZ2F0b3JlPmRhbmllbGUubGFuZHJvQGFnaWQuZ292Lml0PC9lLW1haWxQYWdhdG9yZT48L3NvZ2dldHRvUGFnYXRvcmU+PGRhdGlSZXZvY2E+PGltcG9ydG9Ub3RhbGVSZXZvY2F0bz4wLjAwPC9pbXBvcnRvVG90YWxlUmV2b2NhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM5ODI8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PGNvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjk3NGRjMTgzZWU5MTRkNjg4NGRkOWI1ZDMyMjE4ZmMzPC9jb2RpY2VDb250ZXN0b1BhZ2FtZW50bz48dGlwb1Jldm9jYT4wPC90aXBvUmV2b2NhPjxkYXRpU2luZ29sYVJldm9jYT48c2luZ29sb0ltcG9ydG9SZXZvY2F0bz4wLjAwPC9zaW5nb2xvSW1wb3J0b1Jldm9jYXRvPjxpZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZS8+PGNhdXNhbGVSZXZvY2E+UmV2b2NhIDEgMDAwMDAwMDAwMDExMjM5ODI8L2NhdXNhbGVSZXZvY2E+PGRhdGlBZ2dpdW50aXZpUmV2b2NhPlRlc3QxPC9kYXRpQWdnaXVudGl2aVJldm9jYT48L2RhdGlTaW5nb2xhUmV2b2NhPjwvZGF0aVJldm9jYT48L1JSPgo=</rr>
+                                    </ws:nodoInviaRichiestaRevoca>
+                                 </soapenv:Body>
+                              </soapenv:Envelope>
+
+[05-Dec-2019 17:44:16.000000] [pagopatest.agid.gov.it/cdi/serverPSP/PSPServerCodaRTPagamentoPSP.php] : [INFO] - Esito RR: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:tns="http://PuntoAccessoPSP.spcoop.gov.it/servizi/PagamentiTelematiciPspNodo" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Body>
+    <ppt:nodoInviaRichiestaRevocaRisposta>
+      <fault>
+        <faultCode>PPT_SINTASSI_EXTRAXSD</faultCode>
+        <faultString>Errore di sintassi extra XSD.</faultString>
+        <id>NodoDeiPagamentiSPC</id>
+        <description>Error while parsing &lt;ws:nodoInviaRT xmlns:ws="http://ws.pagamenti.telematici.gov/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+                                               &lt;identificativoIntermediarioPSP>97735020584&lt;/identificativoIntermediarioPSP>
+                                               &lt;identificativoCanale>97735020584_04&lt;/identificativoCanale>
+                                               &lt;password>pwd_AgID&lt;/password>
+                                               &lt;identificativoPSP>AGID_02&lt;/identificativoPSP>
+                                               &lt;identificativoDominio>02336340159&lt;/identificativoDominio>
+                                               &lt;identificativoUnivocoVersamento>00000000001123982&lt;/identificativoUnivocoVersamento>
+                                               &lt;codiceContestoPagamento>974dc183ee914d6884dd9b5d32218fc3&lt;/codiceContestoPagamento>
+                                               &lt;rt>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8UlQgeG1sbnM9Imh0dHA6Ly93d3cuZGlnaXRwYS5nb3YuaXQvc2NoZW1hcy8yMDExL1BhZ2FtZW50aS8iPjx2ZXJzaW9uZU9nZ2V0dG8+Ni4yLjA8L3ZlcnNpb25lT2dnZXR0bz48ZG9taW5pbz48aWRlbnRpZmljYXRpdm9Eb21pbmlvPjAyMzM2MzQwMTU5PC9pZGVudGlmaWNhdGl2b0RvbWluaW8+PC9kb21pbmlvPjxpZGVudGlmaWNhdGl2b01lc3NhZ2dpb1JpY2V2dXRhPjBJTUxKMlUxVjQ3TjVaODwvaWRlbnRpZmljYXRpdm9NZXNzYWdnaW9SaWNldnV0YT48ZGF0YU9yYU1lc3NhZ2dpb1JpY2V2dXRhPjIwMTktMTItMDVUMTc6NDQ6MDgrMDE6MDA8L2RhdGFPcmFNZXNzYWdnaW9SaWNldnV0YT48cmlmZXJpbWVudG9NZXNzYWdnaW9SaWNoaWVzdGE+MDliNzI1ZGRlNjg2NmU0NDU1ZTg0YjhhYjlhYmE1M2Q5NzU8L3JpZmVyaW1lbnRvTWVzc2FnZ2lvUmljaGllc3RhPjxyaWZlcmltZW50b0RhdGFSaWNoaWVzdGE+MjAxOS0xMi0wNTwvcmlmZXJpbWVudG9EYXRhUmljaGllc3RhPjxpc3RpdHV0b0F0dGVzdGFudGU+PGlkZW50aWZpY2F0aXZvVW5pdm9jb0F0dGVzdGFudGU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjk3NzM1MDIwNTg0PC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29BdHRlc3RhbnRlPjxkZW5vbWluYXppb25lQXR0ZXN0YW50ZT5BZ2VuemlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZTwvZGVub21pbmF6aW9uZUF0dGVzdGFudGU+PGNvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT5uL2E8L2NvZGljZVVuaXRPcGVyQXR0ZXN0YW50ZT48ZGVub21Vbml0T3BlckF0dGVzdGFudGU+bi9hPC9kZW5vbVVuaXRPcGVyQXR0ZXN0YW50ZT48aW5kaXJpenpvQXR0ZXN0YW50ZT5WaWEgTGlzenQ8L2luZGlyaXp6b0F0dGVzdGFudGU+PGNpdmljb0F0dGVzdGFudGU+MjE8L2Npdmljb0F0dGVzdGFudGU+PGNhcEF0dGVzdGFudGU+MDAxNDQ8L2NhcEF0dGVzdGFudGU+PGxvY2FsaXRhQXR0ZXN0YW50ZT5Sb21hPC9sb2NhbGl0YUF0dGVzdGFudGU+PHByb3ZpbmNpYUF0dGVzdGFudGU+Uk08L3Byb3ZpbmNpYUF0dGVzdGFudGU+PG5hemlvbmVBdHRlc3RhbnRlPklUPC9uYXppb25lQXR0ZXN0YW50ZT48L2lzdGl0dXRvQXR0ZXN0YW50ZT48ZW50ZUJlbmVmaWNpYXJpbz48aWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjx0aXBvSWRlbnRpZmljYXRpdm9Vbml2b2NvPkc8L3RpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jbz4wMjMzNjM0MDE1OTwvY29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjwvaWRlbnRpZmljYXRpdm9Vbml2b2NvQmVuZWZpY2lhcmlvPjxkZW5vbWluYXppb25lQmVuZWZpY2lhcmlvPkNvbXVuZSBkaSBCaWFzc29ubzwvZGVub21pbmF6aW9uZUJlbmVmaWNpYXJpbz48aW5kaXJpenpvQmVuZWZpY2lhcmlvPlZpYSBzYW4gTWFydGlubzwvaW5kaXJpenpvQmVuZWZpY2lhcmlvPjxjaXZpY29CZW5lZmljaWFyaW8+OTE8L2Npdmljb0JlbmVmaWNpYXJpbz48Y2FwQmVuZWZpY2lhcmlvPjIwODUzPC9jYXBCZW5lZmljaWFyaW8+PGxvY2FsaXRhQmVuZWZpY2lhcmlvPkJpYXNzb25vPC9sb2NhbGl0YUJlbmVmaWNpYXJpbz48cHJvdmluY2lhQmVuZWZpY2lhcmlvPk1JPC9wcm92aW5jaWFCZW5lZmljaWFyaW8+PG5hemlvbmVCZW5lZmljaWFyaW8+SVQ8L25hemlvbmVCZW5lZmljaWFyaW8+PC9lbnRlQmVuZWZpY2lhcmlvPjxzb2dnZXR0b1ZlcnNhbnRlPjxpZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48dGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jby8+PGNvZGljZUlkZW50aWZpY2F0aXZvVW5pdm9jby8+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29WZXJzYW50ZT48YW5hZ3JhZmljYVZlcnNhbnRlLz48ZS1tYWlsVmVyc2FudGU+ZGFuaWVsZS5sYW5kcm9AYWdpZC5nb3YuaXQ8L2UtbWFpbFZlcnNhbnRlPjwvc29nZ2V0dG9WZXJzYW50ZT48c29nZ2V0dG9QYWdhdG9yZT48aWRlbnRpZmljYXRpdm9Vbml2b2NvUGFnYXRvcmU+PHRpcG9JZGVudGlmaWNhdGl2b1VuaXZvY28+RzwvdGlwb0lkZW50aWZpY2F0aXZvVW5pdm9jbz48Y29kaWNlSWRlbnRpZmljYXRpdm9Vbml2b2NvPjAwMTQ4MjUwMDYxPC9jb2RpY2VJZGVudGlmaWNhdGl2b1VuaXZvY28+PC9pZGVudGlmaWNhdGl2b1VuaXZvY29QYWdhdG9yZT48YW5hZ3JhZmljYVBhZ2F0b3JlPlJFU1RJQU5JIFNQQTwvYW5hZ3JhZmljYVBhZ2F0b3JlPjxpbmRpcml6em9QYWdhdG9yZT5WSUEgVU1CRVJUTyBHSU9SREFOTyA1PC9pbmRpcml6em9QYWdhdG9yZT48Y2FwUGFnYXRvcmU+MTUxMjE8L2NhcFBhZ2F0b3JlPjxsb2NhbGl0YVBhZ2F0b3JlPkFMRVNTQU5EUklBPC9sb2NhbGl0YVBhZ2F0b3JlPjxwcm92aW5jaWFQYWdhdG9yZT5BTDwvcHJvdmluY2lhUGFnYXRvcmU+PG5hemlvbmVQYWdhdG9yZT5JVDwvbmF6aW9uZVBhZ2F0b3JlPjxlLW1haWxQYWdhdG9yZT5kYW5pZWxlLmxhbmRyb0BhZ2lkLmdvdi5pdDwvZS1tYWlsUGFnYXRvcmU+PC9zb2dnZXR0b1BhZ2F0b3JlPjxkYXRpUGFnYW1lbnRvPjxjb2RpY2VFc2l0b1BhZ2FtZW50bz4wPC9jb2RpY2VFc2l0b1BhZ2FtZW50bz48aW1wb3J0b1RvdGFsZVBhZ2F0bz4xNTAuMDA8L2ltcG9ydG9Ub3RhbGVQYWdhdG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+MDAwMDAwMDAwMDExMjM5ODI8L2lkZW50aWZpY2F0aXZvVW5pdm9jb1ZlcnNhbWVudG8+PENvZGljZUNvbnRlc3RvUGFnYW1lbnRvPjk3NGRjMTgzZWU5MTRkNjg4NGRkOWI1ZDMyMjE4ZmMzPC9Db2RpY2VDb250ZXN0b1BhZ2FtZW50bz48ZGF0aVNpbmdvbG9QYWdhbWVudG8+PHNpbmdvbG9JbXBvcnRvUGFnYXRvPjE1MC4wMDwvc2luZ29sb0ltcG9ydG9QYWdhdG8+PGVzaXRvU2luZ29sb1BhZ2FtZW50bz5PSzwvZXNpdG9TaW5nb2xvUGFnYW1lbnRvPjxkYXRhRXNpdG9TaW5nb2xvUGFnYW1lbnRvPjIwMTktMTItMDU8L2RhdGFFc2l0b1NpbmdvbG9QYWdhbWVudG8+PGlkZW50aWZpY2F0aXZvVW5pdm9jb1Jpc2Nvc3Npb25lPjgwODYxPC9pZGVudGlmaWNhdGl2b1VuaXZvY29SaXNjb3NzaW9uZT48Y2F1c2FsZVZlcnNhbWVudG8+L1JGQi8wMDAwMDAwMDAwMTEyMzk4Mi8xNTAuMDAvVFhUL1JpY2FyaWNhIFBvcnRhZm9nbGlvIENVUklUPC9jYXVzYWxlVmVyc2FtZW50bz48ZGF0aVNwZWNpZmljaVJpc2Nvc3Npb25lPjkvMDAxNDgyNTAwNjE8L2RhdGlTcGVjaWZpY2lSaXNjb3NzaW9uZT48L2RhdGlTaW5nb2xvUGFnYW1lbnRvPjwvZGF0aVBhZ2FtZW50bz48L1JUPgo=&lt;/rt>
+                                            &lt;/ws:nodoInviaRT>: parser error "'identificativoPSP' expected but identificativoIntermediarioPSP found" while parsing /{http://ws.pagamenti.telematici.gov/}nodoInviaRT/identificativoIntermediarioPSPidentificativoCanalepasswordidentificativoPSPidentificativoDominioidentificativoUnivocoVersamentocodiceContestoPagamentort
+          ^</description>
+        </fault>
+        <esito>KO</esito>
+      </ppt:nodoInviaRichiestaRevocaRisposta>
+    </soapenv:Body>
+  </soapenv:Envelope>
+

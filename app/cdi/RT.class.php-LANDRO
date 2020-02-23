@@ -1,0 +1,105 @@
+<?php
+
+require_once "Helper.php";
+
+    class RT {
+
+        public function getXML($post_params) {
+            $xml = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><RT></RT>');
+
+            $xml->addAttribute("xmlns", "http://www.digitpa.gov.it/schemas/2011/Pagamenti/");
+            $xml->addChild("versioneOggetto", $post_params["versioneOggetto"]);
+            $dominio = $xml->addChild("dominio");
+            $dominio->addChild("identificativoDominio", $post_params["identificativoDominio"]);
+            $xml->addChild("identificativoMessaggioRicevuta", $post_params["identificativoMessaggioRicevuta"]);
+            $xml->addChild("dataOraMessaggioRicevuta", $post_params["dataOraMessaggioRicevuta"]);
+            $xml->addChild("riferimentoMessaggioRichiesta", $post_params["riferimentoMessaggioRichiesta"]);
+            $xml->addChild("riferimentoDataRichiesta", $post_params["riferimentoDataRichiesta"]);
+
+            //istitutoAttestante
+            $istitutoAttestante = $xml->addChild("istitutoAttestante");
+            $identificativoUnivocoAttestante = $istitutoAttestante->addChild("identificativoUnivocoAttestante");
+            $identificativoUnivocoAttestante->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoAttestante"]);
+            $identificativoUnivocoAttestante->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoAttestante"]);
+            $istitutoAttestante->addChild("denominazioneAttestante", $post_params["denominazioneAttestante"]);
+            $istitutoAttestante->addChild("codiceUnitOperAttestante", $post_params["codiceUnitOperAttestante"]);
+            if (!IsNullOrEmptyString($post_params["denomUnitOperAttestante"])) $istitutoAttestante->addChild("denomUnitOperAttestante", $post_params["denomUnitOperAttestante"]);
+            if (!IsNullOrEmptyString($post_params["indirizzoAttestante"])) $istitutoAttestante->addChild("indirizzoAttestante", $post_params["indirizzoAttestante"]);
+            if (!IsNullOrEmptyString($post_params["civicoAttestante"])) $istitutoAttestante->addChild("civicoAttestante", $post_params["civicoAttestante"]);
+            if (!IsNullOrEmptyString($post_params["capAttestante"])) $istitutoAttestante->addChild("capAttestante", $post_params["capAttestante"]);
+            if (!IsNullOrEmptyString($post_params["localitaAttestante"])) $istitutoAttestante->addChild("localitaAttestante", $post_params["localitaAttestante"]);
+            if (!IsNullOrEmptyString($post_params["provinciaAttestante"])) $istitutoAttestante->addChild("provinciaAttestante", $post_params["provinciaAttestante"]);
+            if (!IsNullOrEmptyString($post_params["nazioneAttestante"])) $istitutoAttestante->addChild("nazioneAttestante", $post_params["nazioneAttestante"]);
+
+            //enteBeneficiario
+            $enteBeneficiario = $xml->addChild("enteBeneficiario");
+            $identificativoUnivocoBeneficiario = $enteBeneficiario->addChild("identificativoUnivocoBeneficiario");
+            $identificativoUnivocoBeneficiario->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoBeneficiario"]);
+            $identificativoUnivocoBeneficiario->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoBeneficiario"]);
+            $enteBeneficiario->addChild("denominazioneBeneficiario", $post_params["denominazioneBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["indirizzoBeneficiario"])) $enteBeneficiario->addChild("indirizzoBeneficiario", $post_params["indirizzoBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["civicoBeneficiario"])) $enteBeneficiario->addChild("civicoBeneficiario", $post_params["civicoBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["capBeneficiario"])) $enteBeneficiario->addChild("capBeneficiario", $post_params["capBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["localitaBeneficiario"])) $enteBeneficiario->addChild("localitaBeneficiario", $post_params["localitaBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["provinciaBeneficiario"])) $enteBeneficiario->addChild("provinciaBeneficiario", $post_params["provinciaBeneficiario"]);
+            if (!IsNullOrEmptyString($post_params["nazioneBeneficiario"])) $enteBeneficiario->addChild("nazioneBeneficiario", $post_params["nazioneBeneficiario"]);
+
+            //Versante
+            $soggettoVersante = $xml->addChild("soggettoVersante");
+            $identificativoUnivocoVersante = $soggettoVersante->addChild("identificativoUnivocoVersante");
+            $identificativoUnivocoVersante->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoVersante"]);
+            $identificativoUnivocoVersante->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoVersante"]);
+            $soggettoVersante->addChild("anagraficaVersante", $post_params["anagraficaVersante"]);
+            if (!IsNullOrEmptyString($post_params["indirizzoVersante"])) $soggettoVersante->addChild("indirizzoVersante", $post_params["indirizzoVersante"]);
+            if (!IsNullOrEmptyString($post_params["civicoVersante"])) $soggettoVersante->addChild("civicoVersante", $post_params["civicoVersante"]);
+            if (!IsNullOrEmptyString($post_params["capVersante"])) $soggettoVersante->addChild("capVersante", $post_params["capVersante"]);
+            if (!IsNullOrEmptyString($post_params["localitaVersante"])) $soggettoVersante->addChild("localitaVersante", $post_params["localitaVersante"]);
+            if (!IsNullOrEmptyString($post_params["provinciaVersante"]))  $soggettoVersante->addChild("provinciaVersante", $post_params["provinciaVersante"]);
+            if (!IsNullOrEmptyString($post_params["nazioneVersante"])) $soggettoVersante->addChild("nazioneVersante", $post_params["nazioneVersante"]);
+            if (!IsNullOrEmptyString($post_params["e-mailVersante"]))  $soggettoVersante->addChild("e-mailVersante", $post_params["e-mailVersante"]);
+
+            //Pagatore
+            $soggettoPagatore = $xml->addChild("soggettoPagatore");
+            $identificativoUnivocoPagatore = $soggettoPagatore->addChild("identificativoUnivocoPagatore");
+            $identificativoUnivocoPagatore->addChild("tipoIdentificativoUnivoco", $post_params["tipoIdentificativoUnivocoPagatore"]);
+            $identificativoUnivocoPagatore->addChild("codiceIdentificativoUnivoco", $post_params["codiceIdentificativoUnivocoPagatore"]);
+            $soggettoPagatore->addChild("anagraficaPagatore", $post_params["anagraficaPagatore"]);
+            if (!IsNullOrEmptyString($post_params["indirizzoPagatore"])) $soggettoPagatore->addChild("indirizzoPagatore", $post_params["indirizzoPagatore"]);
+            if (!IsNullOrEmptyString($post_params["civicoPagatore"])) $soggettoPagatore->addChild("civicoPagatore", $post_params["civicoPagatore"]);
+            if (!IsNullOrEmptyString($post_params["capPagatore"])) $soggettoPagatore->addChild("capPagatore", $post_params["capPagatore"]);
+            if (!IsNullOrEmptyString($post_params["localitaPagatore"])) $soggettoPagatore->addChild("localitaPagatore", $post_params["localitaPagatore"]);
+            if (!IsNullOrEmptyString($post_params["provinciaPagatore"])) $soggettoPagatore->addChild("provinciaPagatore", $post_params["provinciaPagatore"]);
+            if (!IsNullOrEmptyString($post_params["nazionePagatore"])) $soggettoPagatore->addChild("nazionePagatore", $post_params["nazionePagatore"]);
+            if (!IsNullOrEmptyString($post_params["e-mailPagatore"])) $soggettoPagatore->addChild("e-mailPagatore", $post_params["e-mailPagatore"]);
+
+            //Pagamento
+            $numPagamenti=$post_params["dropdownNumPagamenti"];
+
+            $datiPagamento = $xml->addChild("datiPagamento");
+            $datiPagamento->addChild("codiceEsitoPagamento", $post_params["codiceEsitoPagamento"]);
+            $datiPagamento->addChild("importoTotalePagato",  sprintf('%0.2f', (float) $post_params["importoTotalePagato"]));
+            $datiPagamento->addChild("identificativoUnivocoVersamento", $post_params["identificativoUnivocoVersamento"]);
+            $datiPagamento->addChild("CodiceContestoPagamento", $post_params["codiceContestoPagamento"]);
+
+            //singoli pagamenti
+            for ($i=1; $i<=$numPagamenti; $i++) {
+                $datiSingoloPagamento=$datiPagamento->addChild("datiSingoloPagamento");
+
+                $datiSingoloPagamento->addChild("singoloImportoPagato",  sprintf('%0.2f', (float) $post_params["singoloImportoPagato" . $i]));
+                $datiSingoloPagamento->addChild("esitoSingoloPagamento", $post_params["esitoSingoloPagamento" . $i]);
+                $datiSingoloPagamento->addChild("dataEsitoSingoloPagamento", $post_params["dataEsitoSingoloPagamento" . $i]);
+                $datiSingoloPagamento->addChild("identificativoUnivocoRiscossione", $post_params["identificativoUnivocoRiscossione" . $i]);
+                $datiSingoloPagamento->addChild("causaleVersamento", $post_params["causaleVersamento" . $i]);
+                $datiSingoloPagamento->addChild("datiSpecificiRiscossione", $post_params["datiSpecificiRiscossione" . $i]);
+
+            }
+
+            return $xml->asXML();
+        }
+
+        private function IsNullOrEmptyString($str){
+            return (!isset($str) || trim($str) === '');
+        }
+
+
+    }

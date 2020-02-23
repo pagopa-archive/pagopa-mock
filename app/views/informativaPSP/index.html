@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <title>AgID pagoPA Simulator</title>
+
+ 
+  <script type="text/javascript" src="data.json"> </script>
+ <!-- <script type="text/javascript" src="informativa.json"></script> -->
+
+ 
+  <script src="./node_modules/vis/dist/vis.js"></script>
+  <link href="./node_modules/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+   <link href="./node_modules/vis/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+  
+  
+  <!-- Theme Bootstrap Italia -->
+  <link rel="stylesheet" href="./theme/css/bootstrap-italia.min.css">
+  <link rel="stylesheet" href="./theme/css/italia-icon-font.css">
+  <script src="./theme/js/bootstrap-italia.bundle.min.js"></script>
+
+   <!-- Custom styles for this template -->
+    <link href="./sidebar.css" rel="stylesheet">
+    <script src="./sidebar.js"></script>
+	 <link href="./network.css" rel="stylesheet">
+
+</head>
+<body>
+    
+      <header class="bg-primary">
+      <div class="container text-white pt-4 pb-4">
+        <h1 class="display-1 display-1 mb-0">InformativaPSP Viewer</h1>
+        <p class="m-0 ml-1">Visualizzatore dell'informativa PSP</p>
+        <p class="ml-1 mb-3">WIP</p>
+      </div>
+    </header>
+      
+      <div id="mySidenav" class="sidenav">
+          <div style="background-image: url(img/1.jpg); height: 200px;">
+          <div class="container text-white">
+              <div class="col"></div>
+              <div class="col"><img style="padding-top: 20px; width: 100px;" src="img/img_avatar.png"></div>
+              <p>John Doe</p>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="42282d2a2c6c262d2702262d276c282d2a2c">[email&#160;protected]</a></p>
+          </div>
+          </div>
+  <a href="#"><i class="it-app"></i>Informazioni</a>
+  <hr />
+  <a href="#"><i class="it-calendar"></i>Eventi</a>
+  <a href="#"><i class="it-comment"></i>Contatti</a>
+  <a href="#"><i class="it-copy"></i>Documenti</a>
+          <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+		  <ul>
+		    <li><a href="/user/view"><span class="tab">Profile</span></a></li>
+		  </ul>
+</div>
+
+      <div class="container">
+      
+<!-- Usa Qualsiasi elemento per aprire la Sidebar -->
+<!-- <span onclick="openNav()"><a href="#"><h3>Menù</h3></a></span> -->
+
+<!-- Aggiungi il contenuto della pagina dentro questo div se vuoi che venga spostato verso destra all'apertura della Sidebar. -->
+<div id="main">
+  Il grafico mostra le relazioni tra PSP ( Quadrati rossi ) ed i canali (elisse blue ) descritti all'interno dell'informativa PSP. Selezionando un elemento, viene visualizzato il dettaglio.
+</div>
+<div id="mynetwork" class ="network"> 
+</div>
+
+          </div>
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Italia Bundle JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./theme/js/bootstrap-italia.bundle.min.js"></script>
+     
+
+<script type="text/javascript">
+
+  
+  // create an array with nodes
+  var nodes = new vis.DataSet();
+  
+   // create an array with edges
+  var edges = new vis.DataSet();
+  
+// test include 
+
+  
+  var readJson = jQuery.getJSON("./informativa.json")
+				.done(function(data){
+				 var informativaPSP = data.informativaPSP
+				  informativaPSP.forEach(function(item,index){
+					var nodePSP = {};
+					nodePSP.id=item.identificativoPSP
+					nodePSP.label=item.ragioneSociale
+					nodePSP.color = "#ff0000"		
+					nodePSP.shape = "square"
+					nodes.update(nodePSP);
+					
+					if (Array.isArray(item.listaInformativaDetail.informativaDetail) ) { 
+					
+						item.listaInformativaDetail.informativaDetail.forEach(function(item1,index1){
+															var newChannel = {};
+															newChannel.id =item1.identificativoCanale;
+															newChannel.label = item1.identificazioneServizio.nomeServizio;
+															//console.log('New Channel : ',newChannel )
+															nodes.update(newChannel);
+															var newEdge = {from:item.identificativoPSP ,to:newChannel.id};
+															//console.log(newEdge);
+															edges.update(newEdge);
+						})
+					} else {
+					//console.log('item: ', item);
+						var newChannel = {};
+															newChannel.id =item.listaInformativaDetail.informativaDetail.identificativoCanale;
+															newChannel.label = item.listaInformativaDetail.informativaDetail.identificazioneServizio.nomeServizio;
+															nodes.update(newChannel);
+                       var newEdge = {from:item.identificativoPSP ,to:newChannel.id};	
+					 //  console.log(newEdge);
+						edges.update(newEdge);					   
+					}
+ });
+  
+				})
+  
+
+  
+
+
+
+  
+ 
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {};
+  var network = new vis.Network(container, data, options);
+  
+  
+   network.on("selectNode", function (params) {
+        console.log('selectNode Event:', params);
+		openNav();
+    });
+	
+</script>
+
+
+</body>
+</html>

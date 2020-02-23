@@ -1,0 +1,29 @@
+[07-Oct-2019 14:16:46.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[07-Oct-2019 14:16:46.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === SERVER PA Pagamento PSP paaAttivaRPT REQUEST: 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ppt="http://ws.pagamenti.telematici.gov/" xmlns:pay_i="http://www.digitpa.gov.it/schemas/2011/Pagamenti/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ppthead="http://ws.pagamenti.telematici.gov/ppthead">
+  <soapenv:Header>
+    <ppthead:intestazionePPT>
+      <identificativoIntermediarioPA>97735020584</identificativoIntermediarioPA>
+      <identificativoStazioneIntermediarioPA>97735020584_01</identificativoStazioneIntermediarioPA>
+      <identificativoDominio>77777777777</identificativoDominio>
+      <identificativoUnivocoVersamento>192550497049481</identificativoUnivocoVersamento>
+      <codiceContestoPagamento>PSP_05258</codiceContestoPagamento>
+    </ppthead:intestazionePPT>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ppt:paaAttivaRPT>
+      <identificativoPSP>AGID_02</identificativoPSP>
+      <datiPagamentoPSP>
+        <importoSingoloVersamento>11.00</importoSingoloVersamento>
+      </datiPagamentoPSP>
+      <identificativoIntermediarioPSP>97735020584</identificativoIntermediarioPSP>
+      <identificativoCanalePSP>97735020584_05</identificativoCanalePSP>
+    </ppt:paaAttivaRPT>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+[07-Oct-2019 14:16:46.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =================================================================
+[07-Oct-2019 14:16:46.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - === Risposta del server alla RPT (paaAttivaRPT): 
+{"paaAttivaRPTRisposta":{"esito":"OK","datiPagamentoPA":{"importoSingoloVersamento":"11.00","ibanAccredito":"IT30N0103076271000001823603","enteBeneficiario":{"identificativoUnivocoBeneficiario":{"enc_type":301,"enc_value":{"enc_type":301,"enc_value":[{"enc_type":101,"enc_value":"G","enc_name":"tipoIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},{"enc_type":101,"enc_value":"00133880252","enc_name":"codiceIdentificativoUnivoco","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}],"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"enc_name":"identificativoUnivocoBeneficiario","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denominazioneBeneficiario":{"enc_type":101,"enc_value":"Comune di Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"codiceUnitOperBeneficiario":{"enc_type":101,"enc_value":1031,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"denomUnitOperBeneficiario":{"enc_type":101,"enc_value":"Ragioneria","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"indirizzoBeneficiario":{"enc_type":101,"enc_value":"Piazzetta delle Biade","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"civicoBeneficiario":{"enc_type":101,"enc_value":1,"enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"capBeneficiario":{"enc_type":101,"enc_value":"32032","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"localitaBeneficiario":{"enc_type":101,"enc_value":"Feltre","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"provinciaBeneficiario":{"enc_type":101,"enc_value":"BL","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"},"nazioneBeneficiario":{"enc_type":101,"enc_value":"IT","enc_namens":"http:\/\/www.digitpa.gov.it\/schemas\/2011\/Pagamenti\/"}},"causaleVersamento":"\/RFB\/990000000007745\/0.10"}}}
+[07-Oct-2019 14:16:46.000000] [pagopatest.agid.gov.it/cdi/serverPA/soapServerPAPagamentoPSP.php] : [INFO] - =============== DB ===============
+MYSQL - Esito inserimento paaAttivaRPT: 1 record.

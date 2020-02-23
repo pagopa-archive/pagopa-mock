@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informativaPSP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:noNamespaceSchemaLocation="CatalogoDatiInformativi_1_0_12.xsd">
+    <identificativoFlusso>WISP_2_0_20191011</identificativoFlusso>
+    <identificativoPSP>IFSPIT21</identificativoPSP>
+    <ragioneSociale>ICONTO srl</ragioneSociale>
+    <informativaMaster>
+        <dataPubblicazione>2019-10-11T00:00:00</dataPubblicazione>
+        <dataInizioValidita>2019-10-14T00:00:00</dataInizioValidita>
+        <urlInformazioniPSP>http://www.oxygenxml.com/</urlInformazioniPSP>
+        <stornoPagamento>0</stornoPagamento>
+        <marcaBolloDigitale>1</marcaBolloDigitale>
+        <logoPSP>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</logoPSP>
+    </informativaMaster>
+    <listaInformativaDetail>
+        <informativaDetail>
+            <identificativoIntermediario>14847241008</identificativoIntermediario>
+            <identificativoCanale>14847241008_01</identificativoCanale>
+            <tipoVersamento>BBT</tipoVersamento>
+            <modelloPagamento>2</modelloPagamento>
+            <priorita>1</priorita>
+            <canaleApp>0</canaleApp>
+            <servizioAlleImprese>0</servizioAlleImprese>
+            <identificazioneServizio>
+                <nomeServizio>Pagamento differito/Bonifico SCT</nomeServizio>
+                <logoServizio>iVBORw0KGgoAAAANSUhEUgAAAZAAAACACAYAAAAlHj/jAAAAB3RJTUUH4goKDjsjJh5brAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAzZJREFUeNrt3d1uokAAgNG62fd/49auFyTE1aqfP9ORcxJvGgNUcT4GEtjt//kAgBv9Gb0BAMxJQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQE7vD19fXx+fk5ejN4gf1+P3oTfp2/ozegWr7M3W43elPYoMP+t7zsg2zVlDOQ9ZGAowJebb3Picd2+K7/N+0MZOFLZRT7Hls33QzEjAPgd5guIIejvvWL11rO+1/zvkevd/T/9Kx1w6x2+wn3YBfQGc0+CBPOQA78aBnNDBgmDciBHy/AWNMGBICxBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIpn+kLWOceoyMOyTDtggIiVgAUwZkffRrIAMYY8qAiAbAeC6iA5AICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAyZQPlJqNJygC78gM5AXW0VjHBGBmZiAvYuYBvBszEAASM5ANOHUNZvnbtTOjW98PvL/d3kn5t/Xoi/ciAqwJCACJayAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACTuhQVv4NwNJdx2hmcyA4E3cC4U7lTEMwkIDHYY5JfXPU5F5PC3RywbTnEzRaZwajf96fTMte+/Z/e/dXnHt9K/dpnlszpezrPXyTaZgTCFWwa5VxwTlUH30kzgkQP58bpujS1cQ0CYxmEQXL8etcxHb+Po7Ti3rEsRERJuJSBs3npgPTeIrh+mdWmwP37PpWsczziFdG47f1rXDKeyls/wUdeNuI9rILCyHqCWC9D3zniOl7mYYcCGnwgIAIlTWAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJA8g2Dtt/v+5oegAAAAABJRU5ErkJggg==</logoServizio>
+            </identificazioneServizio>            
+            <listaInformazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>IT</codiceLingua>
+                    <descrizioneServizio>Consente di disporre Bonifici verso le Amministrazioni aderenti a pagoPA</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>EN</codiceLingua>
+                    <descrizioneServizio>For sending bank transfers to Public Authorities through pagoPA.</descrizioneServizio>
+                    <disponibilitaServizio>Service hours. Service is guaranteed Mon – Fri 08:00 – 21:00, Sat 08:00 – 14:00; the service may not be available outside these hours.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>DE</codiceLingua>
+                    <descrizioneServizio>Ermöglicht, Überweisungen zu Gunsten der registrierten Verwaltungen durchzuführen</descrizioneServizio>
+                    <disponibilitaServizio>Servicegarantie zu folgenden Zeiten: MO-FR 8-21 Uhr, SA 8-14 Uhr. Außerhalb dieser Zeiten ist der Dienst möglicherweise nicht verfügbar.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>FR</codiceLingua>
+                    <descrizioneServizio>Permet d'effectuer des virements bancaires vers les administrations adhérant à pagoPA</descrizioneServizio>
+                    <disponibilitaServizio>Le service est délivré du lundi au vendredi de 8h à 21h, le samedi de 8h à 14h. En dehors de ces horaires le service n'est pas assuré</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>SL</codiceLingua>
+                    <descrizioneServizio>Consente di disporre Bonifici verso le Amministrazioni aderenti a pagoPA</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+            </listaInformazioniServizio>
+            <costiServizio>
+                <tipoCostoTransazione>1</tipoCostoTransazione>
+                <tipoCommissione>0</tipoCommissione>
+                <tipoCanaleServizio>1</tipoCanaleServizio>
+                <plateaErogazioneServizio>0</plateaErogazioneServizio>
+                    <listaFasceCostoServizio>
+                        <fasciaCostoServizio>
+                            <importoMassimoFascia>99999999.99</importoMassimoFascia>
+                            <costoFisso>0.00</costoFisso>
+                            <valoreCommissione>0.80</valoreCommissione>
+                        </fasciaCostoServizio>
+                    </listaFasceCostoServizio>
+            </costiServizio>
+        </informativaDetail>
+        <informativaDetail>
+            <identificativoIntermediario>14847241008</identificativoIntermediario>
+            <identificativoCanale>14847241008_02</identificativoCanale>
+            <tipoVersamento>BBT</tipoVersamento>
+            <modelloPagamento>1</modelloPagamento>
+            <priorita>1</priorita>
+            <canaleApp>0</canaleApp>
+            <servizioAlleImprese>0</servizioAlleImprese>
+            <identificazioneServizio>
+                <nomeServizio>Pagamento diretto/Bonifico SCT</nomeServizio>
+                <logoServizio>iVBORw0KGgoAAAANSUhEUgAAAZAAAACACAYAAAAlHj/jAAAAB3RJTUUH4goKDjsjJh5brAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAzZJREFUeNrt3d1uokAAgNG62fd/49auFyTE1aqfP9ORcxJvGgNUcT4GEtjt//kAgBv9Gb0BAMxJQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQE7vD19fXx+fk5ejN4gf1+P3oTfp2/ozegWr7M3W43elPYoMP+t7zsg2zVlDOQ9ZGAowJebb3Picd2+K7/N+0MZOFLZRT7Hls33QzEjAPgd5guIIejvvWL11rO+1/zvkevd/T/9Kx1w6x2+wn3YBfQGc0+CBPOQA78aBnNDBgmDciBHy/AWNMGBICxBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIpn+kLWOceoyMOyTDtggIiVgAUwZkffRrIAMYY8qAiAbAeC6iA5AICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAyZQPlJqNJygC78gM5AXW0VjHBGBmZiAvYuYBvBszEAASM5ANOHUNZvnbtTOjW98PvL/d3kn5t/Xoi/ciAqwJCACJayAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACTuhQVv4NwNJdx2hmcyA4E3cC4U7lTEMwkIDHYY5JfXPU5F5PC3RywbTnEzRaZwajf96fTMte+/Z/e/dXnHt9K/dpnlszpezrPXyTaZgTCFWwa5VxwTlUH30kzgkQP58bpujS1cQ0CYxmEQXL8etcxHb+Po7Ti3rEsRERJuJSBs3npgPTeIrh+mdWmwP37PpWsczziFdG47f1rXDKeyls/wUdeNuI9rILCyHqCWC9D3zniOl7mYYcCGnwgIAIlTWAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJA8g2Dtt/v+5oegAAAAABJRU5ErkJggg==</logoServizio>
+            </identificazioneServizio>
+            <listaInformazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>IT</codiceLingua>
+                    <descrizioneServizio>Consente ai titolari di Iconto di disporre bonifici alle PA ad un costo massimo di Euro 0,90 a meno del Diritto Camerale che è gratuito</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>EN</codiceLingua>
+                    <descrizioneServizio>IConto clients can send bank transfers to Public Authorities for 0,90 Euro or less; Chamber of Commerce annual fees are paid free of charge</descrizioneServizio>
+                    <disponibilitaServizio>Service hours. Service is guaranteed Mon – Fri 08:00 – 21:00, Sat 08:00 – 14:00; the service may not be available outside these hours.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>DE</codiceLingua>
+                    <descrizioneServizio>Erlaubt den Inhabern eines IConto, Überweisungen an öffentliche Ämter zu Maximalkosten von 0,90 Euro leisten, mit kostenlos Kammergebühr</descrizioneServizio>
+                    <disponibilitaServizio>Servicegarantie zu folgenden Zeiten: MO-FR 8-21 Uhr, SA 8-14 Uhr. Außerhalb dieser Zeiten ist der Dienst möglicherweise nicht verfügbar.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>FR</codiceLingua>
+                    <descrizioneServizio>Permet aux titulaires de Iconto d'effectuer des virements bancaires vers les APU payant max 0,90 €, gratuit si on a payé la taxe à la CCI</descrizioneServizio>
+                    <disponibilitaServizio>Le service est délivré du lundi au vendredi de 8h à 21h, le samedi de 8h à 14h. En dehors de ces horaires le service n'est pas assuré</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>SL</codiceLingua>
+                    <descrizioneServizio>Consente ai titolari di Iconto di disporre bonifici alle PA ad un costo massimo di Euro 0,90 a meno del Diritto Camerale che è gratuito</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>                
+            </listaInformazioniServizio>
+            <costiServizio>
+                <tipoCostoTransazione>1</tipoCostoTransazione>
+                <tipoCommissione>0</tipoCommissione>
+                <tipoCanaleServizio>1</tipoCanaleServizio>
+                <plateaErogazioneServizio>0</plateaErogazioneServizio>
+                <listaFasceCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>99999999.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>0.90</valoreCommissione>
+                    </fasciaCostoServizio>
+                </listaFasceCostoServizio>
+            </costiServizio>
+        </informativaDetail>
+        <informativaDetail>
+            <identificativoIntermediario>14847241008</identificativoIntermediario>
+            <identificativoCanale>14847241008_03</identificativoCanale>
+            <tipoVersamento>CP</tipoVersamento>
+            <modelloPagamento>1</modelloPagamento>
+            <priorita>1</priorita>
+            <canaleApp>0</canaleApp>
+            <servizioAlleImprese>0</servizioAlleImprese>
+            <identificazioneServizio>
+                <nomeServizio>Carte Pagamento</nomeServizio>
+                <logoServizio>iVBORw0KGgoAAAANSUhEUgAAAZAAAACACAYAAAAlHj/jAAAAB3RJTUUH4goKDjsjJh5brAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAzZJREFUeNrt3d1uokAAgNG62fd/49auFyTE1aqfP9ORcxJvGgNUcT4GEtjt//kAgBv9Gb0BAMxJQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQE7vD19fXx+fk5ejN4gf1+P3oTfp2/ozegWr7M3W43elPYoMP+t7zsg2zVlDOQ9ZGAowJebb3Picd2+K7/N+0MZOFLZRT7Hls33QzEjAPgd5guIIejvvWL11rO+1/zvkevd/T/9Kx1w6x2+wn3YBfQGc0+CBPOQA78aBnNDBgmDciBHy/AWNMGBICxBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIpn+kLWOceoyMOyTDtggIiVgAUwZkffRrIAMYY8qAiAbAeC6iA5AICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAyZQPlJqNJygC78gM5AXW0VjHBGBmZiAvYuYBvBszEAASM5ANOHUNZvnbtTOjW98PvL/d3kn5t/Xoi/ciAqwJCACJayAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACTuhQVv4NwNJdx2hmcyA4E3cC4U7lTEMwkIDHYY5JfXPU5F5PC3RywbTnEzRaZwajf96fTMte+/Z/e/dXnHt9K/dpnlszpezrPXyTaZgTCFWwa5VxwTlUH30kzgkQP58bpujS1cQ0CYxmEQXL8etcxHb+Po7Ti3rEsRERJuJSBs3npgPTeIrh+mdWmwP37PpWsczziFdG47f1rXDKeyls/wUdeNuI9rILCyHqCWC9D3zniOl7mYYcCGnwgIAIlTWAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJA8g2Dtt/v+5oegAAAAABJRU5ErkJggg==</logoServizio>
+            </identificazioneServizio>
+            <listaInformazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>IT</codiceLingua>
+                    <descrizioneServizio>Consente di disporre pagamenti alle PA mediante carte di credito/debito. Il costo varia a seconda delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>EN</codiceLingua>
+                    <descrizioneServizio>For paying Public Authorities with credit or debit cards. Charges vary according to the amount of the payment.</descrizioneServizio>
+                    <disponibilitaServizio>Service hours. Service is guaranteed Mon – Fri 08:00 – 21:00, Sat 08:00 – 14:00; the service may not be available outside these hours.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>DE</codiceLingua>
+                    <descrizioneServizio>Ermöglicht Zahlungen an öffentliche Ämter mittels Kredit-/Debitkarte durchzuführen. Die Kosten hängen von den Betragsklassen hab.</descrizioneServizio>
+                    <disponibilitaServizio>Servicegarantie zu folgenden Zeiten: MO-FR 8-21 Uhr, SA 8-14 Uhr. Außerhalb dieser Zeiten ist der Dienst möglicherweise nicht verfügbar.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>FR</codiceLingua>
+                    <descrizioneServizio>Permet d'effectuer des paiements vers les administrations publiques par carte bancaire/de débit</descrizioneServizio>
+                    <disponibilitaServizio>Le service est délivré du lundi au vendredi de 8h à 21h, le samedi de 8h à 14h. En dehors de ces horaires le service n'est pas assuré</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>SL</codiceLingua>
+                    <descrizioneServizio>Consente di disporre pagamenti alle PA mediante carte di credito/debito. Il costo varia a seconda delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>                
+            </listaInformazioniServizio>
+            <listaParoleChiave>
+                <paroleChiave>Visa</paroleChiave>
+                <paroleChiave>Maestro</paroleChiave>
+                <paroleChiave>Mastercard</paroleChiave>
+            </listaParoleChiave>
+            <costiServizio>
+                <tipoCostoTransazione>1</tipoCostoTransazione>
+                <tipoCommissione>0</tipoCommissione>
+                <tipoCanaleServizio>1</tipoCanaleServizio>
+                <plateaErogazioneServizio>1</plateaErogazioneServizio>
+                <listaFasceCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>49.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>0.95</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>249.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.30</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>99999999.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.80</valoreCommissione>
+                    </fasciaCostoServizio>
+                </listaFasceCostoServizio>
+            </costiServizio>
+        </informativaDetail>
+		<informativaDetail>
+		    <identificativoIntermediario>14847241008</identificativoIntermediario>
+		    <identificativoCanale>14847241008_04</identificativoCanale>
+            <tipoVersamento>CP</tipoVersamento>
+            <modelloPagamento>1</modelloPagamento>
+            <priorita>1</priorita>
+            <canaleApp>1</canaleApp>
+            <servizioAlleImprese>0</servizioAlleImprese>
+            <identificazioneServizio>
+                <nomeServizio>Carte Pagamento</nomeServizio>
+                <logoServizio>iVBORw0KGgoAAAANSUhEUgAAAZAAAACACAYAAAAlHj/jAAAAB3RJTUUH4goKDjsjJh5brAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAzZJREFUeNrt3d1uokAAgNG62fd/49auFyTE1aqfP9ORcxJvGgNUcT4GEtjt//kAgBv9Gb0BAMxJQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQE7vD19fXx+fk5ejN4gf1+P3oTfp2/ozegWr7M3W43elPYoMP+t7zsg2zVlDOQ9ZGAowJebb3Picd2+K7/N+0MZOFLZRT7Hls33QzEjAPgd5guIIejvvWL11rO+1/zvkevd/T/9Kx1w6x2+wn3YBfQGc0+CBPOQA78aBnNDBgmDciBHy/AWNMGBICxBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIpn+kLWOceoyMOyTDtggIiVgAUwZkffRrIAMYY8qAiAbAeC6iA5AICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAyZQPlJqNJygC78gM5AXW0VjHBGBmZiAvYuYBvBszEAASM5ANOHUNZvnbtTOjW98PvL/d3kn5t/Xoi/ciAqwJCACJayAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACTuhQVv4NwNJdx2hmcyA4E3cC4U7lTEMwkIDHYY5JfXPU5F5PC3RywbTnEzRaZwajf96fTMte+/Z/e/dXnHt9K/dpnlszpezrPXyTaZgTCFWwa5VxwTlUH30kzgkQP58bpujS1cQ0CYxmEQXL8etcxHb+Po7Ti3rEsRERJuJSBs3npgPTeIrh+mdWmwP37PpWsczziFdG47f1rXDKeyls/wUdeNuI9rILCyHqCWC9D3zniOl7mYYcCGnwgIAIlTWAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJA8g2Dtt/v+5oegAAAAABJRU5ErkJggg==</logoServizio>
+            </identificazioneServizio>
+            <listaInformazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>IT</codiceLingua>
+                    <descrizioneServizio>Consente di disporre pagamenti alle PA mediante carte di credito/debito. Il costo varia a seconda delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>EN</codiceLingua>
+                    <descrizioneServizio>For paying Public Authorities with credit or debit cards. Charges vary according to the amount of the payment.</descrizioneServizio>
+                    <disponibilitaServizio>Service hours. Service is guaranteed Mon – Fri 08:00 – 21:00, Sat 08:00 – 14:00; the service may not be available outside these hours.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>DE</codiceLingua>
+                    <descrizioneServizio>Ermöglicht Zahlungen an öffentliche Ämter mittels Kredit-/Debitkarte durchzuführen. Die Kosten hängen von den Betragsklassen hab.</descrizioneServizio>
+                    <disponibilitaServizio>Servicegarantie zu folgenden Zeiten: MO-FR 8-21 Uhr, SA 8-14 Uhr. Außerhalb dieser Zeiten ist der Dienst möglicherweise nicht verfügbar.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>FR</codiceLingua>
+                    <descrizioneServizio>Permet d'effectuer des paiements vers les administrations publiques par carte bancaire/de débit</descrizioneServizio>
+                    <disponibilitaServizio>Le service est délivré du lundi au vendredi de 8h à 21h, le samedi de 8h à 14h. En dehors de ces horaires le service n'est pas assuré</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>SL</codiceLingua>
+                    <descrizioneServizio>Consente di disporre pagamenti alle PA mediante carte di credito/debito. Il costo varia a seconda delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>                
+            </listaInformazioniServizio>
+            <listaParoleChiave>
+                <paroleChiave>Visa</paroleChiave>
+                <paroleChiave>Maestro</paroleChiave>
+                <paroleChiave>Mastercard</paroleChiave>
+            </listaParoleChiave>
+            <costiServizio>
+                <tipoCostoTransazione>1</tipoCostoTransazione>
+                <tipoCommissione>0</tipoCommissione>
+                <tipoCanaleServizio>1</tipoCanaleServizio>
+                <plateaErogazioneServizio>1</plateaErogazioneServizio>
+                <listaFasceCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>49.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>0.95</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>249.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.30</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>99999999.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.80</valoreCommissione>
+                    </fasciaCostoServizio>
+                </listaFasceCostoServizio>
+            </costiServizio>
+        </informativaDetail>
+        <!-- nuovo canale per il Modello 3. Capire se occorre valorizzare canaleApp se si vuole anche consentire il pagamento tramite App -->
+        <!-- occorre rivedere il logo e renderlo generico; occorre rivedere l'informativa -->
+        <!-- occorre rivedere tutte le commissioni in base alla nuova policy -->
+        <informativaDetail>
+            <identificativoIntermediario>14847241008</identificativoIntermediario>
+            <identificativoCanale>14847241008_05</identificativoCanale>
+            <tipoVersamento>PO</tipoVersamento>
+            <modelloPagamento>4</modelloPagamento>
+            <priorita>1</priorita>
+            <canaleApp>0</canaleApp>
+            <servizioAlleImprese>0</servizioAlleImprese>
+            <identificazioneServizio>
+                <nomeServizio>Pagamento attivato presso il PSP</nomeServizio>
+                <logoServizio>iVBORw0KGgoAAAANSUhEUgAAAZAAAACACAYAAAAlHj/jAAAAB3RJTUUH4goKDjsjJh5brAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAzZJREFUeNrt3d1uokAAgNG62fd/49auFyTE1aqfP9ORcxJvGgNUcT4GEtjt//kAgBv9Gb0BAMxJQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQE7vD19fXx+fk5ejN4gf1+P3oTfp2/ozegWr7M3W43elPYoMP+t7zsg2zVlDOQ9ZGAowJebb3Picd2+K7/N+0MZOFLZRT7Hls33QzEjAPgd5guIIejvvWL11rO+1/zvkevd/T/9Kx1w6x2+wn3YBfQGc0+CBPOQA78aBnNDBgmDciBHy/AWNMGBICxBASAREAASAQEgERAAEgEBIBEQABIBASAREAASAQEgERAAEgEBIBEQABIpn+kLWOceoyMOyTDtggIiVgAUwZkffRrIAMYY8qAiAbAeC6iA5AICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAiYAAkAgIAImAAJAICACJgACQCAgAyZQPlJqNJygC78gM5AXW0VjHBGBmZiAvYuYBvBszEAASM5ANOHUNZvnbtTOjW98PvL/d3kn5t/Xoi/ciAqwJCACJayAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACTuhQVv4NwNJdx2hmcyA4E3cC4U7lTEMwkIDHYY5JfXPU5F5PC3RywbTnEzRaZwajf96fTMte+/Z/e/dXnHt9K/dpnlszpezrPXyTaZgTCFWwa5VxwTlUH30kzgkQP58bpujS1cQ0CYxmEQXL8etcxHb+Po7Ti3rEsRERJuJSBs3npgPTeIrh+mdWmwP37PpWsczziFdG47f1rXDKeyls/wUdeNuI9rILCyHqCWC9D3zniOl7mYYcCGnwgIAIlTWAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJAIiAAJAICQCIgACQCAkAiIAAkAgJA8g2Dtt/v+5oegAAAAABJRU5ErkJggg==</logoServizio>
+            </identificazioneServizio>            
+            <listaInformazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>IT</codiceLingua>
+                    <descrizioneServizio>Consente pagare tramite Bonifico o Carte di Pagamento. Il costo varia a seconda dello strumento e delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>EN</codiceLingua>
+                    <descrizioneServizio>For paying Public Authorities with credit/debit cards or with bank transfer. Charges vary according to the payment method.</descrizioneServizio>
+                    <disponibilitaServizio>Service hours. Service is guaranteed Mon – Fri 08:00 – 21:00, Sat 08:00 – 14:00; the service may not be available outside these hours.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>DE</codiceLingua>
+                    <descrizioneServizio>Consente pagare tramite Bonifico o Carte di Pagamento. Il costo varia a seconda dello strumento e delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servicegarantie zu folgenden Zeiten: MO-FR 8-21 Uhr, SA 8-14 Uhr. Außerhalb dieser Zeiten ist der Dienst möglicherweise nicht verfügbar.</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>FR</codiceLingua>
+                    <descrizioneServizio>Permet d'effectuer des paiements vers les administrations publiques par carte bancaire/de débit ou virements bancaires.</descrizioneServizio>
+                    <disponibilitaServizio>Le service est délivré du lundi au vendredi de 8h à 21h, le samedi de 8h à 14h. En dehors de ces horaires le service n'est pas assuré</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+                <informazioniServizio>
+                    <codiceLingua>SL</codiceLingua>
+                    <descrizioneServizio>Consente pagare tramite Bonifico o Carte di Pagamento. Il costo varia a seconda dello strumento e delle fasce di importo.</descrizioneServizio>
+                    <disponibilitaServizio>Servizio garantito nei seguenti orari LUN - VEN: 08 - 21, SAB: 08 - 14. Fuori fascia potrebbe non essere disponibile</disponibilitaServizio>
+                    <urlInformazioniCanale>https://www.iconto.infocamere.it/idpw/info/nodoSpc</urlInformazioniCanale>
+                </informazioniServizio>
+            </listaInformazioniServizio>        
+            <listaParoleChiave>
+                <paroleChiave>Visa</paroleChiave>
+                <paroleChiave>Maestro</paroleChiave>
+                <paroleChiave>Mastercard</paroleChiave>
+            </listaParoleChiave>
+            <costiServizio>
+                <tipoCostoTransazione>1</tipoCostoTransazione>
+                <tipoCommissione>0</tipoCommissione>
+                <tipoCanaleServizio>1</tipoCanaleServizio>
+                <plateaErogazioneServizio>1</plateaErogazioneServizio>
+                <listaFasceCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>49.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>0.95</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>249.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.30</valoreCommissione>
+                    </fasciaCostoServizio>
+                    <fasciaCostoServizio>
+                        <importoMassimoFascia>99999999.99</importoMassimoFascia>
+                        <costoFisso>0.00</costoFisso>
+                        <valoreCommissione>1.80</valoreCommissione>
+                    </fasciaCostoServizio>
+                </listaFasceCostoServizio>
+            </costiServizio>          
+        </informativaDetail>
+        <!-- Fine nuovo canale per il Modello 3 -->
+    </listaInformativaDetail>
+</informativaPSP>
