@@ -8,10 +8,10 @@ define("CHARSET", 'utf8');
 */
 
 
-define("HOST", 'localhost');
-define("USER", 'pagopamoc');
-define("PASS", '6XNk9G-lfi');
-define("DBNAME", 'pagopatest');
+define("HOST", getenv("DBHOST"));
+define("USER", getenv("DBUSER"));
+define("PASS", getenv("DBPASS"));
+define("DBNAME", getenv("DBNAME"));
 define("CHARSET", 'utf8');
 
 

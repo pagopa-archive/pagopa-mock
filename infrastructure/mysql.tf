@@ -1,6 +1,6 @@
 resource "random_password" "mysql_password" {
-  length = 16
-  special = true
+  length           = 16
+  special          = true
   override_special = "#?&$!"
 }
 
@@ -26,8 +26,8 @@ resource "azurerm_mysql_server" "mysql_server" {
   administrator_login_password = random_password.mysql_password.result
   # Save the password in the key vault. This is not a good practice
   #administrator_login_password = data.azurerm_key_vault_secret.mysqladministratorpassword.value
-  version                      = "5.7"
-  ssl_enforcement              = "Enabled"
+  version         = "5.7"
+  ssl_enforcement = "Enabled"
 
   tags = {
     environment = "Development"

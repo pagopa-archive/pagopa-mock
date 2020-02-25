@@ -210,13 +210,12 @@ $wisp = $responseArray['soapenvBody']['pptnodoInviaRPTRisposta']['url'];
 
 echo $responseArray['soapenvBody']['pptnodoInviaRPTRisposta']['url'];
 
-   $dbhost = 'localhost';
-   $dbname = 'pagopatest';
-   $dbusername = 'pagopamoc';
-   $dbpassword = '6XNk9G-lfi';
+   $dbhost = getenv("DBHOST");
+   $dbname = getenv("DBNAME");
+   $dbusername = getenv("DBUSER");
+   $dbpassword = getenv("DBPASS");
    $iuv=$_POST['identificativoUnivocoVersamento'];
-
-
+   
 if ( $esito === 'OK' ) {
    // $this->flash->success('yes!, everything went very smoothly');
        $log = fopen("../logs/nodoInviaRPT.log", "a") or die("Unable to open file!");
