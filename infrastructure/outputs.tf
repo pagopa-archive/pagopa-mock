@@ -25,8 +25,6 @@ output "container_registry_password" {
   value = azurerm_container_registry.container_registry.admin_password
 }
 
-
-/*
 output "mysql_server_user" {
   value = azurerm_mysql_server.mysql_server.administrator_login
 }
@@ -38,4 +36,3 @@ output "mysql_server_password" {
 output "mysql_server_fqdn" {
   value = azurerm_mysql_server.mysql_server.fqdn
 }
-*/

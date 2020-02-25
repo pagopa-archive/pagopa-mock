@@ -111,7 +111,7 @@ resource "azurerm_container_group" "container_group" {
 
   container {
     name   = "pagopamock"
-    image  = "pagopamock.azurecr.io/pagopamock:v1.2.0"
+    image  = "pagopamock.azurecr.io/pagopamock:v1.3.1"
     cpu    = "0.5"
     memory = "1.5"
 
