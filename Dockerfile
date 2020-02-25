@@ -18,12 +18,12 @@ ADD certs/pagopatest.agid.gov.it.crt /etc/ssl/certs/pagopatest.agid.gov.it.crt
 ADD certs/pagopatest.agid.gov.it.key /etc/ssl/private/pagopatest.agid.gov.it.key
 
 # Enable ssl
-#RUN a2enmod ssl
+RUN a2enmod ssl
 # Enable Proxy
 RUN a2enmod proxy
 # Sym link
-# RUN rm /etc/apache2/sites-enabled/000-default.conf
-#RUN ln -s /etc/apache2/sites-available/pagopatest.agid.gov.it.conf /etc/apache2/sites-enabled/pagopatest.agid.gov.it.conf
+RUN rm /etc/apache2/sites-enabled/000-default.conf
+RUN ln -s /etc/apache2/sites-available/pagopatest.agid.gov.it.conf /etc/apache2/sites-enabled/pagopatest.agid.gov.it.conf
 
-EXPOSE 80
+EXPOSE 443
 CMD ["apachectl", "-D", "FOREGROUND"]
