@@ -65,7 +65,7 @@ In the root folder of the project run the command to build the docker image:
 $ sudo docker build -t pagopamock.azurecr.io/pagopamock:latest .
 ```
 
-Assign a tag the version you want to deploy. eg:
+Assign a tag to the version you want to deploy. eg:
 
 ```
 $ sudo docker tag pagopa/pagopa-mock pagopamock.azurecr.io/pagopamock:v1.2.0
@@ -81,7 +81,7 @@ You can see them again with:
 $ terraform output
 ```
 
-Push the image to azure private docker registry:
+Push the image to the **azure** private **docker registry**:
 
 ```
 $ sudo docker push pagopamock.azurecr.io/pagopamock:v1.2.0
