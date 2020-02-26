@@ -11,7 +11,7 @@ It is a legacy php application running within Apache providing http / SAOP inter
 
 ## Infrastructure
 
-### Pre Requirements
+### Requirements
     * You need a Azure active subscription
     * The azure cli installed
     * Terraform 0.12.20 or grater installed
@@ -49,10 +49,9 @@ terraform apply
 
 ```
 
-
 ## Deploy
 
-### Per requisits
+### Requirements
 
 * You must satisfy the same pre requisites defined in the infrastructure paragraph.
 * Docker 18.09.9 or grather installed
@@ -98,3 +97,22 @@ To run a new deply edit the **container_instance.tf** file in the **infrastructu
 in the example version **v.1.2.0**
 
 Run one more time the terraform apply command.
+
+## Database Structure
+
+The first time you set up the mysql database it is also required to create the tables structure which is defined in ./db/pagopatest.sql
+
+### Requirements
+
+* mysql client installed.
+
+Run the following command:
+
+**TODO**: command to grant access to the database instance from your ip.
+
+```
+mysql -h mysql-pagopa-mock.mysql.database.azure.com -u mysqladmin@mysql-pagopa-mock -p pagopatest < ./db/pagopatest.sql 
+```
+
+
+
