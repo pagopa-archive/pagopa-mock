@@ -15,8 +15,9 @@ RUN apt-get install php -y
 ADD app /var/www/html/moc
 RUN chown -R www-data:www-data /var/www/html 
 ADD apache2/sites-available/ /etc/apache2/sites-available/
-ADD certs/pagopatest.agid.gov.it.crt /etc/ssl/certs/pagopatest.agid.gov.it.crt
-ADD certs/pagopatest.agid.gov.it.key /etc/ssl/private/pagopatest.agid.gov.it.key
+ADD certs/pagopa-mock.westeurope.azurecontainer.io.crt /etc/ssl/certs/pagopa-mock.westeurope.azurecontainer.io.crt
+ADD certs/pagopa-mock.westeurope.azurecontainer.io.key /etc/ssl/private/pagopa-mock.westeurope.azurecontainer.io.key
+
 
 # Enable ssl
 RUN a2enmod ssl
