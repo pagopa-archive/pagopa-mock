@@ -15,8 +15,8 @@ RUN apt-get install php -y
 ADD app /var/www/html/moc
 RUN chown -R www-data:www-data /var/www/html 
 ADD apache2/sites-available/ /etc/apache2/sites-available/
-ADD certs/pagopa-mock.westeurope.azurecontainer.io.crt /etc/ssl/certs/pagopa-mock.westeurope.azurecontainer.io.crt
-ADD certs/pagopa-mock.westeurope.azurecontainer.io.key /etc/ssl/private/pagopa-mock.westeurope.azurecontainer.io.key
+# ADD certs/pagopa-mock.westeurope.azurecontainer.io.crt /etc/ssl/certs/pagopa-mock.westeurope.azurecontainer.io.crt
+# ADD certs/pagopa-mock.westeurope.azurecontainer.io.key /etc/ssl/private/pagopa-mock.westeurope.azurecontainer.io.key
 
 
 # Enable ssl
@@ -24,8 +24,8 @@ RUN a2enmod ssl
 # Enable Proxy
 RUN a2enmod proxy
 # Sym link
-RUN rm /etc/apache2/sites-enabled/000-default.conf
-RUN ln -s /etc/apache2/sites-available/pagopatest.agid.gov.it.conf /etc/apache2/sites-enabled/pagopatest.agid.gov.it.conf
+# RUN rm /etc/apache2/sites-enabled/000-default.conf
+# RUN ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
-EXPOSE 443
+EXPOSE 80
 CMD ["apachectl", "-D", "FOREGROUND"]
