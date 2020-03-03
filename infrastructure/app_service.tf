@@ -27,11 +27,13 @@ resource "azurerm_app_service" "app_service" {
   location            = azurerm_resource_group.resource_group.location
   resource_group_name = azurerm_resource_group.resource_group.name
   app_service_plan_id = azurerm_app_service_plan.app_service_plan.id
+  https_only          = true
 
   # Do not attach Storage by default
   app_settings = {
     WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
     WEBSITES_PORT                       = 80
+    
     DOCKER_REGISTRY_SERVER_URL      = azurerm_container_registry.container_registry.login_server
     DOCKER_REGISTRY_SERVER_USERNAME = azurerm_container_registry.container_registry.admin_username
     DOCKER_REGISTRY_SERVER_PASSWORD = azurerm_container_registry.container_registry.admin_password
