@@ -29,10 +29,7 @@ resource "azurerm_mysql_server" "mysql_server" {
   version         = "5.7"
   ssl_enforcement = "Enabled"
 
-  tags = {
-    environment = "Development"
-    terraform   = "True"
-  }
+  tags = var.tags
 }
 
 resource "azurerm_mysql_database" "database_pagopa-test" {
@@ -41,7 +38,6 @@ resource "azurerm_mysql_database" "database_pagopa-test" {
   server_name         = azurerm_mysql_server.mysql_server.name
   charset             = "utf8"
   collation           = "utf8_unicode_ci"
-
 }
 
 # This rule is to enable the 'Allow access to Azure services' checkbox

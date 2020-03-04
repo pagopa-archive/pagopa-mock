@@ -1,4 +1,3 @@
-
 # Create an App Service Plan with Linux
 resource "azurerm_app_service_plan" "app_service_plan" {
   name                = "plan-pagopa-mock"
@@ -15,10 +14,7 @@ resource "azurerm_app_service_plan" "app_service_plan" {
     size = "S1"
   }
 
-  tags = {
-    environment = "Development"
-    terraform   = "True"
-  }
+  tags = var.tags
 }
 
 # Create an Azure Web App for Containers in that App Service Plan
@@ -54,8 +50,5 @@ resource "azurerm_app_service" "app_service" {
     type = "SystemAssigned"
   }
 
-  tags = {
-    environment = "Development"
-    terraform   = "True"
-  }
+  tags = var.tags
 }

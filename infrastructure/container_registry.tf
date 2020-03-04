@@ -5,8 +5,5 @@ resource "azurerm_container_registry" "container_registry" {
   sku                 = "Premium"
   admin_enabled       = true
 
-  tags = {
-    environment = "Development"
-    terraform   = "True"
-  }
+  tags = var.tags
 }

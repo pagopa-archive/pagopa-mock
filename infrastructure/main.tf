@@ -14,11 +14,8 @@ provider "azurerm" {
 
 # Create a new Resource Group
 resource "azurerm_resource_group" "resource_group" {
-  name     = "rg-pagopa-mock"
-  location = "westeurope"
+  name     = var.resource_group_name
+  location = var.location
 
-  tags = {
-    environment = "Development"
-    terraform   = "True"
-  }
+  tags = var.tags
 }
