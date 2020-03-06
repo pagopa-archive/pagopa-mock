@@ -114,7 +114,7 @@ Run the following command:
 mysql -h mysql-pagopa-mock.mysql.database.azure.com -u mysqladmin@mysql-pagopa-mock -p pagopatest < ./db/pagopatest.sql 
 ```
 
-## Restrinc access
+## Restric access
 
 [Azure Docs](https://docs.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)
 
@@ -124,3 +124,55 @@ Since right now terrarfor does not allow to restrict access to App Service resou
 az webapp config access-restriction add --resource-group ResourceGroup --name AppName \
     --rule-name 'IP example rule' --action Allow --ip-address 122.133.144.0/24 --priority 100
 ```
+
+## SSL Certificate
+
+To generate a self signed certificate to upload in azure app service follow the following steps:
+
+* Create a the file **cert_config** like the example below:
+
+```
+[ req ]
+prompt             = no
+distinguished_name = my dn
+
+[ my dn ]
+# The bare minimum is probably a commonName
+            commonName = pagopamock.pagopa.gov.it
+           countryName = IT
+          localityName = Rome
+      organizationName = PagoPa S.p.a.
+organizationalUnitName = Payment
+   stateOrProvinceName = Rome
+          emailAddress = info@pagopa.it
+                  name = John Doe
+               surname = Doe
+             givenName = John
+              initials = JXD
+           dnQualifier = some
+
+[ my server exts ]
+extendedKeyUsage = 1.3.6.1.5.5.7.3.1 
+# 1.3.6.1.5.5.7.3.1 can also be spelled serverAuth:
+# extendedKeyUsage = serverAuth
+```
+
+Change the values accordingly. Be very caful with the **common name**.
+
+Generate the certificate and its private key.
+
+```
+$ openssl req -x509 -config cert_config -extensions 'my server exts' \
+-nodes -days 3650 -newkey rsa:4096 \
+-keyout pagopamock.key \
+-out pagopamock.crt
+```
+* Create the pfx file for azure:
+
+```
+$ openssl pkcs12 -export -out pagopamock.pfx \
+-inkey pagopamock.key \
+-in pagopamock.crt
+```
+
+Follow the official azure documentation to [Configure TLS mutual authentication for Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-configure-tls-mutual-auth)

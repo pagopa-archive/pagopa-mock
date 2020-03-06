@@ -42,7 +42,7 @@ resource "azurerm_app_service" "app_service" {
 
   # Configure Docker Image to load on start
   site_config {
-    linux_fx_version = "DOCKER|pagopamock.azurecr.io/pagopamock:v1.4.1"
+    linux_fx_version = "DOCKER|pagopamock.azurecr.io/pagopamock:v1.5.0"
     always_on        = "true"
   }
 
