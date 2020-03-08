@@ -44,11 +44,27 @@ resource "azurerm_app_service" "app_service" {
   site_config {
     linux_fx_version = "DOCKER|pagopamock.azurecr.io/pagopamock:v1.5.0"
     always_on        = "true"
+
+    dynamic "ip_restriction" {
+      for_each = var.ip_restriction 
+      content {
+        ip_address = ip_restriction.value["ip_address"]  
+      }
+    }
   }
 
   identity {
     type = "SystemAssigned"
   }
-
+    
   tags = var.tags
 }
+/*
+resource "azurerm_app_service_certificate" "certificate" {
+  name                = "pagopamock-cert-2"
+  resource_group_name = azurerm_resource_group.resource_group.name
+  location            = azurerm_resource_group.resource_group.location
+  pfx_blob            = filebase64("../certs/pagopamock.pfx")
+  password            = var.cert_password
+}
+*/

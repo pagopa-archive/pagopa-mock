@@ -114,17 +114,6 @@ Run the following command:
 mysql -h mysql-pagopa-mock.mysql.database.azure.com -u mysqladmin@mysql-pagopa-mock -p pagopatest < ./db/pagopatest.sql 
 ```
 
-## Restric access
-
-[Azure Docs](https://docs.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)
-
-Since right now terrarfor does not allow to restrict access to App Service resources it is possible to do that programmatically:
-
-```
-az webapp config access-restriction add --resource-group ResourceGroup --name AppName \
-    --rule-name 'IP example rule' --action Allow --ip-address 122.133.144.0/24 --priority 100
-```
-
 ## SSL Certificate
 
 To generate a self signed certificate to upload in azure app service follow the following steps:
