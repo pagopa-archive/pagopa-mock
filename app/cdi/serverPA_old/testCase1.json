@@ -1,0 +1,69 @@
+{
+  "99999999999999":{	
+    "verificaRPT": {
+      "paaVerificaRPTRisposta":{
+        "esito":"OK",
+        "datiPagamentoPA":{
+          "importoSingoloVersamento":"100.00",
+          "ibanAccredito" : "IT30N0103076271000001823603",
+          "causaleVersamento" : "RFB/9999999999/100.00"
+          }
+      }
+    },
+    "attivaRPT":{
+      "paaAttivaRPTRisposta":{
+        "esito":"OK",
+        "datiPagamentoPA":{
+          "importoSingoloVersamento":"100.00",
+          "ibanAccredito" : "IT30N0103076271000001823603",
+          "causaleVersamento" : "RFB/9999999999/100.00"
+          }
+      },
+      "RPT":true
+    },
+    "inviaRT":{
+      "paaInviaRTRisposta":{
+        "esito":"OK"
+      }
+    }
+	},
+  "111111111111111":{
+    "verificaRPT":{
+      "paaVerificaRPTRisposta":{
+        "esito":"KO",
+        "fault":{
+          "faultCode":"PAA_PAGAMENTO_DUPLICATO",
+          "faultString":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "description":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "id":"7777777777"         
+        }
+      }
+    },
+    "attivaRPT":{
+       "paaAttivaRPTRisposta":{
+        "esito":"KO",
+        "fault":{
+          "faultCode":"PAA_PAGAMENTO_DUPLICATO",
+          "faultString":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "description":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "id":"7777777777" 
+        }
+      },
+      "RPT":true
+    }
+  },
+  "000000000000000":{
+    "verificaRPT":{
+      "paaVerificaRPTRisposta":{
+        "esito":"KO",
+        "fault":{
+          "faultCode":"PAA_PAGAMENTO_SCONOSCIUTO",
+          "faultString":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "description":"Pagamento in attesa risulta scaduto all’Ente Creditore",
+          "id":"7777777777"         
+        }
+      }
+    }
+  }
+
+}

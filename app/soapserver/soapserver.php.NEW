@@ -1,0 +1,23 @@
+<?php # HelloServerWsdl.php
+#
+ini_set("soap.wsdl_cache_enabled", "0");
+
+function paaInviaRT() {
+    return '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:query:type:v2.0" xmlns:ns2="http://ws.pagamenti.telematici.gov/">
+   <SOAP-ENV:Body>
+      <ns2:paaInviaRTRisposta>
+         <paaInviaRTRisposta>
+            <esito>OK</esito>
+         </paaInviaRTRisposta>
+      </ns2:paaInviaRTRisposta>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+';
+}
+
+$server = new SoapServer("../cdi/uploads/wsdl/ec/PaPerNodo.wsdl", array('soap_version' => SOAP_1_2));
+$server->addFunction("paaInviaRT");
+$server->handle();
+
+?>
+

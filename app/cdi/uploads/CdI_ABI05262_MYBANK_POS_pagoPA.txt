@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informativaPSP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:noNamespaceSchemaLocation="CatalogoDatiInformativi_1_0_11.xsd">
+	<identificativoFlusso>MYBANKPOS20191118</identificativoFlusso>
+	<identificativoPSP>BPPUIT33</identificativoPSP>
+	<ragioneSociale>Banca Popolare Pugliese</ragioneSociale>
+	<informativaMaster>
+		<dataPubblicazione>2019-11-18T00:00:00</dataPubblicazione>
+		<dataInizioValidita>2019-11-27T00:00:00</dataInizioValidita>
+		<urlInformazioniPSP>http://www.bpp.it</urlInformazioniPSP>
+		<stornoPagamento>0</stornoPagamento>
+		<marcaBolloDigitale>0</marcaBolloDigitale>
+		<logoPSP>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</logoPSP>
+	</informativaMaster>
+	<listaInformativaDetail>
+		<informativaDetail>
+			<identificativoIntermediario>97735020584</identificativoIntermediario>
+			<identificativoCanale>97735020584_01</identificativoCanale>
+			<tipoVersamento>OBEP</tipoVersamento>
+			<modelloPagamento>0</modelloPagamento>
+			<priorita>1</priorita>
+			<canaleApp>0</canaleApp>
+			<identificazioneServizio>
+				<nomeServizio>MYBANK</nomeServizio>
+				<logoServizio>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</logoServizio>
+			</identificazioneServizio>
+			<listaInformazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>IT</codiceLingua>
+					<descrizioneServizio>MyBank consente di pagare la Pubblica Amministrazione tramite bonifico online, automaticamente compilato dalla banca</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.mybank.eu/it/</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>DE</codiceLingua>
+					<descrizioneServizio>Mit MyBank können Sie die öffentliche Verwaltung per Online-Banküberweisung zahlen (automatisch von der Bank ausgefüllt)</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.mybank.eu</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>EN</codiceLingua>
+					<descrizioneServizio>MyBank consente di pagare la Pubblica Amministrazione tramite bonifico online, automaticamente compilato dalla banca</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.mybank.eu/</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>FR</codiceLingua>
+					<descrizioneServizio>MyBank consente di pagare la Pubblica Amministrazione tramite bonifico online, automaticamente compilato dalla banca</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.mybank.eu/</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>SL</codiceLingua>
+					<descrizioneServizio>MyBank consente di pagare la Pubblica Amministrazione tramite bonifico online, automaticamente compilato dalla banca</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>https://www.mybank.eu/</urlInformazioniCanale>
+				</informazioniServizio>
+			</listaInformazioniServizio>
+			<listaParoleChiave>
+				<paroleChiave>MyBank</paroleChiave>
+			</listaParoleChiave>
+
+			<costiServizio>
+				<tipoCostoTransazione>1</tipoCostoTransazione>
+				<tipoCommissione>0</tipoCommissione>
+				<listaFasceCostoServizio>
+					<fasciaCostoServizio>
+						<importoMassimoFascia>99999999.99</importoMassimoFascia>
+						<costoFisso>0.00</costoFisso>
+						<valoreCommissione>1.00</valoreCommissione>
+					</fasciaCostoServizio>
+				</listaFasceCostoServizio>
+			</costiServizio>
+		</informativaDetail>
+		<informativaDetail>
+			<identificativoIntermediario>00307500371</identificativoIntermediario>
+			<identificativoCanale>00307500371_01</identificativoCanale>
+			<tipoVersamento>PO</tipoVersamento>
+			<modelloPagamento>4</modelloPagamento>
+			<priorita>1</priorita>
+			<canaleApp>0</canaleApp>
+			<identificazioneServizio>
+				<nomeServizio>POS FISICO</nomeServizio>
+				<logoServizio>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</logoServizio>
+			</identificazioneServizio>
+			<listaInformazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>IT</codiceLingua>
+					<descrizioneServizio>Il servizio consente di pagare la Pubblica Amministrazione mediante l’utilizzo di un terminale POS</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>http://www.bpp.it/web/guest//sistemi-di-incasso-e-pagamento-imprese/strumenti-di-incasso/incassi-pos-punto-vendita</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>DE</codiceLingua>
+					<descrizioneServizio>Der Service ermöglicht es die Öffentliche Verwaltung durch einen POS-Terminal auszuzahlen</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>http://www.bpp.it/web/guest//sistemi-di-incasso-e-pagamento-imprese/strumenti-di-incasso/incassi-pos-punto-vendita</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>EN</codiceLingua>
+					<descrizioneServizio>Il servizio consente di pagare la Pubblica Amministrazione mediante l’utilizzo di un terminale POS</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>http://www.bpp.it/web/guest//sistemi-di-incasso-e-pagamento-imprese/strumenti-di-incasso/incassi-pos-punto-vendita</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>FR</codiceLingua>
+					<descrizioneServizio>Il servizio consente di pagare la Pubblica Amministrazione mediante l’utilizzo di un terminale POS</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>http://www.bpp.it/web/guest//sistemi-di-incasso-e-pagamento-imprese/strumenti-di-incasso/incassi-pos-punto-vendita</urlInformazioniCanale>
+				</informazioniServizio>
+				<informazioniServizio>
+					<codiceLingua>SL</codiceLingua>
+					<descrizioneServizio>Il servizio consente di pagare la Pubblica Amministrazione mediante l’utilizzo di un terminale POS</descrizioneServizio>
+					<disponibilitaServizio>H24</disponibilitaServizio>
+					<urlInformazioniCanale>http://www.bpp.it/web/guest//sistemi-di-incasso-e-pagamento-imprese/strumenti-di-incasso/incassi-pos-punto-vendita</urlInformazioniCanale>
+				</informazioniServizio>
+			</listaInformazioniServizio>
+			<listaParoleChiave>
+<paroleChiave>American Express</paroleChiave>
+<paroleChiave>Mastercard</paroleChiave>
+<paroleChiave>PagoBancomat</paroleChiave>
+<paroleChiave>Visa</paroleChiave>
+<paroleChiave>Visa Electron</paroleChiave>
+</listaParoleChiave>
+			<costiServizio>
+				<tipoCostoTransazione>1</tipoCostoTransazione>
+				<tipoCommissione>0</tipoCommissione>
+				<listaFasceCostoServizio>
+					<fasciaCostoServizio>
+						<importoMassimoFascia>99999999.99</importoMassimoFascia>
+						<costoFisso>0.00</costoFisso>
+						<valoreCommissione>1.00</valoreCommissione>
+					</fasciaCostoServizio>
+				</listaFasceCostoServizio>
+			</costiServizio>
+		</informativaDetail>
+	</listaInformativaDetail>
+</informativaPSP>

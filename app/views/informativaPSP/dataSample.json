@@ -1,0 +1,252 @@
+
+    dataSample = [
+      {
+        "identificativoFlusso": "WISP_2_0_20181015",
+        "identificativoPSP": "BPPIITRRXXX",
+        "ragioneSociale": "Poste Italiane",
+        "informativaMaster": {
+          "dataPubblicazione": "2018-10-16T00:01:00",
+          "dataInizioValidita": "2018-10-17T00:01:00",
+          "urlInformazioniPSP": "www.poste.it",
+          "stornoPagamento": "0",
+          "marcaBolloDigitale": "0"
+        },
+        "listaInformativaDetail": {
+          "informativaDetail": [
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_01",
+              "tipoVersamento": "BP",
+              "modelloPagamento": "1",
+              "priorita": "1",
+              "canaleApp": "0",
+              "identificazioneServizio": { "nomeServizio": "Conto BP Retail" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Il servizio consente ai correntisti BancoPosta pagamenti con bollettino tramite addebito in Conto.",
+                  "disponibilitaServizio": "Il pagamento con addebito in conto Bancoposta e' disponibile dalle 06.00 alle 22.30."
+                }
+              },
+              "listaParoleChiave": { "paroleChiave": "Maestro" },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1"
+                  }
+                }
+              }
+            },
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_05",
+              "tipoVersamento": "BP",
+              "modelloPagamento": "1",
+              "priorita": "2",
+              "canaleApp": "0",
+              "identificazioneServizio": { "nomeServizio": "Conto BP Impresa" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Il servizio consente ai correntisti BancoPostaImpresa pagamenti con bollettino tramite addebito in Conto.",
+                  "disponibilitaServizio": "Il pagamento con addebito in conto BancoPostaImpresa e' disponibile dalle 06.00 alle 22.30."
+                }
+              },
+              "listaParoleChiave": { "paroleChiave": "Maestro" },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1"
+                  }
+                }
+              }
+            },
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_06",
+              "tipoVersamento": "CP",
+              "modelloPagamento": "1",
+              "priorita": "1",
+              "canaleApp": "1",
+              "identificazioneServizio": { "nomeServizio": "Paga con Postepay" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Il servizio consente ai titolari di carte prepagate Postepay pagamenti con bollettino.",
+                  "disponibilitaServizio": "Il pagamento con Paga con Postepay e' sempre disponibile"
+                }
+              },
+              "listaParoleChiave": {
+                "paroleChiave": [
+                  "Mastercard",
+                  "Visa Electron"
+                ]
+              },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1"
+                  }
+                }
+              }
+            },
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_07_ONUS",
+              "tipoVersamento": "CP",
+              "modelloPagamento": "0",
+              "priorita": "1",
+              "canaleApp": "0",
+              "identificazioneServizio": { "nomeServizio": "Carta di credito" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Il servizio OU consente ai titolari di Carte di Credito Visa e MasterCard pagamenti con bollettino.",
+                  "disponibilitaServizio": "Il pagamento con carte di credito e' disponibile XXXXX."
+                }
+              },
+              "listaParoleChiave": {
+                "paroleChiave": [
+                  "Mastercard",
+                  "Visa"
+                ]
+              },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1"
+                  }
+                }
+              }
+            },
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_07",
+              "tipoVersamento": "CP",
+              "modelloPagamento": "0",
+              "priorita": "1",
+              "canaleApp": "0",
+              "identificazioneServizio": { "nomeServizio": "Carta di credito" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Il servizio NOU consente ai titolari di Carte di Credito Visa e MasterCard pagamenti con bollettino.",
+                  "disponibilitaServizio": "Il pagamento con carte di credito e' disponibile XXX."
+                }
+              },
+              "listaParoleChiave": {
+                "paroleChiave": [
+                  "Mastercard",
+                  "Visa"
+                ]
+              },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1"
+                  }
+                }
+              }
+            },
+            {
+              "identificativoIntermediario": "97103880585",
+              "identificativoCanale": "97103880585_02",
+              "tipoVersamento": "PO",
+              "modelloPagamento": "4",
+              "priorita": "4",
+              "canaleApp": "0",
+              "identificazioneServizio": { "nomeServizio": "Pagamenti PA presso UP e poste.it" },
+              "listaInformazioniServizio": {
+                "informazioniServizio": {
+                  "codiceLingua": "IT",
+                  "descrizioneServizio": "Per pagamenti di bollettiniPA negli UP la commissione e' 1,50E; per ultra 70enni o titolari carta Acquisti e' 0,70E. Su poste.it e’ 1,00E",
+                  "disponibilitaServizio": "Il servizio di pagamento e' disponibile negli orari di apertura degli uffici postali. Per informazioni visitare il sito www.poste.it"
+                }
+              },
+              "listaParoleChiave": {
+                "paroleChiave": [
+                  "Maestro",
+                  "Mastercard",
+                  "PagoBancomat",
+                  "Visa",
+                  "Visa Electron"
+                ]
+              },
+              "costiServizio": {
+                "tipoCostoTransazione": "1",
+                "tipoCommissione": "0",
+                "listaFasceCostoServizio": {
+                  "fasciaCostoServizio": {
+                    "importoMassimoFascia": "99999999.99",
+                    "costoFisso": "0",
+                    "valoreCommissione": "1.5"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "identificativoFlusso": "WISP_1_3_20171021",
+        "identificativoPSP": "UNGCIT21",
+        "ragioneSociale": "doBank",
+        "informativaMaster": {
+          "dataPubblicazione": "2017-05-31T00:01:00",
+          "dataInizioValidita": "2018-01-31T00:02:00",
+          "urlInformazioniPSP": "http://www.dobank.com/servizi-offerti/conto-corrente-professional-pagamenti-spese-giustizia/",
+          "stornoPagamento": "0",
+          "marcaBolloDigitale": "0"
+        },
+        "listaInformativaDetail": {
+          "informativaDetail": {
+            "identificativoIntermediario": "13212880150",
+            "identificativoCanale": "13212880150_06",
+            "tipoVersamento": "BBT",
+            "modelloPagamento": "2",
+            "priorita": "0",
+            "canaleApp": "0",
+            "identificazioneServizio": { "nomeServizio": "non comunicato" },
+            "listaInformazioniServizio": {
+              "informazioniServizio": {
+                "codiceLingua": "IT",
+                "descrizioneServizio": "Il Servizio consente il pagamento on line delle spese di giustizia (contributo unificato, diritti di cancelleria ed altri oneri ex D.M. n. ",
+                "disponibilitaServizio": "Dalle 8 alle 16 tutti i giorni lavorativi. Al di fuori di questo orario verranno elaborati alla prima giornata lavorativa successiva"
+              }
+            },
+            "costiServizio": {
+              "tipoCostoTransazione": "1",
+              "tipoCommissione": "0",
+              "listaFasceCostoServizio": {
+                "fasciaCostoServizio": {
+                  "importoMassimoFascia": "99999999.99",
+                  "costoFisso": "0",
+                  "valoreCommissione": "0"
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    ]

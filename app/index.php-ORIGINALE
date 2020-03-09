@@ -1,0 +1,9 @@
+<?php
+echo "<h2>Seleziona la Primitiva da testare</h2> <br>";
+echo "<a href=views/nodoInviaRPT.php>nodoInviaRPT</a>    Occorrenze datiSingoloVersamento selezionabili<br>";
+echo "<a href=views/nodoInviaCarrelloRPT.php>nodoInviaCarrelloRPT</a>    Singola RPT Singola occorrenza datiSingoloVersamento<br>";
+echo "<a href=views/nodoInviaCarrelloRPTmultiRPTmultiBeneficiario.php>nodoInviaCarrelloRPT</a>    Multi RPT multi occorrenza datiSingoloVersamento MultiBeneficiario<br>";
+echo "<a href=views/ebolloCarrello.php>eBollo su CarrelloRPT</a>    Singola RPT Singola occorrenza datiSingoloVersamento<br>";
+echo "<a href=views/nodoChiediInformativaPSP.php>Richiedi Catalogo Informativo PSP</a><br>";
+echo "<a href=views/nodoChiediStatoRPT.php>Chiedi Stato RPT</a><br>";
+?>

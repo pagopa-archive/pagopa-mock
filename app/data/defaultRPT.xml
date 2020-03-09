@@ -1,0 +1,55 @@
+<?xml version='1.0'?> 
+<RPT xmlns="http://www.digitpa.gov.it/schemas/2011/Pagamenti/">
+    <versioneOggetto>6.2.0</versioneOggetto>
+    <dominio>
+        <identificativoDominio>77777777777</identificativoDominio>
+    </dominio>
+    <identificativoMessaggioRichiesta>'.$IDM.'</identificativoMessaggioRichiesta>
+    <dataOraMessaggioRichiesta>'.$DOM.'</dataOraMessaggioRichiesta>
+    <autenticazioneSoggetto>N/A</autenticazioneSoggetto>
+    <soggettoPagatore>
+        <identificativoUnivocoPagatore>
+            <tipoIdentificativoUnivoco>F</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>KSMKSH80A01H501D</codiceIdentificativoUnivoco>
+        </identificativoUnivocoPagatore>
+        <anagraficaPagatore>Kenshiro Kasumi</anagraficaPagatore>
+        <indirizzoPagatore>via liszt</indirizzoPagatore>
+        <civicoPagatore>21</civicoPagatore>
+        <capPagatore>00141</capPagatore>
+        <localitaPagatore>Roma</localitaPagatore>
+        <provinciaPagatore>RM</provinciaPagatore>
+        <nazionePagatore>IT</nazionePagatore>
+        <e-mailPagatore>ciaone@manleva.eu</e-mailPagatore>
+    </soggettoPagatore>
+    <enteBeneficiario>
+        <identificativoUnivocoBeneficiario>
+            <tipoIdentificativoUnivoco>G</tipoIdentificativoUnivoco>
+            <codiceIdentificativoUnivoco>77777777777</codiceIdentificativoUnivoco>
+        </identificativoUnivocoBeneficiario>
+        <denominazioneBeneficiario>PA di Test</denominazioneBeneficiario>
+        <indirizzoBeneficiario>via liszt</indirizzoBeneficiario>
+        <civicoBeneficiario>21</civicoBeneficiario>
+        <capBeneficiario>00141</capBeneficiario>
+        <localitaBeneficiario>Roma</localitaBeneficiario>
+        <provinciaBeneficiario>RM</provinciaBeneficiario>
+        <nazioneBeneficiario>IT</nazioneBeneficiario>
+    </enteBeneficiario>
+    <datiVersamento>
+        <dataEsecuzionePagamento>DefaultData</dataEsecuzionePagamento>
+        <importoTotaleDaVersare>DefaultImporto</importoTotaleDaVersare>
+        <tipoVersamento>PO</tipoVersamento>
+        <identificativoUnivocoVersamento>DefaultIuv</identificativoUnivocoVersamento>
+        <codiceContestoPagamento>CCP1</codiceContestoPagamento>
+        <ibanAddebito>IT06T1063911700000000010535</ibanAddebito>
+	<firmaRicevuta>0</firmaRicevuta>
+	<datiSingoloVersamento> 
+		<importoSingoloVersamento>DefaultImporto</importoSingoloVersamento>
+		<ibanAccredito>IT30N0103076271000001823603</ibanAccredito>
+		<ibanAppoggio>IT57N0760114800000011050036</ibanAppoggio>
+		<credenzialiPagatore>N/A</credenzialiPagatore>
+		<causaleVersamento>/RFS/RF46341/0.10</causaleVersamento>
+		<datiSpecificiRiscossione>9/abcdefg</datiSpecificiRiscossione>
+	</datiSingoloVersamento>
+     </datiVersamento>
+</RPT>
+

@@ -1,0 +1,86 @@
+<?php
+
+    require_once "../cdi/logWriter.class.php";
+    require_once "../cdi/Helper.php";
+    require_once "../cdi/DOMValidator.class.php";
+
+    class PAServer
+    {
+        public function paaInviaRT()
+        {
+
+            $validRequest=true;
+            $esito="";
+            $soapResponse = new StdClass;
+            $helper = new Helper;
+
+            $soapRequest = file_get_contents ('php://input');
+            $xmlContentBasic = simplexml_load_string($soapRequest, null, LIBXML_NOCDATA);
+            $xmlContent = preg_replace("/(<\/?)(\w+):([^>]*>)/", "$1$2$3", $soapRequest);
+            $xmlContent = simplexml_load_string($xmlContent, null, LIBXML_NOCDATA);
+
+            //Verify
+            if (!$this->verifySchema($xmlContentBasic->asXML())) {
+                $validRequest=false;
+                //details
+                $soapResponse->paaInviaRTRisposta->fault->faultCode = "PAA_SINTASSI_XSD";
+                $soapResponse->paaInviaRTRisposta->fault->faultString = "Errore di sintassi XSD";
+                $idDominio = "77777777777";
+                $soapResponse->paaInviaRTRisposta->fault->id = $idDominio;
+                $soapResponse->paaInviaRTRisposta->fault->description = "Si Ã¨ verificato un errore di validazione dello schema XSD";
+            }
+
+
+            if ($validRequest) {
+                $encodedRT=$xmlContent->soapenvBody->pptpaaInviaRT->rt;
+                $decodedRT=base64_decode($encodedRT);
+
+                //Log
+                $time = date('d-M-Y');
+                $logPath='../cdi/uploads/logs/log-server-' . $time . '.txt';
+                $log = new logWriter($logPath);
+                $log->info('=============== SERVER PA SOAP ACTION: paaInviaRT ===============');
+                $log->info('REQUEST paaInviaRT: ' . $helper->formatXmlString($soapRequest));
+                $log->info('========================= RT =========================');
+                $log->info('Contenuto della RT: ' . $decodedRT );
+            }
+            if ($validRequest) {
+                $esito = "OK";
+            } else {
+                $esito="KO";
+            }
+
+            $soapResponse->paaInviaRTRisposta->esito = $esito;
+            $soapMessage = new SoapVar($soapResponse, SOAP_ENC_OBJECT);
+
+            return $soapMessage;
+        }
+
+
+        public function verifySchema($request)
+        {
+            //XSD
+            $validator = new DomValidator("../cdi/uploads/wsdl/nodo/PagInf_RPT_RT_6_2_0.xsd");
+            $validated = $validator->validateStrings($request);
+
+            if ($validated) {
+                $xsdMessage = "Validazione dello schema XSD avvenuta correttamente";
+            } else {
+                $xsdMessage = "La RT ha degli errori di validazione dello schema: ";
+                $xsdMessage .= implode(" ", $validator->displayErrors());
+            }
+
+            //Log
+            $time = date('d-M-Y');
+            $logPath='../cdi/uploads/logs/log-server-' . $time . '.txt';
+            $log = new logWriter($logPath);
+            $log->error($xsdMessage );
+
+            return $validated;
+        }
+    }
+
+?>
+
+
+
