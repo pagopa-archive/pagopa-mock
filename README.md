@@ -86,6 +86,14 @@ Push the image to the **azure** private **docker registry**:
 $ sudo docker push pagopamock.azurecr.io/pagopamock:v1.2.0
 ```
 
+Alternatively you can build the image on the private container registry:
+
+```
+$ az acr build --image pagopamock:v1.5.1 \
+--registry pagopamock.azurecr.io \
+--file Dockerfile .
+```
+
 To run a new deply edit the **container_instance.tf** file in the **infrastructure** folder and set the version you want to deploy:
 
 ```
