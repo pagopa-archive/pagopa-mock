@@ -10,7 +10,7 @@ RUN apt-get update -y
 RUN apt-get install apache2 -y 
 
 # install php
-RUN apt-get install php -y
+RUN apt-get install php7.2 php7.2-xml php7.2-soap -y
 
 ADD app /var/www/html/moc
 RUN chown -R www-data:www-data /var/www/html 
