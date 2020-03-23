@@ -89,8 +89,8 @@ $ sudo docker push pagopamock.azurecr.io/pagopamock:v1.2.0
 Alternatively you can build the image on the private container registry:
 
 ```
-$ az acr build --image pagopamock:v1.5.1 \
---registry pagopamock.azurecr.io \
+$ az acr build --image pagopamock:v1.5.2 \
+--registry pagopamock \
 --file Dockerfile .
 ```
 

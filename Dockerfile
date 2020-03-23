@@ -10,7 +10,7 @@ RUN apt-get update -y
 RUN apt-get install apache2 -y 
 
 # install php
-RUN apt-get install php7.2 php7.2-xml php7.2-soap -y
+RUN apt-get install php7.2 php7.2-xml php7.2-soap php7.2-curl -y
 
 ADD app /var/www/html/moc
 RUN chown -R www-data:www-data /var/www/html 
@@ -29,9 +29,8 @@ RUN a2enmod proxy
 
 # Enable SSH Connection. It's required in App Service it's not in Container Gruop
 ENV SSH_PASSWD "root:Docker!"
-RUN apt-get update \
-        && apt-get install -y --no-install-recommends dialog \
-        && apt-get update \
+RUN apt-get install -y --no-install-recommends dialog \
+  && apt-get update \
   && apt-get install -y --no-install-recommends openssh-server \
   && echo "$SSH_PASSWD" | chpasswd
 
