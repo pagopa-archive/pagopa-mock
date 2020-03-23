@@ -15,9 +15,10 @@ RUN apt-get install php7.2 php7.2-xml php7.2-soap php7.2-curl -y
 ADD app /var/www/html/moc
 RUN chown -R www-data:www-data /var/www/html 
 ADD apache2/sites-available/ /etc/apache2/sites-available/
-# ADD certs/pagopa-mock.westeurope.azurecontainer.io.crt /etc/ssl/certs/pagopa-mock.westeurope.azurecontainer.io.crt
-# ADD certs/pagopa-mock.westeurope.azurecontainer.io.key /etc/ssl/private/pagopa-mock.westeurope.azurecontainer.io.key
 
+# Certificate to call GAD
+ADD certs/pagopatest.agid.gov.it.crt /opt/moc-other/pagopatest.agid.gov.it.crt
+ADD certs/pagopatest.agid.gov.it.key /opt/moc-other/pagopatest.agid.gov.it.key
 
 # Enable ssl
 RUN a2enmod ssl
