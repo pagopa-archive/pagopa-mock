@@ -19,7 +19,7 @@ ADD apache2/sites-available/ /etc/apache2/sites-available/
 # Certificate to call GAD
 ADD certs/pagopamock.crt /opt/moc-other/pagopatest.agid.gov.it.crt
 ADD certs/pagopamock.key /opt/moc-other/pagopatest.agid.gov.it.key
-RUN chown -R /opt/moc-other/
+RUN chown -R www-data:www-data /opt/moc-other/
 
 # Enable ssl
 RUN a2enmod ssl
