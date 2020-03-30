@@ -17,7 +17,7 @@ RUN chown -R www-data:www-data /var/www/html
 ADD apache2/sites-available/ /etc/apache2/sites-available/
 
 # Certificate to call GAD
-ADD certs/pagopamock.crt /opt/moc-other/pagopatest.agid.gov.it.crt
+ADD certs/pagopamock.cer /opt/moc-other/pagopatest.agid.gov.it.crt
 ADD certs/pagopamock.key /opt/moc-other/pagopatest.agid.gov.it.key
 RUN chown -R www-data:www-data /opt/moc-other/
 
@@ -32,7 +32,6 @@ RUN a2enmod proxy
 # Enable SSH Connection. It's required in App Service it's not in Container Gruop
 ENV SSH_PASSWD "root:Docker!"
 RUN apt-get install -y --no-install-recommends dialog \
-  && apt-get update \
   && apt-get install -y --no-install-recommends openssh-server \
   && echo "$SSH_PASSWD" | chpasswd
 
