@@ -52,7 +52,7 @@ function content_5dd254c5941208_14326547 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="row">
                     <div class="col-12">
                         <div class="it-header-slim-wrapper-content">
-                            <a class="d-none d-lg-block navbar-brand" href="index.php">AGID + Presidenza del Consiglio dei Ministri + Team Digitale</a>
+                            <a class="d-none d-lg-block navbar-brand" href="index.php">PagoPA S.p.A.</a>
                             <div class="nav-mobile">
                                 <nav>
                                     <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu1" role="button" aria-expanded="false" aria-controls="menu1">
