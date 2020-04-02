@@ -133,15 +133,6 @@
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="link-list-wrapper">
-                                            <ul class="link-list">
-                                                <li>
-                                                    <h3 class="no_toc">PSP Virtuale</h3>
-                                                </li>
-                                                <li><a class="list-item" href="verifica.php" title="Verifica"><span>Verifica</span></a>
-                                                </li>
-                                                <li><a class="list-item" href="attiva.php" title="Attiva"><span>Attiva</span></a>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>

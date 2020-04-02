@@ -20,7 +20,6 @@
                 <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
                     <li class="list-inline-item"><a href="https://designers.italia.it/privacy-policy" title="Privacy policy">Privacy policy</a></li>
                     <li class="list-inline-item"><a href="https://designers.italia.it/note-legali" title="Note legali">Note legali</a></li>
-                    <li class="list-inline-item"><a href="credits.php" title="Note legali">Credits</a></li>
                 </ul>
             </div>
         </div>
