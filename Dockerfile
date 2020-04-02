@@ -25,6 +25,7 @@ RUN chown -R www-data:www-data /opt/moc-other/
 RUN a2enmod ssl
 # Enable Proxy
 RUN a2enmod proxy
+RUN a2enmod proxy_http
 # Sym link
 # RUN rm /etc/apache2/sites-enabled/000-default.conf
 # RUN ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf

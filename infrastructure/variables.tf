@@ -35,7 +35,7 @@ variable "ip_restriction" {
     },
     {
       # Gianni Papetti home
-      ip_address = "151.27.62.255"
+      ip_address = "151.27.28.240"
     },
   ]
 }
