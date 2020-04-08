@@ -26,18 +26,22 @@ variable "ip_restriction" {
       ip_address = "193.203.229.20"
     },
     {
-      # Rome office
-      ip_address = "85.44.51.73"
+      # Sia Office
+      ip_address = "193.203.229.21"
     },
-    {
-      # Walter home
-      ip_address = "79.41.138.253"
-    },
-    {
-      # Gianni Papetti home
-      ip_address = "151.27.28.240"
-    },
-  ]
+   {
+     # Rome office
+     ip_address = "85.44.51.73"
+   },
+   {
+     # Walter home
+     ip_address = "79.41.138.253"
+   },
+   {
+     # Gianni Papetti home
+     ip_address = "151.27.28.240"
+   },
+ ]
 }
 
 variable "cert_password" {
