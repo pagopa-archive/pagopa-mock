@@ -88,7 +88,7 @@
                     $helper->base64ToImage($_SESSION["logoPSP"], $logoFile);
                     $validationResult .= htmlentities('<div class="callout note"> 
                         <div class="callout-title"><svg class="icon icon-primary"><use xlink:href="views/bootstrap-italia/svg/sprite.svg#it-info-circle"></use></svg>Logo PSP</div> 
-                        <img src="' . $logoFile . '" />
+                        <img src=' . $logoFile . ' />
                         </div>');
                     //end logo
 
