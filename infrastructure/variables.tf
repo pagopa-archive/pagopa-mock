@@ -45,6 +45,10 @@ variable "ip_restriction" {
      # Mario Gammaldi home
      ip_address = "151.25.100.59/32"
    },
+   {
+     # Mario Gammaldi home
+     ip_address = "151.25.100.59"
+   },
  ]
 }
 
