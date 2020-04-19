@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [v1.6.8](https://github.com/pagopa/pagopa-mock/releases/tag/v1.6.8) ([compare](https://github.com/pagopa/pagopa-mock/compare/v1.6.7...v1.6.8))
+
+### Changed
+- Change log update ([be2b165](https://github.com/pagopa/pagopa-mock/commit/be2b165550d48e16e3ce3fb0bc61b058fe51cbd9) by Walter Traspadini).
+
+
 ## [v1.6.7](https://github.com/pagopa/pagopa-mock/releases/tag/v1.6.7) ([compare](https://github.com/pagopa/pagopa-mock/compare/c2328c4c6be4c828b7e92988e4165b8e76718f5e...v1.6.7)) - 2020-04-19
 
 ### Added
@@ -23,6 +29,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Docker file changed: enable https in apache ([bc3f703](https://github.com/pagopa/pagopa-mock/commit/bc3f703468a1d0f8ef49b64cd6f19832ef95f653) by Walter Traspadini).
 
 ### Fixed
+- Fix logo catalogo xml ([55a0ab0](https://github.com/pagopa/pagopa-mock/commit/55a0ab0aae187453f2afbabae01af677199d9b92) by Walter Traspadini).
 - Fixed the certificate ... ([d465653](https://github.com/pagopa/pagopa-mock/commit/d4656530501ad12ebbaac952078819501720b396) by Walter Traspadini).
 
 ### Removed
