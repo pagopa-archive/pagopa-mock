@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## Unrealeased ([compare](https://github.com/pagopa/pagopa-mock/compare/c2328c4c6be4c828b7e92988e4165b8e76718f5e...HEAD))
+## [v1.6.7](https://github.com/pagopa/pagopa-mock/releases/tag/v1.6.7) ([compare](https://github.com/pagopa/pagopa-mock/compare/c2328c4c6be4c828b7e92988e4165b8e76718f5e...v1.6.7)) - 2020-04-19
 
 ### Added
 - Add certificate ([a451069](https://github.com/pagopa/pagopa-mock/commit/a451069c8c99b190b1bb99efd159f7cfb0e7a5a7) by Walter Traspadini).
@@ -23,7 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Docker file changed: enable https in apache ([bc3f703](https://github.com/pagopa/pagopa-mock/commit/bc3f703468a1d0f8ef49b64cd6f19832ef95f653) by Walter Traspadini).
 
 ### Fixed
-- Fix logo catalogo xml ([55a0ab0](https://github.com/pagopa/pagopa-mock/commit/55a0ab0aae187453f2afbabae01af677199d9b92) by Walter Traspadini).
 - Fixed the certificate ... ([d465653](https://github.com/pagopa/pagopa-mock/commit/d4656530501ad12ebbaac952078819501720b396) by Walter Traspadini).
 
 ### Removed
@@ -31,6 +30,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Removed terraform code ([511e903](https://github.com/pagopa/pagopa-mock/commit/511e9032c3c7d382179228cbc4001f0aa74c4ec7) by Walter Traspadini).
 
 ### Misc
+- Update docker image version and ip restriction list ([9f35bf7](https://github.com/pagopa/pagopa-mock/commit/9f35bf7ab8f99b33d658a1471a2e0c85a2810f2d) by Walter Traspadini).
 - Update ip pago pa node in whitelist ([17e68e3](https://github.com/pagopa/pagopa-mock/commit/17e68e3004cd1b92b49b1dcbd9ee84df5ea61b9f) by Walter Traspadini).
 - Commented out proxy pass to localhost ([ad0745c](https://github.com/pagopa/pagopa-mock/commit/ad0745cae0dbc10ded62666c326cd48c92219adb) by Walter Traspadini).
 - Missed mod proxy in docker file ([8340d71](https://github.com/pagopa/pagopa-mock/commit/8340d716e85d942f6e321fc580802e228c53c8f5) by Walter Traspadini).
