@@ -29,7 +29,7 @@ resource "azurerm_app_service" "app_service" {
   app_settings = {
     WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
     WEBSITES_PORT                       = 80
-    
+
     DOCKER_REGISTRY_SERVER_URL      = azurerm_container_registry.container_registry.login_server
     DOCKER_REGISTRY_SERVER_USERNAME = azurerm_container_registry.container_registry.admin_username
     DOCKER_REGISTRY_SERVER_PASSWORD = azurerm_container_registry.container_registry.admin_password
@@ -46,9 +46,9 @@ resource "azurerm_app_service" "app_service" {
     always_on        = "true"
 
     dynamic "ip_restriction" {
-      for_each = var.ip_restriction 
+      for_each = var.ip_restriction
       content {
-        ip_address = ip_restriction.value["ip_address"]  
+        ip_address = ip_restriction.value["ip_address"]
       }
     }
   }
@@ -56,7 +56,7 @@ resource "azurerm_app_service" "app_service" {
   identity {
     type = "SystemAssigned"
   }
-    
+
   tags = var.tags
 }
 /*
