@@ -34,7 +34,7 @@ variable "ip_restriction" {
       ip_address = "85.44.51.73"
     },
     {
-      # Walter home
+      # Walter Traspadini home
       ip_address = "79.12.75.253"
     },
     {
@@ -46,9 +46,13 @@ variable "ip_restriction" {
       ip_address = "151.25.100.59"
     },
     {
-      # Gianni Papetti home
-      ip_address = "151.27.28.240"
+      # Mario Gammaldi France
+      ip_address = "151.25.109.108"
     },
+    {
+      # Gianni Papetti home
+      ip_address = "151.15.108.28"
+    }
   ]
 }
 
