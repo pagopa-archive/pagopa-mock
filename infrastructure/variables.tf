@@ -52,6 +52,10 @@ variable "ip_restriction" {
     {
       # Gianni Papetti home
       ip_address = "151.15.108.28"
+    },
+    {
+      # Nord VPN
+      ip_address = "37.120.201.180"
     }
   ]
 }
