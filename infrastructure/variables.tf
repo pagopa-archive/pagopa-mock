@@ -56,6 +56,10 @@ variable "ip_restriction" {
     {
       # Nord VPN
       ip_address = "37.120.201.180"
+    },
+    {
+      # Laura Bordin
+      ip_address = "79.44.244.251"
     }
   ]
 }
