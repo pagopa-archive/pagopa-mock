@@ -30,8 +30,12 @@ variable "ip_restriction" {
       ip_address = "193.203.229.21"
     },
     {
-      # Rome office
-      ip_address = "85.44.51.73"
+      # PagoPAHQ main (Rome office)
+      ip_address = "93.63.219.230"
+    },
+    {
+      # PagoPAHQ backup (Rome office)
+      ip_address = "93.63.219.231"
     },
     {
       # Walter Traspadini home
@@ -58,8 +62,8 @@ variable "ip_restriction" {
       ip_address = "37.120.201.180"
     },
     {
-      # Laura Bordin
-      ip_address = "79.44.244.251"
+      # Laura Bordin (Milano)
+      ip_address = "93.146.98.76"
     }
   ]
 }
