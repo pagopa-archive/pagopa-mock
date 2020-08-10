@@ -59,7 +59,7 @@ variable "ip_restriction" {
     },
     {
       # Nord VPN
-      ip_address = "37.120.201.180"
+      ip_address = "37.120.201.204"
     },
     {
       # Laura Bordin (Milano)
