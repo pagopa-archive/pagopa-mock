@@ -64,6 +64,10 @@ variable "ip_restriction" {
     {
       # Laura Bordin (Milano)
       ip_address = "93.146.98.76"
+    },
+    {
+      # Pasquale S.
+      ip_address = "2.38.21.180"
     }
   ]
 }
